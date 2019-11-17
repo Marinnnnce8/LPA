@@ -1,0 +1,222 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?awrwhj');
+  src:  url('../fonts/icomoon.eot?awrwhj#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?awrwhj') format('truetype'),
+    url('../fonts/icomoon.woff?awrwhj') format('woff'),
+    url('../fonts/icomoon.svg?awrwhj#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow:before {
+  content: "\e900";
+}
+.icon-arrow-with-two-points-pointing-opposite-directions-at-both-sides:before {
+  content: "\e901";
+}
+.icon-at:before {
+  content: "\e902";
+}
+.icon-badge:before {
+  content: "\e903";
+}
+.icon-badge-1:before {
+  content: "\e904";
+}
+.icon-boat:before {
+  content: "\e905";
+}
+.icon-boat-1:before {
+  content: "\e906";
+}
+.icon-calendar:before {
+  content: "\e907";
+}
+.icon-car:before {
+  content: "\e908";
+}
+.icon-car-1:before {
+  content: "\e909";
+}
+.icon-caret-down:before {
+  content: "\e90a";
+}
+.icon-check-mark-black-outline:before {
+  content: "\e90b";
+}
+.icon-clock:before {
+  content: "\e90c";
+}
+.icon-close:before {
+  content: "\e90d";
+}
+.icon-crane:before {
+  content: "\e90e";
+}
+.icon-cruise:before {
+  content: "\e90f";
+}
+.icon-cruise-ship:before {
+  content: "\e910";
+}
+.icon-cup:before {
+  content: "\e911";
+}
+.icon-deepwater-quay:before {
+  content: "\e912";
+}
+.icon-delivery-van:before {
+  content: "\e913";
+}
+.icon-ferry-facing-right:before {
+  content: "\e914";
+}
+.icon-food:before {
+  content: "\e915";
+}
+.icon-foreign:before {
+  content: "\e916";
+}
+.icon-graphic:before {
+  content: "\e917";
+}
+.icon-gross:before {
+  content: "\e918";
+}
+.icon-handshake:before {
+  content: "\e919";
+}
+.icon-ipo:before {
+  content: "\e91a";
+}
+.icon-layout:before {
+  content: "\e91b";
+}
+.icon-medal-2:before {
+  content: "\e91c";
+}
+.icon-menu:before {
+  content: "\e91d";
+}
+.icon-moon-phase-outline:before {
+  content: "\e91e";
+}
+.icon-movement:before {
+  content: "\e91f";
+}
+.icon-newspaper-1:before {
+  content: "\e920";
+}
+.icon-noun_79674_cc:before {
+  content: "\e921";
+}
+.icon-noun_232533_cc:before {
+  content: "\e922";
+}
+.icon-noun_744555_cc:before {
+  content: "\e923";
+}
+.icon-noun_870398_cc:before {
+  content: "\e924";
+}
+.icon-noun_1725900_cc:before {
+  content: "\e925";
+}
+.icon-noun_Quotation-Marks_81720:before {
+  content: "\e926";
+}
+.icon-noun_warehouse_604211_000000:before {
+  content: "\e927";
+}
+.icon-people:before {
+  content: "\e928";
+}
+.icon-people-1:before {
+  content: "\e929";
+}
+.icon-petroleum-plant:before {
+  content: "\e92a";
+}
+.icon-phone:before {
+  content: "\e92b";
+}
+.icon-phone-1:before {
+  content: "\e92c";
+}
+.icon-placeholder:before {
+  content: "\e92d";
+}
+.icon-placeholder-1:before {
+  content: "\e92e";
+}
+.icon-radar:before {
+  content: "\e92f";
+}
+.icon-right-arrow:before {
+  content: "\e930";
+}
+.icon-sailboat-1:before {
+  content: "\e931";
+}
+.icon-sea:before {
+  content: "\e932";
+}
+.icon-shield:before {
+  content: "\e933";
+}
+.icon-ship:before {
+  content: "\e934";
+}
+.icon-ship-1:before {
+  content: "\e935";
+}
+.icon-ship-2:before {
+  content: "\e936";
+}
+.icon-ships:before {
+  content: "\e937";
+}
+.icon-social:before {
+  content: "\e938";
+}
+.icon-stock:before {
+  content: "\e939";
+}
+.icon-sunlight:before {
+  content: "\e93a";
+}
+.icon-telephone:before {
+  content: "\e93b";
+}
+.icon-tide:before {
+  content: "\e93c";
+}
+.icon-tide-1:before {
+  content: "\e93d";
+}
+.icon-time-and-date:before {
+  content: "\e93e";
+}
+.icon-transport:before {
+  content: "\e93f";
+}
+.icon-wrench:before {
+  content: "\e940";
+}

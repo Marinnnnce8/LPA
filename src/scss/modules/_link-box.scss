@@ -1,0 +1,42 @@
+.link-box {
+    margin-top: -53px;
+    padding: 2px;
+    position: relative;
+
+    a {
+        bottom: 0;
+        content: '';
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .inner {
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .label {
+        left: 5%;
+        position: absolute;
+        bottom: 12%;
+
+        &::before {
+            color: $white;
+            font-size: 34px;
+        }
+    }
+}
+
+.link-box__title {
+    color: $white;
+    left: 8%;
+    position: absolute;
+    text-transform: uppercase;
+    top: 21%;
+    z-index: 1;
+}
