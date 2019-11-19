@@ -25,7 +25,7 @@
 <body>
 
 	<header class="header">
-		<nav data-uk-navbar class="uk-flex-between uk-container uk-container-expand">
+		<nav data-uk-navbar class="uk-flex uk-flex-between uk-container uk-container-expand">
 			<a href="#" class="header__logo" aria-label="Click here to visit home page"
 				title="Lerwick Port Authority"><img src="./images/logo.png" alt="Lerwick Port Authority logo"></a>
 			<ul class="uk-navbar-nav uk-flex-middle">
@@ -40,102 +40,185 @@
 							class="uk-visible@s" role="presentation"></span>
 						<span data-uk-icon="triangle-right" class="uk-hidden@s" role="presentation"></span></button>
 					<div class="uk-navbar-dropdown"
-						uk-drop="mode: click; boundary: !nav; boundary-align: true; pos: bottom-justify;">
+						data-uk-drop="mode: click; boundary: !nav; boundary-align: true; pos: bottom-justify;">
 						<ul class="uk-nav uk-navbar-dropdown-nav uk-flex uk-flex-between uk-child-width-1-1">
-							<li>
-								<div data-uk-img class="uk-background-cover"
+							<li data-uk-height-match=".nav-equal" class="nav-equal">
+								<div data-uk-img
+									class="uk-background-cover waves-top uk-flex uk-flex-column uk-flex-between"
 									style="background-image: url('./images/slide_1.jpg');">
-									<a class="uk-text-uppercase font-gross" href="#">Cruise</a>
-									<div class="uk-padding">
+									<ul>
+										<li>
+											<a class="uk-text-uppercase font-gross" href="#">Cruise</a>
+										</li>
+									</ul>
+									<img data-uk-img src="./images/lpa-main-pattern.svg" alt="image"
+										role="presentation">
+									<div class="uk-padding" data-uk-height-match=".nav-equal">
 										<ul>
-											<li><a class="uk-text-uppercase font-gross" href="#">2018 cruise list</a>
+											<li><a class="uk-text-uppercase font-gross" href="#">2018 cruise
+													list</a>
 											</li>
-											<li><a class="uk-text-uppercase font-gross" href="#">2019 cruise list</a>
+											<li><a class="uk-text-uppercase font-gross" href="#">2019 cruise
+													list</a>
 											</li>
-											<li><a class="uk-text-uppercase font-gross" href="#">cruise facilities</a>
+											<li><a class="uk-text-uppercase font-gross" href="#">cruise
+													facilities</a>
 											</li>
 											<li><a class="uk-text-uppercase font-gross" href="#">excursions</a></li>
 											<li><a class="uk-text-uppercase font-gross" href="#">passenger
 													information</a>
+											</li>
+										</ul>
+									</div>
+									</span>
+							</li>
+							<li data-uk-height-match=".nav-equal" class="nav-equal">
+								<div data-uk-img
+									class="uk-background-cover waves-top uk-flex uk-flex-column uk-flex-between"
+									style="background-image: url('./images/slide_1.jpg');">
+									<ul>
+										<li>
+											<a class="uk-text-uppercase font-gross" href="#">leisure</a>
+										</li>
+									</ul>
+									<img data-uk-img src="./images/lpa-main-pattern.svg" alt="image"
+										role="presentation">
+									<div class="uk-padding" data-uk-height-match=".nav-equal">
+										<ul>
+											<li><a class="uk-text-uppercase font-gross" href="#">yachts</a>
+											</li>
+											<li><a class="uk-text-uppercase font-gross" href="#">tall ships</a>
+											</li>
+											<li><a class="uk-text-uppercase font-gross" href="#">sail training</a>
+											</li>
+											<li><a class="uk-text-uppercase font-gross" href="#">recreational
+													diving</a>
+											</li>
+											<li><a class="uk-text-uppercase font-gross" href="#">jet skis / personal
+													watercraft</a>
+											</li>
+											<li><a class="uk-text-uppercase font-gross" href="#">drones</a>
 											</li>
 										</ul>
 									</div>
 								</div>
 							</li>
-							<li>
-								<div data-uk-img class="uk-background-cover"
+							<li data-uk-height-match=".nav-equal" class="nav-equal">
+								<div data-uk-img
+									class="uk-background-cover waves-top uk-flex uk-flex-column uk-flex-between"
 									style="background-image: url('./images/slide_1.jpg');">
-									<a class="uk-text-uppercase font-gross" href="#">Cruise</a>
-									<div class="uk-padding">
+									<ul>
+										<li>
+											<a class="uk-text-uppercase font-gross" href="#">decommissioning</a>
+										</li>
+									</ul>
+									<img data-uk-img src="./images/lpa-main-pattern.svg" alt="image"
+										role="presentation">
+									<div class="uk-padding" data-uk-height-match=".nav-equal">
+										<p>Lerwick is one of the first ports in the UK to handle significant
+											offshore
+											decommissioning projects.</p>
 										<ul>
-											<li><a class="uk-text-uppercase font-gross" href="#">2018 cruise list</a>
-											</li>
-											<li><a class="uk-text-uppercase font-gross" href="#">2019 cruise list</a>
-											</li>
-											<li><a class="uk-text-uppercase font-gross" href="#">cruise facilities</a>
-											</li>
-											<li><a class="uk-text-uppercase font-gross" href="#">excursions</a></li>
-											<li><a class="uk-text-uppercase font-gross" href="#">passenger
-													information</a>
+											<li><a class="uk-text-uppercase font-gross" href="#">single lift</a>
 											</li>
 										</ul>
 									</div>
 								</div>
 							</li>
-							<li>
-								<div data-uk-img class="uk-background-cover"
+							<li data-uk-height-match=".nav-equal" class="nav-equal">
+								<div data-uk-img
+									class="uk-background-cover waves-top uk-flex uk-flex-column uk-flex-between"
 									style="background-image: url('./images/slide_1.jpg');">
-									<a class="uk-text-uppercase font-gross" href="#">Cruise</a>
-									<div class="uk-padding">
-										<ul>
-											<li><a class="uk-text-uppercase font-gross" href="#">2018 cruise list</a>
-											</li>
-											<li><a class="uk-text-uppercase font-gross" href="#">2019 cruise list</a>
-											</li>
-											<li><a class="uk-text-uppercase font-gross" href="#">cruise facilities</a>
-											</li>
-											<li><a class="uk-text-uppercase font-gross" href="#">excursions</a></li>
-											<li><a class="uk-text-uppercase font-gross" href="#">passenger
-													information</a>
-											</li>
-										</ul>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div data-uk-img class="uk-background-cover"
-									style="background-image: url('./images/slide_1.jpg');">
-									<a class="uk-text-uppercase font-gross" href="#">Cruise</a>
-									<div class="uk-padding">
-										<ul>
-											<li><a class="uk-text-uppercase font-gross" href="#">2018 cruise list</a>
-											</li>
-											<li><a class="uk-text-uppercase font-gross" href="#">2019 cruise list</a>
-											</li>
-											<li><a class="uk-text-uppercase font-gross" href="#">cruise facilities</a>
-											</li>
-											<li><a class="uk-text-uppercase font-gross" href="#">excursions</a></li>
-											<li><a class="uk-text-uppercase font-gross" href="#">passenger
-													information</a>
-											</li>
-										</ul>
-									</div>
+									<ul>
+										<li>
+											<a class="uk-text-uppercase font-gross" href="#">property</a>
+										</li>
+										<li>
+											<a class="uk-text-uppercase font-gross" href="#">oil & gas</a>
+										</li>
+										<li>
+											<a class="uk-text-uppercase font-gross" href="#">fishing</a>
+										</li>
+										<li>
+											<a class="uk-text-uppercase font-gross" href="#">ferries</a>
+										</li>
+										<li>
+											<a class="uk-text-uppercase font-gross" href="#">cargo</a>
+										</li>
+									</ul>
+									<img data-uk-img src="./images/lpa-main-pattern.svg" alt="image"
+										role="presentation">
+									<span role="presentation"></span>
 								</div>
 							</li>
 						</ul>
+						<button class="uk-text-uppercase" data-uk-close
+							data-uk-toggle="target: .uk-navbar-dropdown">close menu</button>
 					</div>
 				</li>
 				<li>
-					<a class="uk-text-uppercase" href="#">Resources</a>
+					<a class="uk-text-uppercase" href="#">Marine information</a>
 				</li>
 				<li>
-					<a class="uk-text-uppercase" href="#">Events</a>
+					<a class="uk-text-uppercase uk-visible@xl" href="#">Resources</a>
 				</li>
 				<li>
-					<a class="uk-text-uppercase" href="#">Contact</a>
+					<a class="uk-text-uppercase uk-visible@xl" href="#">About</a>
+				</li>
+				<li>
+					<a class="uk-text-uppercase uk-visible@xl" href="#">Events</a>
+				</li>
+				<li>
+					<a class="uk-text-uppercase uk-visible@xl" href="#">Contact</a>
+				</li>
+				<li class="uk-parent uk-parent--dropdown uk-hidden@xl uk-visible@s">
+					<button aria-expanded="false"
+						class="nav-link push-icon-right js-toggle-dropdown uk-text-uppercase">More<span
+							data-uk-icon="triangle-down" role="presentation"></span></button>
+					<div class="uk-navbar-dropdown"
+						data-uk-drop="mode: click; boundary: !nav; boundary-align: true; pos: bottom-justify;">
+						<ul class="uk-nav uk-navbar-dropdown-nav">
+							<li><button class="uk-text-uppercase font-gross">Resources</button>
+								<div data-uk-dropdown="mode: click"
+									class="uk-navbar-dropdown uk-navbar-dropdown-bottom-left" id="nav-children-1">
+									<ul class="uk-nav uk-navbar-dropdown-nav">
+										<li><button class="font-gross uk-text-uppercase"
+												data-uk-toggle="target: #nav-children-1; animation: true">Back</button>
+										</li>
+										<li><span class="uk-text-uppercase">Resources</span></li>
+										<li><a class="uk-text-uppercase" href="#">Annual review</a></li>
+										<li><a class="uk-text-uppercase" href="#">Bulletins</a></li>
+										<li><a class="uk-text-uppercase" href="#">Charges</a></li>
+										<li><a class="uk-text-uppercase" href="#">HSEQ</a></li>
+										<li><a class="uk-text-uppercase" href="#">Privacy notice</a></li>
+									</ul>
+									<!-- TODO: STAVI SOCIAL MEDIA -->
+								</div>
+							</li>
+							<li><button class="uk-text-uppercase font-gross">About</button>
+								<div data-uk-dropdown="mode: click"
+									class="uk-navbar-dropdown uk-navbar-dropdown-bottom-left" id="nav-children-2">
+									<ul class="uk-nav uk-navbar-dropdown-nav">
+										<li><button class="font-gross uk-text-uppercase"
+												data-uk-toggle="target: #nav-children-2; animation: true">Back</button>
+										</li>
+										<li><span class="uk-text-uppercase">About</span></li>
+										<li><a class="uk-text-uppercase" href="#">Annual review</a></li>
+										<li><a class="uk-text-uppercase" href="#">Bulletins</a></li>
+										<li><a class="uk-text-uppercase" href="#">Charges</a></li>
+										<li><a class="uk-text-uppercase" href="#">HSEQ</a></li>
+										<li><a class="uk-text-uppercase" href="#">Privacy notice</a></li>
+									</ul>
+									<!-- TODO: STAVI SOCIAL MEDIA -->
+								</div>
+							</li>
+							<li><a class="uk-text-uppercase" href="#">Events</a></li>
+							<li><a class="uk-text-uppercase" href="#">Contact</a></li>
+						</ul>
+					</div>
 				</li>
 			</ul>
-			<ul class="uk-flex uk-flex-middle header__socials">
+			<ul class="uk-flex uk-flex-middle header__socials uk-visible@xl">
 				<li><a href="#" data-uk-icon="youtube" aria-label="Click here to visit our youtube page"
 						class="font-youtube"></a></li>
 				<li><a href="#" data-uk-icon="linkedin" aria-label="Click here to visit our linkedin page"
@@ -143,8 +226,9 @@
 				<li><a href="#" data-uk-icon="instagram" aria-label="Click here to visit our instagram page"
 						class="font-instagram"></a></li>
 			</ul>
+			<a class="uk-text-uppercase uk-flex uk-flex-middle header__live font-gross" href="#">Lervick harbour
+				live</a>
 		</nav>
-		<a class="uk-text-uppercase uk-flex uk-flex-middle header__live font-gross" href="#">Lervick harbour live</a>
 	</header>
 
 

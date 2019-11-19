@@ -10,10 +10,11 @@
 
 	.uk-container {
 		position: relative;
+		padding-right: 0;
 	}
 
 	.uk-navbar {
-		padding-left: 260px;
+		padding-left: 320px;
 	}
 
 	.uk-navbar-nav {
@@ -21,12 +22,16 @@
 		a,
 		button,
 		span,
-		.uk-active>a {
+		.uk-active>a,
+		p {
 			font-family: $font-default;
-			font-weight: $bold;
 			font-size: 14px;
 			color: $white;
 			transition: .3s ease-in-out;
+
+			&:not(p) {
+				font-weight: $bold;
+			}
 		}
 
 		li>a,
@@ -37,12 +42,28 @@
 				border-color: $white;
 				color: $white;
 				background: $blue-light;
+
+				span {
+					color: $white;
+				}
 			}
 		}
 
-		li>button {
+		.uk-open,
+		.uk-open:focus {
+			background: $white;
+			color: $blue;
+
+			>span {
+				transform: rotate(-180deg);
+				color: $blue;
+			}
+		}
+
+		li button {
 			min-height: 80px;
 			padding: 0 15px;
+			width: 100%;
 
 			.uk-icon {
 				top: -3px;
@@ -50,38 +71,64 @@
 				left: 3px;
 			}
 		}
+
+		.uk-close {
+			color: $blue;
+			position: absolute;
+			bottom: 20px;
+			right: 60px;
+			font-size: 12px;
+
+			svg {
+				margin-left: 10px;
+				width: 12px;
+				font-weight: bold;
+			}
+		}
 	}
 
 	.uk-navbar-dropdown {
-		padding: 20px 60px;
+		padding: 20px 60px 50px;
 		margin-top: 0;
 	}
 
-	.uk-navbar-dropdown-nav {
-		>li {
-			&:not(:last-of-type) {
-				padding-right: 3px;
+	.uk-navbar-dropdown-nav>li {
+		&:not(:last-of-type) {
+			padding-right: 3px;
+		}
+
+		.uk-background-cover {
+			padding-top: 30px;
+
+			ul,
+			p {
+				padding: 0 10px 0 40px;
 			}
 
-			.uk-background-cover {
-				padding-top: 30px;
-				>a {
-					padding: 0 40px;
-					display: inline-block;
-					position: relative;
-	
-					&::before {
-						right: 12px;
-						position: absolute;
-						top: 4px;
-						font-size: 12px;
-					}
+			a {
+				display: inline-block;
+				position: relative;
+			}
+
+			>ul li a {
+				padding-right: 20px;
+
+				&::before {
+					right: -5px;
+					position: absolute;
+					top: 4px;
+					font-size: 12px;
 				}
-				ul li a {
-					display: inline-block;
+			}
+
+			>.uk-padding {
+				background: $blue;
+				min-height: 205px;
+				padding: 20px 0;
+
+				ul a {
 					padding-left: 20px;
-					position: relative;
-	
+
 					&::before {
 						left: 0;
 						position: absolute;
@@ -89,6 +136,129 @@
 						font-size: 12px;
 					}
 				}
+			}
+
+			span {
+				background: $blue;
+				min-height: 95px;
+				display: block;
+				width: 100%;
+			}
+		}
+	}
+
+	@media (max-width: $breakpointXlarge) {
+		.uk-navbar-dropdown-nav {
+			li {
+				&:not(:last-of-type) {
+					padding-right: 0;
+					margin-bottom: 2px;
+				}
+
+				a,
+				button,
+				span {
+					display: block;
+					background: $blue;
+					padding: 20px;
+					position: relative;
+					text-align: left;
+					min-height: 0;
+
+					&::before {
+						position: absolute;
+						top: 50%;
+						transform: translateY(-50%);
+						right: 20px;
+					}
+				}
+			}
+
+			.uk-navbar-dropdown {
+				top: 0 !important; // sass-lint:disable-line no-important
+				left: 0 !important; // sass-lint:disable-line no-important
+				width: 100%;
+
+				span,
+				button {
+					padding-left: 30px;
+				}
+
+				button {
+					background: $white;
+					color: $blue;
+
+					&::before {
+						left: 10px;
+						right: auto;
+						transform: rotate(-180deg) translateY(40%);
+					}
+				}
+
+				span {
+					font-size: 18px;
+				}
+
+				a {
+					padding-left: 50px;
+				}
+			}
+		}
+	}
+
+	@media (max-width: $breakpointLarge) {
+		.uk-navbar {
+			padding-left: 171px;
+		}
+
+		.uk-navbar-nav {
+
+			.uk-navbar-dropdown,
+			.uk-open,
+			.uk-open:focus {
+				background: $blue-mid;
+				border-top-color: transparent;
+				color: $white;
+
+				svg {
+					color: $white;
+					transform: rotate(-180deg);
+				}
+			}
+
+			.uk-navbar-dropdown .uk-navbar-dropdown button {
+				background: $blue-mid;
+				color: $white;
+			}
+
+			li a {
+				padding: 0 5px;
+			}
+
+			li>button {
+				@include hover {
+					background: $blue-mid;
+					border-top-color: transparent;
+					color: $white;
+
+					svg {
+						color: $white;
+						transform: rotate(-180deg);
+					}
+				}
+			}
+		}
+	}
+
+	@media (max-width: $breakpointMedium) {
+		.uk-navbar-nav {
+
+			a,
+			button,
+			span,
+			.uk-active>a,
+			p {
+				font-size: 12px;
 			}
 		}
 	}
@@ -104,10 +274,19 @@
 		width: 100%;
 		height: auto;
 	}
+
+	@media (max-width: $breakpointLarge) {
+		left: 0;
+		width: 187px;
+
+		img {
+			width: auto;
+			height: 80px;
+		}
+	}
 }
 
 .header__socials {
-	padding: 0 20px;
 	margin: 0;
 
 	a {
@@ -123,14 +302,10 @@
 .header__live {
 	background: $orange;
 	color: $white;
-	padding: 0 80px 0 30px;
-	position: absolute;
-	right: 0;
-	top: 0;
-	bottom: 0;
+	padding: 0 40px 0 30px;
 
 	&::before {
-		right: 50px;
+		right: 20px;
 		position: absolute;
 		top: 50%;
 		font-size: 14px;
@@ -139,5 +314,27 @@
 
 	@include hover {
 		color: $orange;
+	}
+
+	@media (max-width: $breakpointLarge) {
+		width: 50px;
+	}
+}
+
+.waves-top {
+	height: 100%;
+	padding-top: 80px;
+	min-height: 85px;
+	position: relative;
+
+	>a {
+		margin-bottom: 45px;
+	}
+
+	img {
+		width: 100%;
+		height: auto;
+		position: relative;
+		bottom: -20px;
 	}
 }
