@@ -1,7 +1,157 @@
 //----------  footer
 //------------------------------------------------------------------------------
+main {
+	margin-bottom: 100px;
+}
+
 .footer {
-	background-color: $orange;
-	padding: 30px 0;
-	color: $white;
+	background-color: $white;
+
+	a {
+		text-decoration: none;
+	}
+}
+
+.footer__top {
+
+	.uk-flex {
+		background-repeat: round;
+		min-height: 235px;
+		position: relative;
+		padding: 40px;
+
+		a,
+		span {
+			color: $white;
+		}
+
+		span {
+			&:first-of-type {
+				font-weight: $bold;
+				font-size: 34px;
+			}
+
+			&:last-of-type {
+				font-size: 20px;
+			}
+		}
+
+		a {
+			font-size: 16px;
+			position: relative;
+
+			&::after,
+			&::before {
+				position: absolute;
+			}
+
+			b {
+				font-size: 18px;
+			}
+		}
+
+		img {
+			width: 100%;
+			height: auto;
+		}
+
+		&:first-of-type {
+			width: 80%;
+
+			a {
+				&::before {
+					top: 0;
+					left: 0;
+				}
+
+				&::after {
+					background: $white;
+					content: '';
+					height: 1px;
+					bottom: 0;
+					left: 25px;
+					width: calc(100% - 25px);
+				}
+
+				&:last-of-type {
+					padding-left: 25px;
+				}
+			}
+		}
+
+		&:last-of-type {
+			width: 20%;
+
+			a {
+				display: inline-block;
+				width: 100%;
+
+				&::before {
+					right: 0;
+				}
+			}
+		}
+	}
+}
+
+.footer__bottom {
+
+	span,
+	li,
+	a {
+		font-size: 14px;
+		color: $black;
+	}
+
+	li {
+		display: block;
+		margin-bottom: 15px;
+	}
+
+	a,
+	.font-placeholder-1 {
+		position: relative;
+
+		&::before {
+			position: absolute;
+			color: $black;
+			top: 0;
+			left: 0;
+		}
+	}
+
+	.uk-flex-between:last-of-type .uk-flex {
+		img {
+			height: auto;
+		}
+
+		&:first-of-type {
+			img {
+				width: 290px;
+			}
+		}
+
+		&:last-of-type {
+			flex-direction: column;
+			img {
+				width: 15px;
+			}
+			>span {
+				display: block;
+			}
+		}
+	}
+
+	.uk-flex {
+		&:first-of-type {
+			a {
+				color: $blue;
+			}
+
+			.font-placeholder-1,
+			a {
+				padding-left: 25px;
+			}
+		}
+	}
 }
