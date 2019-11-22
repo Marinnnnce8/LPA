@@ -54,6 +54,7 @@ h6,
 p {
 	margin-bottom: 15px;
 	font-size: 20px;
+	font-family: $font-default;
 }
 
 blockquote {
@@ -73,6 +74,7 @@ ol {
 
 ul li, span {
 	font-size: 18px;
+	font-family: $font-default;
 }
 
 ol li {
