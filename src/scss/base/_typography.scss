@@ -37,7 +37,7 @@ h3,
 
 h4,
 .h4 {
-	font-size: 24px;
+	font-size: 20px;
 }
 
 h5,
@@ -50,17 +50,17 @@ h6,
 	font-size: 16px;
 }
 
-
 p {
 	margin-bottom: 15px;
-	font-size: 20px;
+	font-size: 18px;
 	font-family: $font-default;
-}
+	font-weight: $light;
+	color: $black;
 
-blockquote {
-	border-top: 1px solid $black;
-	border-bottom: 1px solid $black;
-	padding: 30px 0;
+	a {
+		color: $blue;
+		font-size: inherit;
+	}
 }
 
 ul {
@@ -68,19 +68,73 @@ ul {
 	padding-left: 0;
 }
 
-ol {
-	padding-left: 0;
-}
-
-ul li, span {
+ul li,
+span {
 	font-size: 18px;
 	font-family: $font-default;
 }
 
-ol li {
-	list-style-type: decimal-leading-zero;
+ol {
+	li {
+		list-style-type: decimal;
+		padding-left: 5px;
+		margin-bottom: 7px;
+		color: $black;
+
+		a {
+			color: $blue;
+			font-weight: 400;
+		}
+	}
 }
 
+b {
+	font-weight: $bold;
+}
+
+blockquote {
+	text-decoration: underline;
+	border-top: 3px solid $blue;
+	border-bottom: 3px solid $blue;
+	margin-bottom: 50px;
+	margin-top: 45px;
+	padding: 35px 20px 35px 115px;
+	color: transparent;
+	position: relative;
+
+	&::after {
+		position: absolute;
+		font-family: 'svgicons';
+		content: font-char($quote);
+		color: $blue;
+		top: 0;
+		left: 0;
+		transform: rotate(180deg) translate(17%, -18%);
+		font-size: 86px;
+		z-index: 1;
+		width: 55px;
+	}
+
+	p,
+	span {
+		color: $blue;
+	}
+
+	p {
+		font-weight: $bold;
+		font-size: 20px;
+		font-style: normal;
+
+		&:last-of-type {
+			margin-bottom: 20px;
+		}
+	}
+
+	span {
+		font-size: 18px;
+		font-style: normal;
+	}
+}
 
 img {
 	max-width: 100%;

@@ -1,0 +1,110 @@
+.triangle-wrap {
+    width: calc(100% - 6px);
+    overflow-x: hidden;
+    left: 3px;
+    position: absolute;
+    z-index: 1;
+    height: 80px;
+}
+
+.triangle {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    width: 66.66%;
+
+    &::after,
+    &::before {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 50%;
+    }
+
+    &::after {
+        right: 0;
+    }
+
+    &::before {
+        left: 0;
+    }
+}
+
+.triangle-wrap--top .triangle {
+    &:first-of-type {
+        left: -33.33%;
+    }
+
+    &:last-of-type {
+        right: 0;
+    }
+
+    &::after {
+        background: linear-gradient(to left bottom, $white 0%, transparent 0%), linear-gradient(to right bottom, $white 50%, transparent 50%);
+    }
+
+    &::before {
+        background: linear-gradient(to left bottom, $white 50%, transparent 50%),
+            linear-gradient(to left bottom, $white 50%, transparent 50%);
+    }
+}
+
+.triangle-wrap--bottom {
+    bottom: 3px;
+
+    .triangle {
+        &:first-of-type {
+            left: 0;
+        }
+
+        &:last-of-type {
+            right: -33.33%;
+        }
+
+        &::after {
+            background: linear-gradient(to right top, $white 50%, transparent 50%), linear-gradient(to right bottom, $white 0%, transparent 0%);
+        }
+
+        &::before {
+            background: linear-gradient(to right bottom, transparent 50%, $white 50%), linear-gradient(to right bottom, transparent 50%, $white 50%);
+        }
+    }
+
+    .triangle--blue {
+        &::after {
+            background: linear-gradient(to right top, $blue 50%, transparent 50%), linear-gradient(to right bottom, $blue 0%, transparent 0%);
+        }
+
+        &::before {
+            background: linear-gradient(to right bottom, transparent 50%, $blue 50%), linear-gradient(to right bottom, transparent 50%, $blue 50%);
+        }
+    }
+}
+
+.triangle-left {
+    bottom: 0;
+    left: 0;
+    height: 17%;
+    position: absolute;
+    width: 33.33%;
+
+    &::after {
+        background: linear-gradient(to left bottom, $blue 0%, transparent 0%), linear-gradient(25deg, $blue 50%, transparent 50%);
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        bottom: 97%;
+        z-index: 3;
+    }
+
+    &::before {
+        background: linear-gradient(to right bottom, $blue 0%, transparent 0%), linear-gradient(-205deg, $blue 50%, transparent 50%);
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        bottom: -2px;
+        z-index: 3;
+    }
+}

@@ -98,6 +98,6 @@ rules:
   url-quotes: 2
   variable-for-property: 2
   variable-name-format:
-    - 2
+    - 0
     - allow-leading-underscore: false
   zero-unit: 2

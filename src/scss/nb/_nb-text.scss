@@ -1,0 +1,66 @@
+.nb-text-lead {
+    color: $blue;
+    font-size: 24px;
+}
+
+.nb-color-blue {
+    color: $blue;
+}
+
+.nb-bold {
+    font-weight: $bold;
+}
+
+.nb-list {
+	margin-bottom: 10px;
+
+	li {
+        margin-bottom: 40px;
+        color: $black;
+		padding-left: 35px;
+		position: relative;
+
+		&::after {
+			position: absolute;
+            background: $blue;
+            content: '';
+            width: 7px;
+            height: 7px;
+			left: 0;
+            top: 10px;
+            z-index: 1;
+		}
+
+		img {
+			margin-right: 20px;
+		}
+    }
+    .list-bottom {
+		display: block;
+		color: $black;
+		font-weight: $light;
+	}
+
+	@media (max-width: $breakpointLarge) {
+		li {
+			margin-bottom: 20px;
+		}
+	}
+}
+
+.nb-list--rec {
+	li {
+		padding-left: 20px;
+
+		&::after {
+			content: '';
+			width: 7px;
+			height: 7px;
+			background: $blue;
+			z-index: 1;
+			left: 0;
+			top: 15%;
+			position: absolute;
+		}
+	}
+}
