@@ -107,143 +107,140 @@
 	@if $filename == handshake {
 		$char: '\E01B';
 	}
-	@if $filename == ico-quote {
+	@if $filename == ipo {
 		$char: '\E01C';
 	}
-	@if $filename == ipo {
+	@if $filename == layout {
 		$char: '\E01D';
 	}
-	@if $filename == layout {
+	@if $filename == lpa-icon-bg {
 		$char: '\E01E';
 	}
-	@if $filename == lpa-icon-bg {
+	@if $filename == lpa-logo {
 		$char: '\E01F';
 	}
-	@if $filename == lpa-logo {
+	@if $filename == lpa-main-pattern {
 		$char: '\E020';
 	}
-	@if $filename == lpa-main-pattern {
+	@if $filename == lpa-solid-pattern-large {
 		$char: '\E021';
 	}
-	@if $filename == lpa-solid-pattern-large {
+	@if $filename == lpa-solid-pattern-smaller {
 		$char: '\E022';
 	}
-	@if $filename == lpa-solid-pattern-smaller {
+	@if $filename == lpa-solid-pattern {
 		$char: '\E023';
 	}
-	@if $filename == lpa-solid-pattern {
+	@if $filename == medal-2 {
 		$char: '\E024';
 	}
-	@if $filename == medal-2 {
+	@if $filename == medal {
 		$char: '\E025';
 	}
-	@if $filename == medal {
+	@if $filename == menu {
 		$char: '\E026';
 	}
-	@if $filename == menu {
+	@if $filename == moon-phase-outline {
 		$char: '\E027';
 	}
-	@if $filename == moon-phase-outline {
+	@if $filename == movement {
 		$char: '\E028';
 	}
-	@if $filename == movement {
+	@if $filename == newspaper-1 {
 		$char: '\E029';
 	}
-	@if $filename == newspaper-1 {
+	@if $filename == noun_1725900_cc {
 		$char: '\E02A';
 	}
-	@if $filename == noun_1725900_cc {
+	@if $filename == noun_232533_cc {
 		$char: '\E02B';
 	}
-	@if $filename == noun_232533_cc {
+	@if $filename == noun_744555_cc {
 		$char: '\E02C';
 	}
-	@if $filename == noun_744555_cc {
+	@if $filename == noun_79674_cc {
 		$char: '\E02D';
 	}
-	@if $filename == noun_79674_cc {
+	@if $filename == noun_870398_cc {
 		$char: '\E02E';
 	}
-	@if $filename == noun_870398_cc {
+	@if $filename == noun_warehouse {
 		$char: '\E02F';
 	}
-	@if $filename == noun_warehouse {
+	@if $filename == people-1 {
 		$char: '\E030';
 	}
-	@if $filename == people-1 {
+	@if $filename == people {
 		$char: '\E031';
 	}
-	@if $filename == people {
+	@if $filename == petroleum-plant {
 		$char: '\E032';
 	}
-	@if $filename == petroleum-plant {
+	@if $filename == phone-1 {
 		$char: '\E033';
 	}
-	@if $filename == phone-1 {
+	@if $filename == phone {
 		$char: '\E034';
 	}
-	@if $filename == phone {
+	@if $filename == placeholder-1 {
 		$char: '\E035';
 	}
-	@if $filename == placeholder-1 {
+	@if $filename == placeholder {
 		$char: '\E036';
 	}
-	@if $filename == placeholder {
+	@if $filename == radar {
 		$char: '\E037';
 	}
-	@if $filename == radar {
+	@if $filename == right-arrow {
 		$char: '\E038';
 	}
-	@if $filename == right-arrow {
+	@if $filename == sailboat-1 {
 		$char: '\E039';
 	}
-	@if $filename == sailboat-1 {
+	@if $filename == sea {
 		$char: '\E03A';
 	}
-	@if $filename == sea {
+	@if $filename == shield {
 		$char: '\E03B';
 	}
-	@if $filename == shield {
+	@if $filename == ship-1 {
 		$char: '\E03C';
 	}
-	@if $filename == ship-1 {
+	@if $filename == ship-2 {
 		$char: '\E03D';
 	}
-	@if $filename == ship-2 {
+	@if $filename == ship {
 		$char: '\E03E';
 	}
-	@if $filename == ship {
+	@if $filename == ships {
 		$char: '\E03F';
 	}
-	@if $filename == ships {
+	@if $filename == social {
 		$char: '\E040';
 	}
-	@if $filename == social {
+	@if $filename == stock {
 		$char: '\E041';
 	}
-	@if $filename == stock {
+	@if $filename == sunlight {
 		$char: '\E042';
 	}
-	@if $filename == sunlight {
+	@if $filename == telephone {
 		$char: '\E043';
 	}
-	@if $filename == telephone {
+	@if $filename == tide-1 {
 		$char: '\E044';
 	}
-	@if $filename == tide-1 {
+	@if $filename == tide {
 		$char: '\E045';
 	}
-	@if $filename == tide {
+	@if $filename == time-and-date {
 		$char: '\E046';
 	}
-	@if $filename == time-and-date {
+	@if $filename == transport {
 		$char: '\E047';
 	}
-	@if $filename == transport {
-		$char: '\E048';
-	}
 	@if $filename == wrench {
-		$char: '\E049';
+		$char: '\E048';
 	}
 
 	@return $char;
@@ -344,9 +341,6 @@
 }
 .font-handshake {
 	@include font(handshake);
-}
-.font-ico-quote {
-	@include font(ico-quote);
 }
 .font-ipo {
 	@include font(ipo);

@@ -30,6 +30,20 @@
 @import 'layout/lists.scss';
 @import 'layout/triangles.scss';
 
+/*--------------------------------------------------------------
+# Modules
+--------------------------------------------------------------*/
+@import 'modules/basic-block.scss';
+@import 'modules/team-list.scss';
+@import 'modules/banner.scss';
+@import 'modules/slider.scss';
+@import 'modules/link-box.scss';
+@import 'modules/zig-zag.scss';
+@import 'modules/wave-section.scss';
+@import 'modules/vision-section.scss';
+@import 'modules/values-section.scss';
+@import 'modules/intro-section.scss';
+
 // UIkit
 @import 'uikit/base.scss';
 @import 'uikit/navbar.scss';
@@ -52,19 +66,7 @@
 @import 'theme/ie11.scss';
 @import 'theme/print.scss';
 
-/*--------------------------------------------------------------
-# Modules
---------------------------------------------------------------*/
-@import 'modules/basic-block.scss';
-@import 'modules/team-list.scss';
-@import 'modules/banner.scss';
-@import 'modules/slider.scss';
-@import 'modules/link-box.scss';
-@import 'modules/zig-zag.scss';
-@import 'modules/wave-section.scss';
-@import 'modules/vision-section.scss';
-@import 'modules/values-section.scss';
-@import 'modules/intro-section.scss';
+
 
 
 // Template | Remove or Integrate
