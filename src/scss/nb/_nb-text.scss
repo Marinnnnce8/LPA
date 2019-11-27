@@ -1,41 +1,42 @@
 .nb-text-lead {
-    color: $blue;
-    font-size: 24px;
+	color: $blue;
+	font-size: 24px;
 }
 
 .nb-color-blue {
-    color: $blue;
+	color: $blue;
 }
 
 .nb-bold {
-    font-weight: $bold;
+	font-weight: $bold;
 }
 
 .nb-list {
 	margin-bottom: 10px;
 
 	li {
-        margin-bottom: 40px;
-        color: $black;
+		margin-bottom: 40px;
+		color: $black;
 		padding-left: 35px;
 		position: relative;
 
 		&::after {
 			position: absolute;
-            background: $blue;
-            content: '';
-            width: 7px;
-            height: 7px;
+			background: $blue;
+			content: '';
+			width: 7px;
+			height: 7px;
 			left: 0;
-            top: 10px;
-            z-index: 1;
+			top: 10px;
+			z-index: 1;
 		}
 
 		img {
 			margin-right: 20px;
 		}
-    }
-    .list-bottom {
+	}
+
+	.list-bottom {
 		display: block;
 		color: $black;
 		font-weight: $light;
@@ -62,5 +63,96 @@
 			top: 15%;
 			position: absolute;
 		}
+	}
+}
+
+.nb-table {
+	border-collapse: collapse;
+
+	thead {
+		background: $blue;
+		color: $white;
+		text-transform: uppercase;
+		border: 3px solid $white;
+	}
+
+	th,
+	td {
+		padding: 20px;
+	}
+
+	tbody {
+		tr {
+			border: 3px solid $white;
+		}
+
+		td {
+			background: $blue-lightest;
+			font-size: 12px;
+			font-weight: $light;
+			color: $black;
+
+			&:first-of-type {
+				background: $blue-sky;
+				text-transform: uppercase;
+				font-weight: $bold;
+				font-size: 12px;
+			}
+		}
+	}
+}
+
+.uk-alert-danger,
+.uk-alert-primary,
+.uk-alert-success,
+.uk-alert-warning {
+	padding: 25px 50px 25px 25px;
+	p {
+		font-size: 14px;
+	}
+	.uk-close svg {
+		color: rgba($black, .5);
+	}
+}
+
+.uk-alert-primary {
+	background: $blue;
+
+	p {
+		color: $white;
+	}
+}
+
+.uk-alert-success {
+	background: $green;
+}
+
+.uk-alert-warning {
+	background: $orange-dark;
+}
+
+.uk-alert-danger {
+	background: $red;
+
+	p {
+		color: $white;
+	}
+}
+
+.uk-form-stacked {
+	background: rgba($blue, .1);
+	padding: 50px;
+	label {
+		font-weight: $bold;
+		font-size: 12px;
+		text-transform: uppercase;
+	}
+	.uk-input {
+		margin-bottom: 20px;
+		min-height: 45px;
+	}
+	.uk-textarea {
+		min-height: 220px;
+		resize: none;
 	}
 }

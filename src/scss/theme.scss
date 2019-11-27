@@ -43,6 +43,7 @@
 @import 'modules/vision-section.scss';
 @import 'modules/values-section.scss';
 @import 'modules/intro-section.scss';
+@import 'modules/video-section.scss';
 
 // UIkit
 @import 'uikit/base.scss';
@@ -112,7 +113,12 @@ a:hover {
 .uk-radio:not(.uk-form-danger),
 .uk-checkbox:checked:not(.uk-form-danger),
 .uk-radio:checked:not(.uk-form-danger) {
-	border-color: $nbBlack;
+	border-color: $ocean-blue;
+	font-size: 16px;
+	font-weight: $light;
+	&:focus {
+		border-color: $night-blue;
+	}
 }
 
 // theme/header

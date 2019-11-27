@@ -1,4 +1,5 @@
-.about-section {
+.about-section,
+.sectors-section {
 
     h2,
     p {
@@ -54,6 +55,7 @@
         background: $blue;
         left: 0;
         bottom: 0;
+        transition: .3s ease-in-out;
 
         &::before {
             position: absolute;
@@ -61,8 +63,13 @@
             left: 25px;
             color: $white;
             z-index: 1;
-            font-size: 16px;
+            font-size: 40px;
             transition: .3s ease-in-out;
+            transform: translate(-25%, -25%);
+        }
+
+        &.font-gross::before {
+            font-size: 16px;
         }
     }
 
@@ -73,6 +80,7 @@
 
         >span {
             position: absolute;
+
             &:first-of-type {
                 right: 15px;
                 top: 72px;
@@ -99,11 +107,14 @@
     .zig-zag-title {
         padding-left: 35px;
         transition: .3s ease-in-out;
+
         span {
             display: block;
+
             &:first-of-type {
                 font-size: 20px;
             }
+
             &:last-of-type {
                 font-size: 26px;
                 font-weight: $bold;
@@ -116,6 +127,7 @@
         width: 100%;
         bottom: -100%;
         transition: .3s ease-in-out;
+
         p {
             margin-bottom: 25px;
         }
@@ -129,6 +141,10 @@
 
         .zig-zag-title {
             opacity: 0;
+        }
+
+        .triangle-left {
+            background: transparent;
         }
     }
 }
@@ -158,6 +174,93 @@
             position: absolute;
             top: 0;
             right: 0;
+        }
+    }
+}
+
+.sectors-section {
+    .zig-zag__text-inner {
+        padding: 90px 35px 130px;
+    }
+
+    .triangle-left {
+        z-index: 5;
+    }
+}
+
+.sectors-section--home {
+    position: relative;
+    padding: 130px 0 115px;
+
+    &::after {
+        background: $blue;
+        content: '';
+        position: absolute;
+        left: 0;
+        height: 470px;
+        width: 100%;
+        top: 0;
+        z-index: -1;
+    }
+
+    h2,
+    p {
+        color: $white;
+    }
+
+    .sectors-half {
+        &:last-child {
+            margin-top: -60px;
+        }
+    }
+}
+
+.sectors-half {
+
+    h3,
+    p,
+    >a {
+        color: $blue;
+    }
+
+    .zig-zag__text-inner {
+
+        p,
+        a,
+        h3 {
+            color: $white;
+        }
+    }
+
+    h3,
+    .zig-zag-title span {
+        &:first-of-type {
+            font-weight: $medium;
+            font-size: 16px;
+        }
+        &:last-of-type {
+            font-size: 44px;
+            font-weight: $bold;
+        }
+    }
+
+    p,
+    >a {
+        font-size: 20px;
+    }
+
+    p {
+        margin-bottom: 150px;
+    }
+
+    >a {
+        position: relative;
+        padding: 0 55px 0 25px;
+
+        &::before {
+            position: absolute;
+            right: 0;
+            top: 0;
         }
     }
 }
