@@ -1,10 +1,9 @@
-//----------  footer
-//------------------------------------------------------------------------------
 .footer {
 	background-color: $white;
 
 	a {
 		text-decoration: none;
+		transition: .3s ease-in-out;
 	}
 }
 
@@ -193,6 +192,9 @@
 		&:first-of-type {
 			a {
 				color: $blue;
+				@include hover {
+					color: $orange;
+				}
 			}
 
 			.font-placeholder-1,
@@ -214,12 +216,12 @@
 				}
 
 				a {
-					background: $blue;
 					display: block;
-					color: $white;
-					padding: 15px 20px;
-					position: relative;
+					padding: 5px 20px;
 					max-width: 260px;
+					span {
+						color: $white;
+					}
 
 					&::before {
 						position: absolute;
@@ -228,6 +230,7 @@
 						color: $white;
 						right: 15px;
 						left: auto;
+						z-index: 2;
 					}
 				}
 			}
@@ -265,6 +268,7 @@
 						}
 
 						@include hover {
+							color: $blue;
 							left: 15px;
 
 							&::before {

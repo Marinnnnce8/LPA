@@ -7,6 +7,7 @@ button {
 	transition: .3s ease-in-out;
 	color: $white;
 	text-decoration: none;
+
 	@include media-breakpoint-up(lg) {
 		&:focus {
 			outline: 1px dashed rgba($orange, .2);
@@ -34,6 +35,7 @@ input[type='submit'] {
 	line-height: 40px;
 	padding: 0 20px;
 	transition: 0.4s ease-out;
+
 	@include hover {
 		background-color: lighten($black, 30%);
 		border-radius: 20px;
@@ -48,6 +50,7 @@ input[type='submit'] {
 	font-weight: $bold;
 	padding: 60px 0 30px;
 	position: relative;
+
 	&::before {
 		color: $blue;
 		position: absolute;
@@ -56,6 +59,7 @@ input[type='submit'] {
 		transform: translateX(-50%) rotate(90deg);
 		transition: .3s ease-in-out;
 	}
+
 	@include hover {
 		&::before {
 			bottom: 7px;
@@ -106,7 +110,7 @@ input[type='submit'] {
 		display: block;
 		height: 0;
 		border-radius: 50%;
-		background-color: $midblue;
+		background-color: $orange;
 		transition: width .4s ease-in-out, height .4s ease-in-out;
 		transform: translate(-50%, -50%);
 		width: 0;
@@ -114,9 +118,9 @@ input[type='submit'] {
 	}
 
 	@include hover {
-		border: 1px solid $midblue;
+		border: 1px solid $orange;
 		background: $blue;
-		color: tint($midblue, 75%);
+		color: tint($orange, 75%);
 
 		.uk-button--text {
 			color: $white;
@@ -152,7 +156,6 @@ input[type='submit'] {
 
 .uk-button-primary {
 	background: $blue;
-	// font-family: $font-heavy;
 	font-size: 14px;
 	color: $white;
 	text-align: center;
@@ -307,6 +310,7 @@ input[type='submit'] {
 .uk-slidenav,
 .uk-button-secondary,
 .uk-button-primary {
+
 	&:focus,
 	&:hover {
 		background: $blue;
@@ -315,3 +319,23 @@ input[type='submit'] {
 	}
 }
 
+.btn-down {
+	position: absolute;
+	bottom: 30px;
+	left: 50%;
+	transform: translateX(-50%);
+	transition: .3s ease-in-out;
+	width: 50px;
+	height: 30px;
+
+	svg {
+		width: 40px;
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	@include hover {
+		bottom: 20px;
+	}
+}

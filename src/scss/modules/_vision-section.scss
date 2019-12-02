@@ -35,13 +35,13 @@
                 &:first-of-type {
                     display: block;
                     position: relative;
-                    min-height: 50px;
+                    min-height: 80px;
 
                     &::before {
                         left: 0;
                         position: absolute;
                         color: $blue;
-                        font-size: 50px;
+                        font-size: 80px;
                     }
                 }
 

@@ -107,9 +107,11 @@
 .uk-alert-success,
 .uk-alert-warning {
 	padding: 25px 50px 25px 25px;
+
 	p {
 		font-size: 14px;
 	}
+
 	.uk-close svg {
 		color: rgba($black, .5);
 	}
@@ -142,17 +144,51 @@
 .uk-form-stacked {
 	background: rgba($blue, .1);
 	padding: 50px;
+
 	label {
 		font-weight: $bold;
 		font-size: 12px;
 		text-transform: uppercase;
 	}
+
 	.uk-input {
 		margin-bottom: 20px;
 		min-height: 45px;
 	}
+
 	.uk-textarea {
 		min-height: 220px;
 		resize: none;
+	}
+}
+
+.nb-slider-one {
+
+	.uk-slidenav {
+		background: rgba($white, .5);
+		color: $white;
+		margin: 15px 0;
+		height: 55px;
+		transition: .3s ease-in-out;
+		width: 55px;
+
+		svg {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+		@include hover {
+			color: $blue;
+			background: $white;
+		}
+	}
+
+	.uk-thumbnav {
+		margin-left: 0;
+		li {
+			padding-left: 0;
+		}
 	}
 }

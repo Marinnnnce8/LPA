@@ -18,8 +18,14 @@
     }
 }
 
+.sectors-section--cruise {
+    h2 {
+        font-size: 44px;
+    }
+}
+
 .zig-zag-wrap {
-    padding-top: 150px;
+    padding-top: 120px;
 }
 
 .zig-zag {
@@ -85,6 +91,7 @@
                 right: 15px;
                 top: 72px;
                 z-index: 1;
+                font-weight: $bold;
             }
 
             &:last-of-type {
@@ -118,6 +125,9 @@
             &:last-of-type {
                 font-size: 26px;
                 font-weight: $bold;
+            }
+            &.large {
+                font-size: 44px;
             }
         }
     }
@@ -163,17 +173,31 @@
     p {
         font-size: 16px;
     }
+    .large {
+        font-size: 44px;
+    }
 
     a {
         font-size: 14px;
         position: relative;
         padding-right: 25px;
         display: inline-block;
+        text-decoration: none;
+        font-weight: $bold;
 
         &::before {
             position: absolute;
-            top: 0;
+            top: 4px;
+            font-size: 12px;
             right: 0;
+            transition: .3s ease-in-out;
+        }
+        @include hover {
+            color: $white;
+            &::before {
+                color: $white;
+                right: -10px;
+            }
         }
     }
 }
@@ -190,7 +214,7 @@
 
 .sectors-section--home {
     position: relative;
-    padding: 130px 0 115px;
+    padding: 130px 0 280px;
 
     &::after {
         background: $blue;
@@ -215,12 +239,20 @@
     }
 }
 
+.sectors-section--home-diff {
+    padding-bottom: 0;
+}
+
 .sectors-half {
 
     h3,
     p,
     >a {
         color: $blue;
+    }
+
+    h3, p {
+        width: 60%;
     }
 
     .zig-zag__text-inner {
@@ -251,16 +283,26 @@
 
     p {
         margin-bottom: 150px;
+        font-weight: $medium;
     }
 
     >a {
         position: relative;
         padding: 0 55px 0 25px;
+        text-decoration: none;
 
         &::before {
+            transition: .3s ease-in-out;
             position: absolute;
             right: 0;
             top: 0;
+        }
+        @include hover {
+            color: $blue;
+            &::before {
+                color: $blue;
+                right: -10px;
+            }
         }
     }
 }

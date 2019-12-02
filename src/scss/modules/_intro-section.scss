@@ -12,11 +12,20 @@
         position: relative;
         padding-right: 25px;
         font-size: 14px;
+        text-decoration: none;
 
         &::before {
             position: absolute;
             right: 0;
-            top: 0;
+            top: 2px;
+            transition: .3s ease-in-out;
+        }
+        @include hover {
+            color: $white;
+            &::before {
+                color: $white;
+                right: -10px;
+            }
         }
     }
 
@@ -67,7 +76,7 @@
             bottom: 100%;
             transform: translateY(21%);
             content: '';
-            z-index: 1;
+            z-index: 0;
             width: 100%;
             left: 0;
             height: 80px;
@@ -149,6 +158,13 @@
     a {
         font-size: 12px;
         padding-left: 30px;
+        @include hover {
+            color: $blue;
+            &::before {
+                color: $blue;
+                right: -10px;
+            }
+        }
     }
 
     >div {

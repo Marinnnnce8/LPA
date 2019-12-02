@@ -159,6 +159,13 @@
             position: absolute;
             right: 0;
             top: 3px;
+            transition: .3s ease-in-out;
+        }
+
+        @include hover {
+            &::before {
+                right: 10px;
+            }
         }
     }
 
