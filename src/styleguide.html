@@ -239,17 +239,16 @@
     </header>
 
     <main class='nb-main'>
-        <section data-uk-img class="uk-background-cover banner-section brush-icon"
-            style="background-image: url('./images/styleguide_banner.jpg')">
-            <div class="uk-container uk-container-small nb-container">
-                <div class="banner-inner">
-                    <span>About</span>
-                    <h1>Standard internal page with style guide</h1>
-                </div>
+        <section class="banner uk-background-cover uk-background-fixed banner--cruise" data-uk-img
+            style="background-image: url('./images/styleguide_banner.jpg');">
+            <div class="uk-panel">
+                <h2 class="uk-text-uppercase">This is the styleguide</h2>
             </div>
+            <a href="#styleguide" data-uk-scroll class="btn-down" data-uk-icon="chevron-down" role="button"
+                aria-label="Click to scroll to next section"></a>
         </section>
-        <section data-uk-img style="background-image: url(./images/blue_brush.png)">
-            <div class="uk-flex uk-container nb-container uk-container-large">
+        <section data-uk-img style="background-image: url(./images/blue_brush.png)" id="styleguide">
+            <div class="uk-flex uk-container nb-container uk-container-large uk-padding-large">
                 <div class='uk-container uk-container-small'>
                     <p class="nb-text-lead uk-text-uppercase">
                         This is some lead text to introduce the styleguide. It should gently catch the user's eye,

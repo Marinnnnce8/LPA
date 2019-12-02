@@ -321,7 +321,7 @@ input[type='submit'] {
 
 .btn-down {
 	position: absolute;
-	bottom: 30px;
+	bottom: 40px;
 	left: 50%;
 	transform: translateX(-50%);
 	transition: .3s ease-in-out;
@@ -336,6 +336,6 @@ input[type='submit'] {
 	}
 
 	@include hover {
-		bottom: 20px;
+		bottom: 30px;
 	}
 }
