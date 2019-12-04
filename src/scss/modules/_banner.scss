@@ -171,12 +171,71 @@
 			}
 		}
 	}
+
+	@media (max-width: $breakpointXlarge) {
+		.uk-slider-nav {
+			left: 20px;
+			width: calc(100% - 40px);
+		 li {
+			>div {
+				padding-top: 50px;
+				padding-bottom: 0;
+				min-height: 80px;
+
+				&::before {
+					right: 50%;
+					top: 10px;
+					font-size: 46px;
+					transform: translate(50%, 0);
+				}
+			}
+
+			button {
+				padding: 0 2px;
+				text-transform: uppercase;
+				text-align: center;
+				font-size: 12px;
+			}
+
+			a {
+				font-size: 10px;
+				left: 50%;
+				transform: translateX(-50%);
+				margin: 0;
+				text-align: center;
+				width: 65%;
+				&::before {
+					right: 10px;
+				}
+			}
+		}
+		}
+
+		.uk-active>div {
+			min-height: 145px;
+		}
+
+		.uk-panel {
+			width: 100%;
+			top: 300px;
+		}
+	}
+
+	@media (max-width: $breakpointMedium) {
+		.uk-slider-nav li {
+			>div {
+				a {
+					width: 100%;
+				}
+			}
+		}
+	}
 }
 
 .pin-container {
 	position: absolute;
 	top: 33%;
-    right: 31%;
+	right: 31%;
 	height: 85px;
 	width: 40px;
 
@@ -257,7 +316,9 @@
 		left: 60px;
 		transform: translateY(-50%);
 		top: 50%;
+		width: 100%;
 	}
+
 	h2 {
 		font-size: 54px;
 		font-weight: $bold;

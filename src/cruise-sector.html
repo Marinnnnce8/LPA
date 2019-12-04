@@ -41,16 +41,74 @@
         </defs>
     </svg>
     <main>
-        <section class="banner uk-background-cover uk-background-fixed banner--cruise" data-uk-img
-            style="background-image: url('./images/cruise_sector_banner.jpg');">
-            <div class="uk-panel">
-                <span>The perfect destination for...</span>
-                <h2 class="uk-text-uppercase">Cruise ships</h2>
+        <section class="banner banner--cruise">
+            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1"
+                data-uk-slider="autoplay: true;autoplay-interval: 6000;">
+
+                <ul class="uk-slider-items uk-grid">
+                    <li data-uk-img class="uk-width-1-1 uk-background-cover"
+                        style="background-image: url('./images/cruise_banner_1.jpg');">
+                        <div class="uk-panel">
+                            <div class="uk-position-center uk-panel">
+                                <span>The perfect destination for...</span>
+                                <h2 class="uk-text-uppercase">Cruise ships</h2>
+                            </div>
+                        </div>
+                    </li>
+                    <li data-uk-img class="uk-width-1-1 uk-background-cover"
+                        style="background-image: url('./images/cruise_banner_2.jpg');">
+                        <div class="uk-panel">
+                            <div class="uk-position-center uk-panel">
+                                <span>The perfect destination for...</span>
+                                <h2 class="uk-text-uppercase">Cruise ships</h2>
+                            </div>
+                        </div>
+                    </li>
+                    <li data-uk-img class="uk-width-1-1 uk-background-cover"
+                        style="background-image: url('./images/cruise_banner_3.jpg');">
+                        <div class="uk-panel">
+                            <div class="uk-position-center uk-panel">
+                                <span>The perfect destination for...</span>
+                                <h2 class="uk-text-uppercase">Cruise ships</h2>
+                            </div>
+                        </div>
+                    </li>
+                    <li data-uk-img class="uk-width-1-1 uk-background-cover"
+                        style="background-image: url('./images/cruise_banner_4.jpg');">
+                        <div class="uk-panel">
+                            <div class="uk-position-center uk-panel">
+                                <span>The perfect destination for...</span>
+                                <h2 class="uk-text-uppercase">Cruise ships</h2>
+                            </div>
+                        </div>
+                    </li>
+                    <li data-uk-img class="uk-width-1-1 uk-background-cover"
+                        style="background-image: url('./images/cruise_banner_5.jpg');">
+                        <div class="uk-panel">
+                            <div class="uk-position-center uk-panel">
+                                <span>The perfect destination for...</span>
+                                <h2 class="uk-text-uppercase">Cruise ships</h2>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
             <a href="#cruise-section" data-uk-scroll class="btn-down" data-uk-icon="chevron-down" role="button"
                 aria-label="Click to scroll to next section"></a>
         </section>
         <section class="cruise-section" id="cruise-section">
+            <div class="uk-position-fixed uk-position-center-right">
+                <a class="nb-link-contact font-phone" href="tel:+123456789" aria-label="Click here to contact us"></a>
+                <a class="nb-link-contact font-layout" href="#" aria-label="Click here to visit dashboard"></a>
+            </div>
+            <div class="uk-position-fixed nb-block-social uk-position-center-left">
+                <a class="nb-link-social" data-uk-icon="facebook" href="#"
+                    aria-label="Click here to visit our facebook page"></a>
+                <a class="nb-link-social" data-uk-icon="twitter" href="#"
+                    aria-label="Click here to visit our twitter page"></a>
+                <a class="nb-link-social" data-uk-icon="mail" href="#" aria-label="Click here to email us"></a>
+                <span class="uk-text-uppercase">share page on</span>
+            </div>
             <div class="uk-flex uk-container nb-container uk-container-large uk-padding-large">
                 <div class="uk-container uk-container-small">
                     <div class="uk-flex">
@@ -100,20 +158,30 @@
                                 explore on foot with many interesting places to visit.</p>
                             <p>The islands’ many attractions for visitors include the fantastic five-star<a href="#"
                                     class="uk-button--underline underline-blue"><span>Shetland Museum and
-                                        Archives</span></a><a href="#"
-                                    class="uk-button--underline underline-blue"><span>Mareel</span></a>and the
+                                        Archives</span><span class="font-foreign"></span></a> and <a href="#"
+                                    class="uk-button--underline underline-blue"><span>Mareel</span><span
+                                        class="font-foreign"></span></a> the
                                 multi-purpose
                                 entertainment venue, both located at a
                                 restored historic dock on the Lerwick waterfront.</p>
                             <p>Lerwick Port Authority is a member of <a href="#"
-                                    class="uk-button--underline underline-blue"><span>Cruise Scotland</span></a>,
-                                <a href="#" class="uk-button--underline underline-blue"><span> Cruise Europe</span></a>
+                                    class="uk-button--underline underline-blue"><span>Cruise Scotland</span><span
+                                        class="font-foreign"></span></a>,
+                                <a href="#" class="uk-button--underline underline-blue"><span> Cruise Europe</span><span
+                                        class="font-foreign"></span></a>
                                 and
                                 the
                                 <a href="#" class="uk-button--underline underline-blue"><span> Cruise Lines
                                         International
-                                        Association</span></a>.</p>
+                                        Association</span><span class="font-foreign"></span></a>.</p>
                             <blockquote>
+                                <div class="nb-quote-box">
+                                    <span class="uk-text-uppercase">our clients trust our services, and make us
+                                        special</span>
+                                    <img src="./images/zone_connections.jpg" alt="zone connections logo">
+                                    <span>Mr. May Sarton,</span>
+                                    <span>President at Zone Travel Ltd</span>
+                                </div>
                                 <p class="uk-text-uppercase">“Lerwick harbour is popular with cruise ships and yachts.
                                     With
                                     two entrances, from the north and the south, the harbour is open to shipping in all
@@ -142,8 +210,7 @@
                             <li class="font-noun_79674_cc">Over 200,000 passengers a year</li>
                         </ul>
                         <div class="nb-facts-body">
-                            <a href="#" class="uk-text-uppercase font-gross download">view 2019 cruise ships visits to
-                                lerwick</a>
+                            <a href="#" class="uk-text-uppercase font-gross download">view more cruise facilities</a>
                         </div>
                     </div>
                     <div data-uk-img class="nb-facts nb-facts--download uk-background-cover"
@@ -161,6 +228,17 @@
                             </ul>
                         </div>
                     </div>
+                    <div class="nb-facts nb-facts-logos">
+                        <span class="uk-text-uppercase nb-color-blue">member of</span>
+                        <div class="uk-flex uk-flex-wrap">
+                            <span class="uk-width-1-2"><img src="./images/cruise-scotland.jpg"
+                                    alt="cruise scotland logo"></span>
+                            <span class="uk-width-1-2"><img src="./images/cruise_europe.jpg"
+                                    alt="cruise europe logo"></span>
+                            <span class="uk-width-1-2"><img src="./images/clia.jpg"
+                                    alt="cruise lines international association"></span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -169,79 +247,200 @@
                 <h2 class="uk-text-uppercase">More in cruise ships</h2>
             </div>
             <div class="uk-container uk-container-large zig-zag-wrap">
-                <div class="uk-flex uk-flex-wrap uk-child-width-1-4@l uk-child-width-1-2@s uk-child-width-1-1">
+                <div
+                    class="uk-flex uk-flex-wrap uk-child-width-1-4@xl uk-child-width-1-3@l uk-child-width-1-2@m uk-child-width-1-1">
                     <div class="zig-zag">
+                        <div class="zig-zag-waves">
+                            <span class="zig-zag-top">
+                                <img src="./images/lpa-solid-pattern-footer.svg" data-uk-svg alt="image" hidden="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-298 254.4 324.9 109.9"
+                                    preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
+                                    data-svg="./images/lpa-solid-pattern-footer.svg">
+                                    <path class="st0"
+                                        d="M-83.4,307.6l107.3-53.8h-212.4h-2.1h-2.1H-298v53.8l106.4-53.3h2L-83.4,307.6z" />
+                                </svg>
+                            </span>
+                            <span class="zig-zag-bottom">
+                                <img src="./images/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg alt="image"
+                                    hidden="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-952 768.5 321.9 109.9"
+                                    preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
+                                    data-svg="./images/lpa-solid-pattern-footer-with-triangle.svg">
+                                    <path class="st0"
+                                        d="M-844.7,824.6L-952,878.4h212.4h2.1h2.1h105.3v-53.8l-106.4,53.3h-2L-844.7,824.6z" />
+                                    <path class="st1" d="M-952,768.5l107.6,56.1L-952,878.4V768.5z" />
+                                </svg>
+                            </span>
+                        </div>
+                        <span class="triangle-left font-gross" role="presentation"></span>
                         <div class="zig-zag__inner uk-background-cover" data-uk-img
                             style="background-image: url('./images/slide_1.jpg');">
-                            <span class="triangle-left font-gross"></span>
                             <div class="zig-zag-title">
                                 <span class="uk-text-uppercase">2019 cruise list</span>
                             </div>
                             <div class="zig-zag__text">
                                 <div class="zig-zag__text-inner">
+                                    <span class="zig-zag-bottom">
+                                        <img src="./images/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg
+                                            alt="image" hidden="true">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="-952 768.5 321.9 109.9"
+                                            preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
+                                            data-svg="./images/lpa-solid-pattern-footer-with-triangle.svg">
+                                            <path class="st0"
+                                                d="M-844.7,824.6L-952,878.4h212.4h2.1h2.1h105.3v-53.8l-106.4,53.3h-2L-844.7,824.6z" />
+                                        </svg>
+                                    </span>
                                     <h3 class="uk-text-uppercase">2019 cruise list</h3>
-                                    <p>Lerwick Port Authority is an independent body governed by its own legislation
-                                        and
+                                    <p>Lerwick Port Authority is an independent body governed by its own legislation and
                                         directed by Board Members.</p>
-                                    <a href="#" class="uk-text-uppercase font-gross"
-                                        aria-label="Click here to visit page"></a>
+                                    <a href="#" class="uk-text-uppercase font-gross">Find out more</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="zig-zag">
-                        <div class="zig-zag__inner uk-background-cover" data-uk-img
-                            style="background-image: url('./images/slide_1.jpg');">
-                            <span class="triangle-left font-gross"></span>
-                            <div class="zig-zag-title">
-                                <span class="uk-text-uppercase">Cruise facilities</span>
-                            </div>
-                            <div class="zig-zag__text">
-                                <div class="zig-zag__text-inner">
-                                    <h3 class="uk-text-uppercase">Cruise facilities</h3>
-                                    <p>This is some lead text to introduce the case study. It should gently catch
-                                        the
-                                        user's eye, initiating the reading of the main page content. Sed ut per
-                                        spiciatis unde omnis</p>
-                                    <a href="#" class="uk-text-uppercase font-gross"
-                                        aria-label="Click here to visit page"></a>
-                                </div>
-                            </div>
+                        <div class="zig-zag-waves">
+                            <span class="zig-zag-top">
+                                <img src="./images/lpa-solid-pattern-footer.svg" data-uk-svg alt="image" hidden="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-298 254.4 324.9 109.9"
+                                    preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
+                                    data-svg="./images/lpa-solid-pattern-footer.svg">
+                                    <path class="st0"
+                                        d="M-83.4,307.6l107.3-53.8h-212.4h-2.1h-2.1H-298v53.8l106.4-53.3h2L-83.4,307.6z" />
+                                </svg>
+                            </span>
+                            <span class="zig-zag-bottom">
+                                <img src="./images/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg alt="image"
+                                    hidden="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-952 768.5 321.9 109.9"
+                                    preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
+                                    data-svg="./images/lpa-solid-pattern-footer-with-triangle.svg">
+                                    <path class="st0"
+                                        d="M-844.7,824.6L-952,878.4h212.4h2.1h2.1h105.3v-53.8l-106.4,53.3h-2L-844.7,824.6z" />
+                                    <path class="st1" d="M-952,768.5l107.6,56.1L-952,878.4V768.5z" />
+                                </svg>
+                            </span>
                         </div>
-                    </div>
-                    <div class="zig-zag">
+                        <span class="triangle-left font-gross" role="presentation"></span>
                         <div class="zig-zag__inner uk-background-cover" data-uk-img
                             style="background-image: url('./images/slide_1.jpg');">
-                            <span class="triangle-left font-gross"></span>
                             <div class="zig-zag-title">
-                                <span class="uk-text-uppercase">Excursions</span>
+                                <span class="uk-text-uppercase">cruise facilities</span>
                             </div>
                             <div class="zig-zag__text">
                                 <div class="zig-zag__text-inner">
-                                    <h3 class="uk-text-uppercase">Excursions</h3>
-                                    <p>As a gateway for over 90 cruise ships in a season, Lerwick Harbour makes a
-                                        major contribution to Shetland's important tourism industry.</p>
-                                    <a href="#" class="uk-text-uppercase font-gross"
-                                        aria-label="Click here to visit page"></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="zig-zag">
-                        <div class="zig-zag__inner uk-background-cover" data-uk-img
-                            style="background-image: url('./images/slide_1.jpg');">
-                            <span class="triangle-left font-gross"></span>
-                            <div class="zig-zag-title">
-                                <span class="uk-text-uppercase">Passenger information</span>
-                            </div>
-                            <div class="zig-zag__text">
-                                <div class="zig-zag__text-inner">
-                                    <h3 class="uk-text-uppercase">Passenger information</h3>
-                                    <p>Lerwick Port Authority is an independent body governed by its own legislation
-                                        and
+                                    <span class="zig-zag-bottom">
+                                        <img src="./images/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg
+                                            alt="image" hidden="true">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="-952 768.5 321.9 109.9"
+                                            preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
+                                            data-svg="./images/lpa-solid-pattern-footer-with-triangle.svg">
+                                            <path class="st0"
+                                                d="M-844.7,824.6L-952,878.4h212.4h2.1h2.1h105.3v-53.8l-106.4,53.3h-2L-844.7,824.6z" />
+                                        </svg>
+                                    </span>
+                                    <h3 class="uk-text-uppercase">cruise facilities</h3>
+                                    <p>Lerwick Port Authority is an independent body governed by its own legislation and
                                         directed by Board Members.</p>
-                                    <a href="#" class="uk-text-uppercase font-gross"
-                                        aria-label="Click here to visit page"></a>
+                                    <a href="#" class="uk-text-uppercase font-gross">Find out more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="zig-zag">
+                        <div class="zig-zag-waves">
+                            <span class="zig-zag-top">
+                                <img src="./images/lpa-solid-pattern-footer.svg" data-uk-svg alt="image" hidden="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-298 254.4 324.9 109.9"
+                                    preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
+                                    data-svg="./images/lpa-solid-pattern-footer.svg">
+                                    <path class="st0"
+                                        d="M-83.4,307.6l107.3-53.8h-212.4h-2.1h-2.1H-298v53.8l106.4-53.3h2L-83.4,307.6z" />
+                                </svg>
+                            </span>
+                            <span class="zig-zag-bottom">
+                                <img src="./images/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg alt="image"
+                                    hidden="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-952 768.5 321.9 109.9"
+                                    preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
+                                    data-svg="./images/lpa-solid-pattern-footer-with-triangle.svg">
+                                    <path class="st0"
+                                        d="M-844.7,824.6L-952,878.4h212.4h2.1h2.1h105.3v-53.8l-106.4,53.3h-2L-844.7,824.6z" />
+                                    <path class="st1" d="M-952,768.5l107.6,56.1L-952,878.4V768.5z" />
+                                </svg>
+                            </span>
+                        </div>
+                        <span class="triangle-left font-gross" role="presentation"></span>
+                        <div class="zig-zag__inner uk-background-cover" data-uk-img
+                            style="background-image: url('./images/slide_1.jpg');">
+                            <div class="zig-zag-title">
+                                <span class="uk-text-uppercase">excursions</span>
+                            </div>
+                            <div class="zig-zag__text">
+                                <div class="zig-zag__text-inner">
+                                    <span class="zig-zag-bottom">
+                                        <img src="./images/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg
+                                            alt="image" hidden="true">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="-952 768.5 321.9 109.9"
+                                            preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
+                                            data-svg="./images/lpa-solid-pattern-footer-with-triangle.svg">
+                                            <path class="st0"
+                                                d="M-844.7,824.6L-952,878.4h212.4h2.1h2.1h105.3v-53.8l-106.4,53.3h-2L-844.7,824.6z" />
+                                        </svg>
+                                    </span>
+                                    <h3 class="uk-text-uppercase">excursions</h3>
+                                    <p>Lerwick Port Authority is an independent body governed by its own legislation and
+                                        directed by Board Members.</p>
+                                    <a href="#" class="uk-text-uppercase font-gross">Find out more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="zig-zag">
+                        <div class="zig-zag-waves">
+                            <span class="zig-zag-top">
+                                <img src="./images/lpa-solid-pattern-footer.svg" data-uk-svg alt="image" hidden="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-298 254.4 324.9 109.9"
+                                    preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
+                                    data-svg="./images/lpa-solid-pattern-footer.svg">
+                                    <path class="st0"
+                                        d="M-83.4,307.6l107.3-53.8h-212.4h-2.1h-2.1H-298v53.8l106.4-53.3h2L-83.4,307.6z" />
+                                </svg>
+                            </span>
+                            <span class="zig-zag-bottom">
+                                <img src="./images/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg alt="image"
+                                    hidden="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-952 768.5 321.9 109.9"
+                                    preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
+                                    data-svg="./images/lpa-solid-pattern-footer-with-triangle.svg">
+                                    <path class="st0"
+                                        d="M-844.7,824.6L-952,878.4h212.4h2.1h2.1h105.3v-53.8l-106.4,53.3h-2L-844.7,824.6z" />
+                                    <path class="st1" d="M-952,768.5l107.6,56.1L-952,878.4V768.5z" />
+                                </svg>
+                            </span>
+                        </div>
+                        <span class="triangle-left font-gross" role="presentation"></span>
+                        <div class="zig-zag__inner uk-background-cover" data-uk-img
+                            style="background-image: url('./images/slide_1.jpg');">
+                            <div class="zig-zag-title">
+                                <span class="uk-text-uppercase">passenger information</span>
+                            </div>
+                            <div class="zig-zag__text">
+                                <div class="zig-zag__text-inner">
+                                    <span class="zig-zag-bottom">
+                                        <img src="./images/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg
+                                            alt="image" hidden="true">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="-952 768.5 321.9 109.9"
+                                            preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
+                                            data-svg="./images/lpa-solid-pattern-footer-with-triangle.svg">
+                                            <path class="st0"
+                                                d="M-844.7,824.6L-952,878.4h212.4h2.1h2.1h105.3v-53.8l-106.4,53.3h-2L-844.7,824.6z" />
+                                        </svg>
+                                    </span>
+                                    <h3 class="uk-text-uppercase">passenger information</h3>
+                                    <p>Lerwick Port Authority is an independent body governed by its own legislation and
+                                        directed by Board Members.</p>
+                                    <a href="#" class="uk-text-uppercase font-gross">Find out more</a>
                                 </div>
                             </div>
                         </div>
@@ -364,93 +563,250 @@
                 <h2 class="uk-text-uppercase">See our other sectors</h2>
             </div>
             <div class="uk-container uk-container-large zig-zag-wrap">
-                <div class="uk-flex uk-flex-wrap uk-child-width-1-4@l uk-child-width-1-2@s uk-child-width-1-1">
+                <div
+                    class="uk-flex uk-flex-wrap uk-child-width-1-4@xl uk-child-width-1-3@l uk-child-width-1-2@m uk-child-width-1-1">
                     <div class="zig-zag">
+                        <div class="zig-zag-waves">
+                            <span class="zig-zag-top">
+                                <img src="./images/lpa-solid-pattern-footer.svg" data-uk-svg alt="image" hidden="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-298 254.4 324.9 109.9"
+                                    preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
+                                    data-svg="./images/lpa-solid-pattern-footer.svg">
+                                    <path class="st0"
+                                        d="M-83.4,307.6l107.3-53.8h-212.4h-2.1h-2.1H-298v53.8l106.4-53.3h2L-83.4,307.6z" />
+                                </svg>
+                            </span>
+                            <span class="zig-zag-bottom">
+                                <img src="./images/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg alt="image"
+                                    hidden="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-952 768.5 321.9 109.9"
+                                    preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
+                                    data-svg="./images/lpa-solid-pattern-footer-with-triangle.svg">
+                                    <path class="st0"
+                                        d="M-844.7,824.6L-952,878.4h212.4h2.1h2.1h105.3v-53.8l-106.4,53.3h-2L-844.7,824.6z" />
+                                    <path class="st1" d="M-952,768.5l107.6,56.1L-952,878.4V768.5z" />
+                                </svg>
+                            </span>
+                        </div>
+                        <span class="triangle-left font-sea"></span>
                         <div class="zig-zag__inner uk-background-cover" data-uk-img
                             style="background-image: url('./images/slide_1.jpg');">
-                            <span class="triangle-left font-sea"></span>
                             <div class="zig-zag-title">
-                                <span class="uk-text-uppercase">Oil & gas</span>
+                                <span class="uk-text-uppercase">Oil & Gas</span>
                             </div>
                             <div class="zig-zag__text">
                                 <div class="zig-zag__text-inner">
-                                    <h3 class="uk-text-uppercase">Oil & gas</h3>
+                                    <span class="zig-zag-bottom">
+                                        <img src="./images/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg
+                                            alt="image" hidden="true">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="-952 768.5 321.9 109.9"
+                                            preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
+                                            data-svg="./images/lpa-solid-pattern-footer-with-triangle.svg">
+                                            <path class="st0"
+                                                d="M-844.7,824.6L-952,878.4h212.4h2.1h2.1h105.3v-53.8l-106.4,53.3h-2L-844.7,824.6z" />
+                                        </svg>
+                                    </span>
+                                    <h3 class="uk-text-uppercase">Oil & Gas</h3>
                                     <p>Lerwick Port Authority is an independent body governed by its own legislation
                                         and
                                         directed by Board Members.</p>
-                                    <a href="#" class="uk-text-uppercase font-gross"
-                                        aria-label="Click here to find out more"></a>
+                                    <a href="#" class="uk-text-uppercase font-gross">Find out more</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="zig-zag">
+                        <div class="zig-zag-waves">
+                            <span class="zig-zag-top">
+                                <img src="./images/lpa-solid-pattern-footer.svg" data-uk-svg alt="image" hidden="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-298 254.4 324.9 109.9"
+                                    preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
+                                    data-svg="./images/lpa-solid-pattern-footer.svg">
+                                    <path class="st0"
+                                        d="M-83.4,307.6l107.3-53.8h-212.4h-2.1h-2.1H-298v53.8l106.4-53.3h2L-83.4,307.6z" />
+                                </svg>
+                            </span>
+                            <span class="zig-zag-bottom">
+                                <img src="./images/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg alt="image"
+                                    hidden="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-952 768.5 321.9 109.9"
+                                    preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
+                                    data-svg="./images/lpa-solid-pattern-footer-with-triangle.svg">
+                                    <path class="st0"
+                                        d="M-844.7,824.6L-952,878.4h212.4h2.1h2.1h105.3v-53.8l-106.4,53.3h-2L-844.7,824.6z" />
+                                    <path class="st1" d="M-952,768.5l107.6,56.1L-952,878.4V768.5z" />
+                                </svg>
+                            </span>
+                        </div>
+                        <span class="triangle-left font-wrench"></span>
                         <div class="zig-zag__inner uk-background-cover" data-uk-img
                             style="background-image: url('./images/slide_1.jpg');">
-                            <span class="triangle-left font-wrench"></span>
                             <div class="zig-zag-title">
                                 <span class="uk-text-uppercase">Decommissioning</span>
                             </div>
                             <div class="zig-zag__text">
                                 <div class="zig-zag__text-inner">
+                                    <span class="zig-zag-bottom">
+                                        <img src="./images/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg
+                                            alt="image" hidden="true">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="-952 768.5 321.9 109.9"
+                                            preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
+                                            data-svg="./images/lpa-solid-pattern-footer-with-triangle.svg">
+                                            <path class="st0"
+                                                d="M-844.7,824.6L-952,878.4h212.4h2.1h2.1h105.3v-53.8l-106.4,53.3h-2L-844.7,824.6z" />
+                                        </svg>
+                                    </span>
                                     <h3 class="uk-text-uppercase">Decommissioning</h3>
                                     <p>This is some lead text to introduce the case study. It should gently catch
                                         the
                                         user's eye, initiating the reading of the main page content. Sed ut per
                                         spiciatis unde omnis</p>
-                                    <a href="#" class="uk-text-uppercase font-gross"
-                                        aria-label="Click here to find out more"></a>
+                                    <a href="#" class="uk-text-uppercase font-gross">Find out more</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="zig-zag">
+                        <div class="zig-zag-waves">
+                            <span class="zig-zag-top">
+                                <img src="./images/lpa-solid-pattern-footer.svg" data-uk-svg alt="image" hidden="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-298 254.4 324.9 109.9"
+                                    preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
+                                    data-svg="./images/lpa-solid-pattern-footer.svg">
+                                    <path class="st0"
+                                        d="M-83.4,307.6l107.3-53.8h-212.4h-2.1h-2.1H-298v53.8l106.4-53.3h2L-83.4,307.6z" />
+                                </svg>
+                            </span>
+                            <span class="zig-zag-bottom">
+                                <img src="./images/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg alt="image"
+                                    hidden="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-952 768.5 321.9 109.9"
+                                    preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
+                                    data-svg="./images/lpa-solid-pattern-footer-with-triangle.svg">
+                                    <path class="st0"
+                                        d="M-844.7,824.6L-952,878.4h212.4h2.1h2.1h105.3v-53.8l-106.4,53.3h-2L-844.7,824.6z" />
+                                    <path class="st1" d="M-952,768.5l107.6,56.1L-952,878.4V768.5z" />
+                                </svg>
+                            </span>
+                        </div>
+                        <span class="triangle-left font-crane"></span>
                         <div class="zig-zag__inner uk-background-cover" data-uk-img
                             style="background-image: url('./images/slide_1.jpg');">
-                            <span class="triangle-left font-crane"></span>
                             <div class="zig-zag-title">
                                 <span class="uk-text-uppercase">Cargo</span>
                             </div>
                             <div class="zig-zag__text">
                                 <div class="zig-zag__text-inner">
+                                    <span class="zig-zag-bottom">
+                                        <img src="./images/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg
+                                            alt="image" hidden="true">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="-952 768.5 321.9 109.9"
+                                            preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
+                                            data-svg="./images/lpa-solid-pattern-footer-with-triangle.svg">
+                                            <path class="st0"
+                                                d="M-844.7,824.6L-952,878.4h212.4h2.1h2.1h105.3v-53.8l-106.4,53.3h-2L-844.7,824.6z" />
+                                        </svg>
+                                    </span>
                                     <h3 class="uk-text-uppercase">Cargo</h3>
                                     <p>Lerwick Port Authority is an independent body governed by its own legislation
                                         and
                                         directed by Board Members.</p>
-                                    <a href="#" class="uk-text-uppercase font-gross"
-                                        aria-label="Click here to find out more"></a>
+                                    <a href="#" class="uk-text-uppercase font-gross">Find out more</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="zig-zag">
+                        <div class="zig-zag-waves">
+                            <span class="zig-zag-top">
+                                <img src="./images/lpa-solid-pattern-footer.svg" data-uk-svg alt="image" hidden="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-298 254.4 324.9 109.9"
+                                    preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
+                                    data-svg="./images/lpa-solid-pattern-footer.svg">
+                                    <path class="st0"
+                                        d="M-83.4,307.6l107.3-53.8h-212.4h-2.1h-2.1H-298v53.8l106.4-53.3h2L-83.4,307.6z" />
+                                </svg>
+                            </span>
+                            <span class="zig-zag-bottom">
+                                <img src="./images/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg alt="image"
+                                    hidden="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-952 768.5 321.9 109.9"
+                                    preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
+                                    data-svg="./images/lpa-solid-pattern-footer-with-triangle.svg">
+                                    <path class="st0"
+                                        d="M-844.7,824.6L-952,878.4h212.4h2.1h2.1h105.3v-53.8l-106.4,53.3h-2L-844.7,824.6z" />
+                                    <path class="st1" d="M-952,768.5l107.6,56.1L-952,878.4V768.5z" />
+                                </svg>
+                            </span>
+                        </div>
+                        <span class="triangle-left font-food"></span>
                         <div class="zig-zag__inner uk-background-cover" data-uk-img
                             style="background-image: url('./images/slide_1.jpg');">
-                            <span class="triangle-left font-food"></span>
                             <div class="zig-zag-title">
                                 <span class="uk-text-uppercase">Fishing</span>
                             </div>
                             <div class="zig-zag__text">
                                 <div class="zig-zag__text-inner">
+                                    <span class="zig-zag-bottom">
+                                        <img src="./images/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg
+                                            alt="image" hidden="true">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="-952 768.5 321.9 109.9"
+                                            preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
+                                            data-svg="./images/lpa-solid-pattern-footer-with-triangle.svg">
+                                            <path class="st0"
+                                                d="M-844.7,824.6L-952,878.4h212.4h2.1h2.1h105.3v-53.8l-106.4,53.3h-2L-844.7,824.6z" />
+                                        </svg>
+                                    </span>
                                     <h3 class="uk-text-uppercase">Fishing</h3>
                                     <p>Lerwick Port Authority is an independent body governed by its own legislation
                                         and
                                         directed by Board Members.</p>
-                                    <a href="#" class="uk-text-uppercase font-gross"
-                                        aria-label="Click here to find out more"></a>
+                                    <a href="#" class="uk-text-uppercase font-gross">Find out more</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="zig-zag">
+                        <div class="zig-zag-waves">
+                            <span class="zig-zag-top">
+                                <img src="./images/lpa-solid-pattern-footer.svg" data-uk-svg alt="image" hidden="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-298 254.4 324.9 109.9"
+                                    preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
+                                    data-svg="./images/lpa-solid-pattern-footer.svg">
+                                    <path class="st0"
+                                        d="M-83.4,307.6l107.3-53.8h-212.4h-2.1h-2.1H-298v53.8l106.4-53.3h2L-83.4,307.6z" />
+                                </svg>
+                            </span>
+                            <span class="zig-zag-bottom">
+                                <img src="./images/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg alt="image"
+                                    hidden="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-952 768.5 321.9 109.9"
+                                    preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
+                                    data-svg="./images/lpa-solid-pattern-footer-with-triangle.svg">
+                                    <path class="st0"
+                                        d="M-844.7,824.6L-952,878.4h212.4h2.1h2.1h105.3v-53.8l-106.4,53.3h-2L-844.7,824.6z" />
+                                    <path class="st1" d="M-952,768.5l107.6,56.1L-952,878.4V768.5z" />
+                                </svg>
+                            </span>
+                        </div>
+                        <span class="triangle-left font-noun_warehouse"></span>
                         <div class="zig-zag__inner uk-background-cover" data-uk-img
                             style="background-image: url('./images/slide_1.jpg');">
-                            <span class="triangle-left font-noun_warehouse"></span>
                             <div class="zig-zag-title">
                                 <span class="uk-text-uppercase">Property</span>
                             </div>
                             <div class="zig-zag__text">
                                 <div class="zig-zag__text-inner">
+                                    <span class="zig-zag-bottom">
+                                        <img src="./images/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg
+                                            alt="image" hidden="true">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="-952 768.5 321.9 109.9"
+                                            preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
+                                            data-svg="./images/lpa-solid-pattern-footer-with-triangle.svg">
+                                            <path class="st0"
+                                                d="M-844.7,824.6L-952,878.4h212.4h2.1h2.1h105.3v-53.8l-106.4,53.3h-2L-844.7,824.6z" />
+                                        </svg>
+                                    </span>
                                     <h3 class="uk-text-uppercase">Property</h3>
                                     <p>Lerwick Port Authority is an independent body governed by its own legislation
                                         and
@@ -461,14 +817,46 @@
                         </div>
                     </div>
                     <div class="zig-zag">
+                        <div class="zig-zag-waves">
+                            <span class="zig-zag-top">
+                                <img src="./images/lpa-solid-pattern-footer.svg" data-uk-svg alt="image" hidden="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-298 254.4 324.9 109.9"
+                                    preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
+                                    data-svg="./images/lpa-solid-pattern-footer.svg">
+                                    <path class="st0"
+                                        d="M-83.4,307.6l107.3-53.8h-212.4h-2.1h-2.1H-298v53.8l106.4-53.3h2L-83.4,307.6z" />
+                                </svg>
+                            </span>
+                            <span class="zig-zag-bottom">
+                                <img src="./images/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg alt="image"
+                                    hidden="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-952 768.5 321.9 109.9"
+                                    preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
+                                    data-svg="./images/lpa-solid-pattern-footer-with-triangle.svg">
+                                    <path class="st0"
+                                        d="M-844.7,824.6L-952,878.4h212.4h2.1h2.1h105.3v-53.8l-106.4,53.3h-2L-844.7,824.6z" />
+                                    <path class="st1" d="M-952,768.5l107.6,56.1L-952,878.4V768.5z" />
+                                </svg>
+                            </span>
+                        </div>
+                        <span class="triangle-left font-ship"></span>
                         <div class="zig-zag__inner uk-background-cover" data-uk-img
                             style="background-image: url('./images/slide_1.jpg');">
-                            <span class="triangle-left font-ship"></span>
                             <div class="zig-zag-title">
                                 <span class="uk-text-uppercase">Ferries</span>
                             </div>
                             <div class="zig-zag__text">
                                 <div class="zig-zag__text-inner">
+                                    <span class="zig-zag-bottom">
+                                        <img src="./images/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg
+                                            alt="image" hidden="true">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="-952 768.5 321.9 109.9"
+                                            preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
+                                            data-svg="./images/lpa-solid-pattern-footer-with-triangle.svg">
+                                            <path class="st0"
+                                                d="M-844.7,824.6L-952,878.4h212.4h2.1h2.1h105.3v-53.8l-106.4,53.3h-2L-844.7,824.6z" />
+                                        </svg>
+                                    </span>
                                     <h3 class="uk-text-uppercase">Ferries</h3>
                                     <p>Lerwick Port Authority is an independent body governed by its own legislation
                                         and
@@ -479,14 +867,46 @@
                         </div>
                     </div>
                     <div class="zig-zag">
+                        <div class="zig-zag-waves">
+                            <span class="zig-zag-top">
+                                <img src="./images/lpa-solid-pattern-footer.svg" data-uk-svg alt="image" hidden="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-298 254.4 324.9 109.9"
+                                    preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
+                                    data-svg="./images/lpa-solid-pattern-footer.svg">
+                                    <path class="st0"
+                                        d="M-83.4,307.6l107.3-53.8h-212.4h-2.1h-2.1H-298v53.8l106.4-53.3h2L-83.4,307.6z" />
+                                </svg>
+                            </span>
+                            <span class="zig-zag-bottom">
+                                <img src="./images/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg alt="image"
+                                    hidden="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-952 768.5 321.9 109.9"
+                                    preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
+                                    data-svg="./images/lpa-solid-pattern-footer-with-triangle.svg">
+                                    <path class="st0"
+                                        d="M-844.7,824.6L-952,878.4h212.4h2.1h2.1h105.3v-53.8l-106.4,53.3h-2L-844.7,824.6z" />
+                                    <path class="st1" d="M-952,768.5l107.6,56.1L-952,878.4V768.5z" />
+                                </svg>
+                            </span>
+                        </div>
+                        <span class="triangle-left font-sailboat-1"></span>
                         <div class="zig-zag__inner uk-background-cover" data-uk-img
                             style="background-image: url('./images/slide_1.jpg');">
-                            <span class="triangle-left font-sailboat-1"></span>
                             <div class="zig-zag-title">
                                 <span class="uk-text-uppercase">Leisure</span>
                             </div>
                             <div class="zig-zag__text">
                                 <div class="zig-zag__text-inner">
+                                    <span class="zig-zag-bottom">
+                                        <img src="./images/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg
+                                            alt="image" hidden="true">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="-952 768.5 321.9 109.9"
+                                            preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
+                                            data-svg="./images/lpa-solid-pattern-footer-with-triangle.svg">
+                                            <path class="st0"
+                                                d="M-844.7,824.6L-952,878.4h212.4h2.1h2.1h105.3v-53.8l-106.4,53.3h-2L-844.7,824.6z" />
+                                        </svg>
+                                    </span>
                                     <h3 class="uk-text-uppercase">Leisure</h3>
                                     <p>Lerwick Port Authority is an independent body governed by its own legislation
                                         and

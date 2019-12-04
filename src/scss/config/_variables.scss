@@ -13,11 +13,10 @@ $bold-italic: 'Montserrat Bold Italic';
 // Colors
 $white: #fff;
 $blue: #3db7e4;
-$heavy-blue: #0089bb;
+$blue-dark: #0089bb;
 $blue-mid: #35aee8;
 $blue-sky: #c4e9f7;
 $blue-lightest: #ebf8fc;
-$blue-dark: #0089bb;
 $skyblue: #93c3eb;
 $midblue: #004b91;
 $realblue: #6ac8ea;
@@ -121,5 +120,6 @@ $nbSpeedLong: $nbSpeed * 2;
 $themeVar: 0; // Example, not used
 $waves: 'lpa-main-pattern';
 $wave-pattern: 'lpa-solid-pattern';
+$wave-pattern-smaller: 'lpa-solid-pattern-smaller';
 $quote: 'ico-quote';
 

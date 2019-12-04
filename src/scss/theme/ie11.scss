@@ -5,4 +5,130 @@
             display: none;
         }
     }
+    .zig-zag-bottom {
+        svg .st1 {
+            fill: $blue;
+        }
+    }
+    .zig-zag__inner .zig-zag__text .zig-zag-bottom svg {
+        fill: $blue;
+    }
+    .sectors-half {
+        .zig-zag-top {
+            path:last-of-type {
+                fill: rgba($black, .3);
+            }
+        }
+    }
+    .sectors-section--home {
+    
+        .zig-zag:nth-of-type(-n + 4) {
+            .zig-zag-top path {
+                fill: $blue;
+            }
+        }
+    
+        @media (max-width: $breakpointXlarge) {
+            .zig-zag {
+                .zig-zag-top path {
+                    fill: $white;
+                }
+    
+                &:nth-of-type(-n + 4) {
+                    .zig-zag-top path {
+                        fill: $white;
+                    }
+                }
+    
+                &:nth-of-type(-n + 3) {
+                    .zig-zag-top path {
+                        fill: $blue;
+                    }
+                }
+            }
+        }
+    
+        @media (max-width: $breakpointLarge) {
+            .zig-zag {
+                .zig-zag-top path {
+                    fill: $white;
+                }
+    
+                &:nth-of-type(-n + 4),
+                &:nth-of-type(-n + 3) {
+                    .zig-zag-top path {
+                        fill: $white;
+                    }
+                }
+    
+                &:nth-of-type(-n + 2) {
+                    .zig-zag-top path {
+                        fill: $blue;
+                    }
+                }
+            }
+        }
+    
+        @media (max-width: $breakpointMedium) {
+            .zig-zag {
+                .zig-zag-top path {
+                    fill: $white;
+                }
+    
+                &:nth-of-type(-n + 4),
+                &:nth-of-type(-n + 3),
+                &:nth-of-type(-n + 2) {
+                    .zig-zag-top path {
+                        fill: $white;
+                    }
+                }
+    
+                &:first-of-type {
+                    .zig-zag-top path {
+                        fill: $blue;
+                    }
+                }
+            }
+        }
+    }
+    .sectors-section--home-diff {
+    
+        .zig-zag-top path {
+            fill: $blue;
+        }
+    
+        @media (max-width: $breakpointLarge) {
+            .zig-zag {
+                .zig-zag-top path {
+                    fill: $white;
+                }
+    
+                &:nth-of-type(-n + 2) {
+                    .zig-zag-top path {
+                        fill: $blue;
+                    }
+                }
+            }
+        }
+    
+        @media (max-width: $breakpointMedium) {
+            .zig-zag {
+                .zig-zag-top path {
+                    fill: $white;
+                }
+    
+                &:nth-of-type(-n + 2) {
+                    .zig-zag-top path {
+                        fill: $white;
+                    }
+                }
+    
+                &:first-of-type {
+                    .zig-zag-top path {
+                        fill: $blue;
+                    }
+                }
+            }
+        }
+    }
 }

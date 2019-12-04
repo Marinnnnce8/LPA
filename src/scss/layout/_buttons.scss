@@ -212,8 +212,8 @@ input[type='submit'] {
 .uk-button--underline {
 	position: relative;
 
-	>span {
-		&:first-of-type {
+	>span:not(.font-foreign) {
+		// &:first-of-type {
 			background: none;
 			position: relative;
 			text-decoration: none;
@@ -246,18 +246,30 @@ input[type='submit'] {
 				bottom: 0;
 				transition: ease .6s;
 			}
-		}
+		// }
 
-		&:last-of-type {
-			right: 10px;
+		// &:last-of-type {
+		// 	right: 10px;
+		// 	position: absolute;
+		// 	top: 50%;
+		// 	transform: translateY(-50%);
+		// 	color: $white;
+
+		// 	svg {
+		// 		width: 30px;
+		// 	}
+		// }
+	}
+
+	.font-foreign {
+		position: relative;
+		padding-right: 20px;
+		&::before {
 			position: absolute;
-			top: 50%;
-			transform: translateY(-50%);
-			color: $white;
-
-			svg {
-				width: 30px;
-			}
+			right: 3px;
+			top: 3px;
+			font-size: 14px;
+			color: $blue-dark;
 		}
 	}
 
@@ -282,17 +294,17 @@ input[type='submit'] {
 			font-weight: inherit;
 
 			&:first-of-type {
-				color: $heavy-blue;
+				color: $blue-dark;
 
 				&::before,
 				&::after {
-					background-color: $heavy-blue;
+					background-color: $blue-dark;
 				}
 			}
 
 			&:last-of-type {
 				position: relative;
-				color: $heavy-blue;
+				color: $blue-dark;
 				top: auto;
 				transform: none;
 				right: auto;
