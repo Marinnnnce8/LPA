@@ -321,6 +321,21 @@
     }
 }
 
+.zig-zag-year {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    font-weight: $bold;
+    color: $white;
+    font-size: 26px;
+    z-index: 1;
+    @media (max-width: $breakpointSmall) {
+        font-size: 18px;
+        top: 40px;
+        right: 10px;
+    }
+}
+
 .zig-zag__text-inner {
     padding: 10px 35px 95px;
     background: $blue;

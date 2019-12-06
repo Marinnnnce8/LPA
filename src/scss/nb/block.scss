@@ -544,6 +544,10 @@
 }
 
 .nb-select {
+	.uk-button-primary.uk-active {
+		background: $white;
+		color: $blue;
+	}
 
 	.uk-button,
 	.uk-dropdown {
