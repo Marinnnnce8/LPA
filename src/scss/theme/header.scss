@@ -63,7 +63,7 @@
 				width: 12px;
 				font-weight: bold;
 				top: -2px;
-				position: relative;			
+				position: relative;
 			}
 		}
 	}
@@ -347,6 +347,8 @@
 			position: absolute;
 			left: 50%;
 			top: 50%;
+			width: 45px;
+			height: 45px;
 			transform: translate(-50%, -50%);
 
 			span {
@@ -356,7 +358,7 @@
 				height: 2px;
 				background: $white;
 				content: '';
-				top: 33%;
+				top: 50%;
 				transform: translate(-50%, -50%);
 				transition: .5s ease-in-out;
 
@@ -380,23 +382,27 @@
 				}
 			}
 
-			&.uk-open span {
-				background: transparent;
+			&.uk-open {
+				background: $blue-mid;
 
-				&::after,
-				&::before {
-					top: 0;
-				}
+				span {
+					background: transparent;
 
-				&::after {
-					transform: rotate(45deg);
-					left: 0;
-				}
+					&::after,
+					&::before {
+						top: 0;
+					}
 
-				&::before {
-					transform: rotate(-45deg);
-					right: 0;
-					width: 100%;
+					&::after {
+						transform: rotate(45deg);
+						left: 0;
+					}
+
+					&::before {
+						transform: rotate(-45deg);
+						right: 0;
+						width: 100%;
+					}
 				}
 			}
 		}
@@ -577,7 +583,7 @@
 		display: block;
 		position: absolute;
 		content: '';
-		background-image: url('../images/lpa-main-pattern.svg');
+		background-image: url('../img/lpa-main-pattern.svg');
 		background-repeat: repeat-x;
 		background-size: contain;
 		background-position: center;
@@ -646,19 +652,30 @@
 			position: absolute;
 			left: 0;
 		}
-	}
-
-	.uk-navbar {
-		padding-left: 171px;
+		a:not(.header__logo)::before {
+			font-size: 18px;
+		}
+		.uk-navbar {
+			padding-left: 171px;
+		}
 	}
 
 	@media (max-width: $breakpointSmall) {
 		height: 45px;
+
 		span,
 		a:not(.header__logo) {
 			min-height: 45px;
 			line-height: 0;
 		}
+
+		a:not(.header__logo)::before {
+			font-size: 18px;
+			left: 50%;
+			right: auto;
+			transform: rotate(0) translate(-50%, -50%);
+		}
+
 		.header__live {
 			width: 45px;
 			height: 45px;

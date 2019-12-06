@@ -1,24 +1,37 @@
 .cruise-section {
     padding: 80px 0;
-} 
+
+    @media (max-width: $breakpointSmall) {
+        padding: 30px 0;
+        .uk-padding-large {
+            padding: 30px 20px;
+        }
+    }
+}
+
 .nb-text-lead {
     font-weight: 400;
 }
+
 .cruise-sector {
     .uk-button-expand {
         margin-bottom: 20px;
+
         .uk-button--text {
             >span {
                 font-size: 26px;
+
                 >span {
                     font-size: 18px;
                 }
             }
+
             .font-gross {
                 font-size: 10px;
                 position: relative;
                 padding-right: 20px;
                 line-height: 18px;
+
                 &::before {
                     position: absolute;
                     right: 0;
@@ -27,8 +40,29 @@
             }
         }
     }
+
     blockquote {
         padding-left: 0;
         padding-right: 0;
+    }
+
+    @media (max-width: $breakpointSmall) {
+        h2 {
+            font-size: 26px;
+        }
+
+        .uk-button-expand {
+            padding: 15px 5px;
+
+            .uk-button--text {
+                >span {
+                    font-size: 14px;
+
+                    >span {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
     }
 }

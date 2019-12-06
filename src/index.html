@@ -35,12 +35,12 @@
 			</clipPath>
 		</defs>
 	</svg>
-	<span class="uk-overlay-primary uk-position-cover uk-position-z-index" hidden role="presentation"
-		id="overlay"></span>
+	<span class="uk-overlay-primary uk-position-cover uk-position-z-index js-overlay nb-overlay"
+		role="presentation"></span>
 	<header class="header">
 		<nav data-uk-navbar class="uk-flex uk-flex-between uk-container uk-container-large">
 			<a href="./index.html" class="header__logo" aria-label="Click here to visit home page"
-				title="Lerwick Port Authority"><img src="./images/logo.png" alt="Lerwick Port Authority logo"></a>
+				title="Lerwick Port Authority"><img src="./img/logo.png" alt="Lerwick Port Authority logo"></a>
 			<ul class="uk-navbar-nav uk-flex-middle uk-visible@s">
 				<li>
 					<a class="uk-text-uppercase" href="#">News</a>
@@ -49,8 +49,8 @@
 					<a class="uk-text-uppercase" href="#">Case studies</a>
 				</li>
 				<li class="uk-parent uk-parent--dropdown">
-					<button class="js-toggle-dropdown uk-text-uppercase">Sectors<span data-uk-icon="triangle-down"
-							class="uk-visible@s" role="presentation"></span>
+					<button class="js-toggle-dropdown uk-text-uppercase js-toggle-overlay">Sectors<span
+							data-uk-icon="triangle-down" class="uk-visible@s" role="presentation"></span>
 						<span data-uk-icon="triangle-right" class="uk-hidden@s" role="presentation"></span></button>
 					<div class="uk-navbar-dropdown"
 						data-uk-drop="mode: click; boundary: !nav; boundary-align: true; pos: bottom-justify;"
@@ -60,7 +60,7 @@
 							<li>
 								<div data-uk-img
 									class="uk-background-cover nav-box uk-flex uk-flex-column uk-flex-between"
-									style="background-image: url('./images/slide_1.jpg');">
+									style="background-image: url('./img/slide_1.jpg');">
 									<div>
 										<a class="uk-text-uppercase font-gross title" href="#">Cruise</a>
 									</div>
@@ -86,7 +86,7 @@
 							<li>
 								<div data-uk-img
 									class="uk-background-cover nav-box uk-flex uk-flex-column uk-flex-between"
-									style="background-image: url('./images/slide_1.jpg');">
+									style="background-image: url('./img/slide_1.jpg');">
 									<div>
 										<a class="uk-text-uppercase font-gross title" href="#">leisure</a>
 									</div>
@@ -113,7 +113,7 @@
 							<li>
 								<div data-uk-img
 									class="uk-background-cover nav-box uk-flex uk-flex-column uk-flex-between"
-									style="background-image: url('./images/slide_1.jpg');">
+									style="background-image: url('./img/slide_1.jpg');">
 									<div>
 										<a class="uk-text-uppercase font-gross title" href="#">decommissioning</a>
 									</div>
@@ -131,7 +131,7 @@
 							<li>
 								<div data-uk-img
 									class="uk-background-cover nav-box uk-flex uk-flex-column uk-flex-between"
-									style="background-image: url('./images/slide_1.jpg');">
+									style="background-image: url('./img/slide_1.jpg');">
 									<ul>
 										<li>
 											<a class="uk-text-uppercase font-gross" href="#">property</a>
@@ -149,8 +149,7 @@
 											<a class="uk-text-uppercase font-gross" href="#">cargo</a>
 										</li>
 									</ul>
-									<img data-uk-img src="./images/lpa-main-pattern.svg" alt="image"
-										role="presentation">
+									<img data-uk-img src="./img/lpa-main-pattern.svg" alt="image" role="presentation">
 									<span role="presentation"></span>
 								</div>
 							</li>
@@ -260,12 +259,12 @@
 								</div>
 							</li>
 						</ul>
-						<button class="uk-text-uppercase uk-visible@xl" data-uk-close
+						<button class="uk-text-uppercase uk-visible@xl js-toggle-overlay" data-uk-close
 							data-uk-toggle="target: #nav-1">close menu</button>
 					</div>
 				</li>
 				<li class="uk-parent uk-parent--dropdown">
-					<button class="js-toggle-dropdown uk-text-uppercase">Marine information<span
+					<button class="js-toggle-dropdown uk-text-uppercase js-toggle-overlay">Marine information<span
 							data-uk-icon="triangle-down" class="uk-visible@s" role="presentation"></span>
 						<span data-uk-icon="triangle-right" class="uk-hidden@s" role="presentation"></span></button>
 					<div class="uk-navbar-dropdown"
@@ -275,7 +274,7 @@
 							<li class="uk-width-2-5">
 								<div data-uk-img
 									class="uk-background-cover nav-box uk-flex uk-flex-column uk-flex-between"
-									style="background-image: url('./images/slide_1.jpg');">
+									style="background-image: url('./img/slide_1.jpg');">
 									<div>
 										<a class="uk-text-uppercase font-gross title" href="#">Services</a>
 									</div>
@@ -335,7 +334,7 @@
 								<div class="nav-bottom">
 									<div data-uk-img
 										class="uk-background-cover nav-box uk-flex uk-flex-column uk-flex-between"
-										style="background-image: url('./images/slide_1.jpg');">
+										style="background-image: url('./img/slide_1.jpg');">
 										<div>
 											<a class="uk-text-uppercase font-gross title" href="#">industry</a>
 										</div>
@@ -361,7 +360,7 @@
 								<div>
 									<div data-uk-img
 										class="uk-background-cover nav-box uk-flex uk-flex-column uk-flex-between"
-										style="background-image: url('./images/slide_1.jpg');">
+										style="background-image: url('./img/slide_1.jpg');">
 										<div>
 											<a class="uk-text-uppercase font-gross title" href="#">guidance &
 												permits</a>
@@ -392,7 +391,7 @@
 							<li class="uk-width-1-5">
 								<div data-uk-img
 									class="uk-background-cover nav-box uk-flex uk-flex-column uk-flex-between"
-									style="background-image: url('./images/slide_1.jpg');">
+									style="background-image: url('./img/slide_1.jpg');">
 									<div>
 										<a class="uk-text-uppercase font-gross title" href="#">facilities</a>
 									</div>
@@ -426,7 +425,7 @@
 								<div class="nav-padding-bottom">
 									<div data-uk-img
 										class="uk-background-cover nav-box uk-flex uk-flex-column uk-flex-between"
-										style="background-image: url('./images/slide_1.jpg');">
+										style="background-image: url('./img/slide_1.jpg');">
 										<div>
 											<a class="uk-text-uppercase font-gross title" href="#">navigation</a>
 										</div>
@@ -452,7 +451,7 @@
 								<div>
 									<div data-uk-img
 										class="uk-background-cover nav-box uk-flex uk-flex-column uk-flex-between"
-										style="background-image: url('./images/slide_1.jpg');">
+										style="background-image: url('./img/slide_1.jpg');">
 										<div>
 											<a class="uk-text-uppercase font-gross title" href="#">notices</a>
 										</div>
@@ -733,13 +732,14 @@
 								</div>
 							</li>
 						</ul>
-						<button class="uk-text-uppercase" data-uk-close data-uk-toggle="target: #nav-2">close
+						<button class="uk-text-uppercase js-toggle-overlay" data-uk-close
+							data-uk-toggle="target: #nav-2">close
 							menu</button>
 					</div>
 				</li>
 				<li class="uk-parent uk-parent--dropdown uk-visible@xl">
-					<button class="js-toggle-dropdown uk-text-uppercase">Resources<span data-uk-icon="triangle-down"
-							class="uk-visible@s" role="presentation"></span>
+					<button class="js-toggle-dropdown uk-text-uppercase js-toggle-overlay">Resources<span
+							data-uk-icon="triangle-down" class="uk-visible@s" role="presentation"></span>
 						<span data-uk-icon="triangle-right" class="uk-hidden@s" role="presentation"></span></button>
 					<div class="uk-navbar-dropdown"
 						data-uk-drop="mode: click; boundary: !nav; boundary-align: true; pos: bottom-justify;"
@@ -748,7 +748,7 @@
 							<li>
 								<div data-uk-img
 									class="uk-background-cover nav-box uk-flex uk-flex-column uk-flex-between"
-									style="background-image: url('./images/slide_1.jpg');">
+									style="background-image: url('./img/slide_1.jpg');">
 									<div>
 										<span class="uk-text-uppercase title">Annual review</span>
 									</div>
@@ -765,7 +765,7 @@
 							<li>
 								<div data-uk-img
 									class="uk-background-cover nav-box uk-flex uk-flex-column uk-flex-between"
-									style="background-image: url('./images/slide_1.jpg');">
+									style="background-image: url('./img/slide_1.jpg');">
 									<div>
 										<span class="uk-text-uppercase title">Bulletins</span>
 									</div>
@@ -782,7 +782,7 @@
 							<li>
 								<div data-uk-img
 									class="uk-background-cover nav-box uk-flex uk-flex-column uk-flex-between"
-									style="background-image: url('./images/slide_1.jpg');">
+									style="background-image: url('./img/slide_1.jpg');">
 									<div>
 										<span class="uk-text-uppercase title">Charges</span>
 									</div>
@@ -797,7 +797,7 @@
 							<li>
 								<div data-uk-img
 									class="uk-background-cover nav-box uk-flex uk-flex-column uk-flex-between"
-									style="background-image: url('./images/slide_1.jpg');">
+									style="background-image: url('./img/slide_1.jpg');">
 									<div>
 										<span class="uk-text-uppercase title">HSEQ</span>
 									</div>
@@ -814,7 +814,7 @@
 							<li>
 								<div data-uk-img
 									class="uk-background-cover nav-box uk-flex uk-flex-column uk-flex-between"
-									style="background-image: url('./images/slide_1.jpg');">
+									style="background-image: url('./img/slide_1.jpg');">
 									<div>
 										<span class="uk-text-uppercase title">Privacy notice</span>
 									</div>
@@ -828,13 +828,14 @@
 								</div>
 							</li>
 						</ul>
-						<button class="uk-text-uppercase" data-uk-close data-uk-toggle="target: #nav-3">close
+						<button class="uk-text-uppercase js-toggle-overlay" data-uk-close
+							data-uk-toggle="target: #nav-3">close
 							menu</button>
 					</div>
 				</li>
 				<li class="uk-parent uk-parent--dropdown uk-visible@xl">
-					<button class="js-toggle-dropdown uk-text-uppercase">About<span data-uk-icon="triangle-down"
-							class="uk-visible@s" role="presentation"></span>
+					<button class="js-toggle-dropdown uk-text-uppercase js-toggle-overlay">About<span
+							data-uk-icon="triangle-down" class="uk-visible@s" role="presentation"></span>
 						<span data-uk-icon="triangle-right" class="uk-hidden@s" role="presentation"></span></button>
 					<div class="uk-navbar-dropdown"
 						data-uk-drop="mode: click; boundary: !nav; boundary-align: true; pos: bottom-justify;"
@@ -843,7 +844,7 @@
 							<li>
 								<div data-uk-img
 									class="uk-background-cover nav-box uk-flex uk-flex-column uk-flex-between"
-									style="background-image: url('./images/slide_1.jpg');">
+									style="background-image: url('./img/slide_1.jpg');">
 									<div>
 										<span class="uk-text-uppercase title">History</span>
 									</div>
@@ -858,7 +859,7 @@
 							<li>
 								<div data-uk-img
 									class="uk-background-cover nav-box uk-flex uk-flex-column uk-flex-between"
-									style="background-image: url('./images/slide_1.jpg');">
+									style="background-image: url('./img/slide_1.jpg');">
 									<div>
 										<span class="uk-text-uppercase title">Strategy</span>
 									</div>
@@ -874,7 +875,7 @@
 							<li>
 								<div data-uk-img
 									class="uk-background-cover nav-box uk-flex uk-flex-column uk-flex-between"
-									style="background-image: url('./images/slide_1.jpg');">
+									style="background-image: url('./img/slide_1.jpg');">
 									<div>
 										<span class="uk-text-uppercase title">People</span>
 									</div>
@@ -890,7 +891,7 @@
 							<li>
 								<div data-uk-img
 									class="uk-background-cover nav-box uk-flex uk-flex-column uk-flex-between"
-									style="background-image: url('./images/slide_1.jpg');">
+									style="background-image: url('./img/slide_1.jpg');">
 									<div>
 										<span class="uk-text-uppercase title">HSEQ</span>
 									</div>
@@ -906,7 +907,7 @@
 							<li>
 								<div data-uk-img
 									class="uk-background-cover nav-box uk-flex uk-flex-column uk-flex-between"
-									style="background-image: url('./images/slide_1.jpg');">
+									style="background-image: url('./img/slide_1.jpg');">
 									<div>
 										<span class="uk-text-uppercase title">Vacancies</span>
 									</div>
@@ -920,7 +921,8 @@
 								</div>
 							</li>
 						</ul>
-						<button class="uk-text-uppercase" data-uk-close data-uk-toggle="target: #nav-4">close
+						<button class="uk-text-uppercase js-toggle-overlay" data-uk-close
+							data-uk-toggle="target: #nav-4">close
 							menu</button>
 					</div>
 				</li>
@@ -932,7 +934,7 @@
 				</li>
 				<li class="uk-parent uk-parent--dropdown uk-hidden@xl uk-visible@s">
 					<button aria-expanded="false"
-						class="nav-link push-icon-right js-toggle-dropdown uk-text-uppercase">More<span
+						class="nav-link push-icon-right js-toggle-dropdown uk-text-uppercase js-toggle-overlay">More<span
 							data-uk-icon="triangle-down" role="presentation"></span></button>
 					<div class="uk-navbar-dropdown"
 						data-uk-drop="mode: click; boundary: !nav; boundary-align: true; pos: bottom-justify;">
@@ -1016,7 +1018,7 @@
 			</ul>
 			<ul class="uk-navbar-nav uk-flex-middle uk-hidden@s">
 				<button aria-expanded="false"
-					class="nav-link push-icon-right js-toggle-dropdown uk-text-uppercase burger-menu"
+					class="nav-link push-icon-right js-toggle-dropdown uk-text-uppercase burger-menu js-toggle-overlay"
 					aria-label="Click here to open navigation"><span role="presentation"></span></button>
 				<div class="uk-navbar-dropdown"
 					data-uk-drop="mode: click; boundary: !nav; boundary-align: true; pos: bottom-justify;">
@@ -1535,14 +1537,17 @@
 
 	<main>
 		<section class="banner">
+			<div class="uk-position-fixed uk-position-center-right uk-position-z-index">
+				<a class="nb-link-contact font-phone" href="tel:+123456789" aria-label="Click here to contact us"></a>
+				<a class="nb-link-contact font-layout" href="#" aria-label="Click here to visit dashboard"></a>
+			</div>
 			<div uk-slider>
 				<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
 					<ul class="uk-slider-items uk-child-width-1-1">
-						<li data-uk-img class="uk-background-cover"
-							style="background-image: url('./images/slide_1.jpg');">
-							<span class="pin-container">
+						<li data-uk-img class="uk-background-cover" style="background-image: url('./img/slide_1.jpg');">
+							<span class="pin-container uk-visible@s">
 								<span class="uk-text-uppercase">Lerwick harbour</span>
-								<span class="pin"><img data-uk-img src="./images/pin-tide.png" alt="image"
+								<span class="pin"><img data-uk-img src="./img/pin-tide.png" alt="image"
 										role="presentation"></span>
 								<span class="dot" role="presentation"></span>
 							</span>
@@ -1560,8 +1565,7 @@
 								</div>
 							</div>
 						</li>
-						<li data-uk-img class="uk-background-cover"
-							style="background-image: url('./images/slide_2.jpg');">
+						<li data-uk-img class="uk-background-cover" style="background-image: url('./img/slide_2.jpg');">
 							<div class="uk-container uk-container-large">
 								<div class="uk-panel">
 									<span>Deep water port for...</span>
@@ -1575,8 +1579,7 @@
 								</div>
 							</div>
 						</li>
-						<li data-uk-img class="uk-background-cover"
-							style="background-image: url('./images/slide_3.jpg');">
+						<li data-uk-img class="uk-background-cover" style="background-image: url('./img/slide_3.jpg');">
 							<div class="uk-container uk-container-large">
 								<div class="uk-panel">
 									<span>Strategically positioned to support...</span>
@@ -1584,8 +1587,7 @@
 								</div>
 							</div>
 						</li>
-						<li data-uk-img class="uk-background-cover"
-							style="background-image: url('./images/slide_4.jpg');">
+						<li data-uk-img class="uk-background-cover" style="background-image: url('./img/slide_4.jpg');">
 							<div class="uk-container uk-container-large">
 								<div class="uk-panel">
 									<span>Discover Britain's top...</span>
@@ -1593,8 +1595,7 @@
 								</div>
 							</div>
 						</li>
-						<li data-uk-img class="uk-background-cover"
-							style="background-image: url('./images/slide_5.jpg');">
+						<li data-uk-img class="uk-background-cover" style="background-image: url('./img/slide_5.jpg');">
 							<div class="uk-container uk-container-large">
 								<div class="uk-panel">
 									<span>A leading hub for fish...</span>
@@ -1608,8 +1609,8 @@
 					<ul class="uk-slider-nav uk-dotnav">
 						<li uk-slider-item="0" class="uk-active">
 							<div class="font-placeholder">
-								<span data-uk-img class="uk-background-cover"
-									style="background-image: url('./images/slide_1.jpg');" role="presentation"></span>
+								<span data-uk-img class="uk-background-cover uk-visible@s"
+									style="background-image: url('./img/slide_1.jpg');" role="presentation"></span>
 								<button>Location</button>
 								<a href="https://wwjs-enable-link w.google.com/" target="_blank"
 									class="font-gross uk-text-uppercase">Find out more</a>
@@ -1617,32 +1618,32 @@
 						</li>
 						<li uk-slider-item="1">
 							<div class="font-wrench">
-								<span data-uk-img class="uk-background-cover"
-									style="background-image: url('./images/slide_1.jpg');" role="presentation"></span>
+								<span data-uk-img class="uk-background-cover uk-visible@s"
+									style="background-image: url('./img/slide_1.jpg');" role="presentation"></span>
 								<button>Decommissioning</button>
 								<a href="#" class="js-enable-link font-gross uk-text-uppercase">Find out more</a>
 							</div>
 						</li>
 						<li uk-slider-item="2">
 							<div class="font-petroleum-plant">
-								<span data-uk-img class="uk-background-cover"
-									style="background-image: url('./images/slide_1.jpg');" role="presentation"></span>
+								<span data-uk-img class="uk-background-cover uk-visible@s"
+									style="background-image: url('./img/slide_1.jpg');" role="presentation"></span>
 								<button>Oil & Gas</button>
 								<a href="#" class="js-enable-link font-gross uk-text-uppercase">Find out more</a>
 							</div>
 						</li>
 						<li uk-slider-item="3">
 							<div class="font-ship-2">
-								<span data-uk-img class="uk-background-cover"
-									style="background-image: url('./images/slide_1.jpg');" role="presentation"></span>
+								<span data-uk-img class="uk-background-cover uk-visible@s"
+									style="background-image: url('./img/slide_1.jpg');" role="presentation"></span>
 								<button>Cruise</button>
 								<a href="#" class="js-enable-link font-gross uk-text-uppercase">Find out more</a>
 							</div>
 						</li>
 						<li uk-slider-item="4">
 							<div class="font-food">
-								<span data-uk-img class="uk-background-cover"
-									style="background-image: url('./images/slide_1.jpg');" role="presentation"></span>
+								<span data-uk-img class="uk-background-cover uk-visible@s"
+									style="background-image: url('./img/slide_1.jpg');" role="presentation"></span>
 								<button>Fishing</button>
 								<a href="#" class="js-enable-link font-gross uk-text-uppercase">Find out more</a>
 							</div>
@@ -1655,15 +1656,15 @@
 			<div class="uk-container uk-container-large">
 				<div class="uk-flex uk-flex-between">
 					<div class="intro-box">
-						<div class="intor-box__inner">
+						<div class="intro-box__inner">
 							<span>Friday 25th May, 2018 - Saturday 26th May, 2018</span>
 							<h2 class="uk-text-uppercase">Skipper expo aberdeen</h2>
 							<p>Catch up with all our latest news on stand 67.</p>
 							<a href="#" class="font-gross uk-text-uppercase">Find out more</a>
 						</div>
 					</div>
-					<div class="intro-img">
-						<img data-uk-img src="./images/intro.png" alt="image">
+					<div class="intro-img uk-flex uk-flex-middle">
+						<img data-uk-img src="./img/intro.png" alt="image">
 					</div>
 				</div>
 				<div class="uk-flex uk-flex-between intro__bottom">
@@ -1686,24 +1687,24 @@
 			</div>
 			<div class="uk-container uk-container-large zig-zag-wrap">
 				<div
-					class="uk-flex uk-flex-wrap uk-child-width-1-4@xl uk-child-width-1-3@l uk-child-width-1-2@l uk-child-width-1-1">
+					class="uk-flex uk-flex-wrap uk-child-width-1-4@xl uk-child-width-1-3@l uk-child-width-1-2@s uk-child-width-1-1">
 					<div class="zig-zag">
 						<div class="zig-zag-waves">
 							<span class="zig-zag-top">
-								<img src="./images/lpa-solid-pattern-footer.svg" data-uk-svg alt="image" hidden="true">
+								<img src="./img/lpa-solid-pattern-footer.svg" data-uk-svg alt="image" hidden="true">
 								<svg xmlns="http://www.w3.org/2000/svg" viewBox="-298 254.4 324.9 109.9"
 									preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
-									data-svg="./images/lpa-solid-pattern-footer.svg">
+									data-svg="./img/lpa-solid-pattern-footer.svg">
 									<path class="st0"
 										d="M-83.4,307.6l107.3-53.8h-212.4h-2.1h-2.1H-298v53.8l106.4-53.3h2L-83.4,307.6z" />
 								</svg>
 							</span>
 							<span class="zig-zag-bottom">
-								<img src="./images/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg alt="image"
+								<img src="./img/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg alt="image"
 									hidden="true">
 								<svg xmlns="http://www.w3.org/2000/svg" viewBox="-952 768.5 321.9 109.9"
 									preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
-									data-svg="./images/lpa-solid-pattern-footer-with-triangle.svg">
+									data-svg="./img/lpa-solid-pattern-footer-with-triangle.svg">
 									<path class="st0"
 										d="M-844.7,824.6L-952,878.4h212.4h2.1h2.1h105.3v-53.8l-106.4,53.3h-2L-844.7,824.6z" />
 									<path class="st1" d="M-952,768.5l107.6,56.1L-952,878.4V768.5z" />
@@ -1712,18 +1713,18 @@
 						</div>
 						<span class="triangle-left font-sea"></span>
 						<div class="zig-zag__inner uk-background-cover" data-uk-img
-							style="background-image: url('./images/slide_1.jpg');">
+							style="background-image: url('./img/slide_1.jpg');">
 							<div class="zig-zag-title">
 								<span class="uk-text-uppercase">Oil & Gas</span>
 							</div>
 							<div class="zig-zag__text">
 								<div class="zig-zag__text-inner">
 									<span class="zig-zag-bottom">
-										<img src="./images/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg
+										<img src="./img/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg
 											alt="image" hidden="true">
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="-952 768.5 321.9 109.9"
 											preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
-											data-svg="./images/lpa-solid-pattern-footer-with-triangle.svg">
+											data-svg="./img/lpa-solid-pattern-footer-with-triangle.svg">
 											<path class="st0"
 												d="M-844.7,824.6L-952,878.4h212.4h2.1h2.1h105.3v-53.8l-106.4,53.3h-2L-844.7,824.6z" />
 										</svg>
@@ -1740,20 +1741,20 @@
 					<div class="zig-zag">
 						<div class="zig-zag-waves">
 							<span class="zig-zag-top">
-								<img src="./images/lpa-solid-pattern-footer.svg" data-uk-svg alt="image" hidden="true">
+								<img src="./img/lpa-solid-pattern-footer.svg" data-uk-svg alt="image" hidden="true">
 								<svg xmlns="http://www.w3.org/2000/svg" viewBox="-298 254.4 324.9 109.9"
 									preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
-									data-svg="./images/lpa-solid-pattern-footer.svg">
+									data-svg="./img/lpa-solid-pattern-footer.svg">
 									<path class="st0"
 										d="M-83.4,307.6l107.3-53.8h-212.4h-2.1h-2.1H-298v53.8l106.4-53.3h2L-83.4,307.6z" />
 								</svg>
 							</span>
 							<span class="zig-zag-bottom">
-								<img src="./images/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg alt="image"
+								<img src="./img/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg alt="image"
 									hidden="true">
 								<svg xmlns="http://www.w3.org/2000/svg" viewBox="-952 768.5 321.9 109.9"
 									preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
-									data-svg="./images/lpa-solid-pattern-footer-with-triangle.svg">
+									data-svg="./img/lpa-solid-pattern-footer-with-triangle.svg">
 									<path class="st0"
 										d="M-844.7,824.6L-952,878.4h212.4h2.1h2.1h105.3v-53.8l-106.4,53.3h-2L-844.7,824.6z" />
 									<path class="st1" d="M-952,768.5l107.6,56.1L-952,878.4V768.5z" />
@@ -1762,18 +1763,18 @@
 						</div>
 						<span class="triangle-left font-wrench"></span>
 						<div class="zig-zag__inner uk-background-cover" data-uk-img
-							style="background-image: url('./images/slide_1.jpg');">
+							style="background-image: url('./img/slide_1.jpg');">
 							<div class="zig-zag-title">
 								<span class="uk-text-uppercase">Decommissioning</span>
 							</div>
 							<div class="zig-zag__text">
 								<div class="zig-zag__text-inner">
 									<span class="zig-zag-bottom">
-										<img src="./images/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg
+										<img src="./img/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg
 											alt="image" hidden="true">
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="-952 768.5 321.9 109.9"
 											preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
-											data-svg="./images/lpa-solid-pattern-footer-with-triangle.svg">
+											data-svg="./img/lpa-solid-pattern-footer-with-triangle.svg">
 											<path class="st0"
 												d="M-844.7,824.6L-952,878.4h212.4h2.1h2.1h105.3v-53.8l-106.4,53.3h-2L-844.7,824.6z" />
 										</svg>
@@ -1791,20 +1792,20 @@
 					<div class="zig-zag">
 						<div class="zig-zag-waves">
 							<span class="zig-zag-top">
-								<img src="./images/lpa-solid-pattern-footer.svg" data-uk-svg alt="image" hidden="true">
+								<img src="./img/lpa-solid-pattern-footer.svg" data-uk-svg alt="image" hidden="true">
 								<svg xmlns="http://www.w3.org/2000/svg" viewBox="-298 254.4 324.9 109.9"
 									preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
-									data-svg="./images/lpa-solid-pattern-footer.svg">
+									data-svg="./img/lpa-solid-pattern-footer.svg">
 									<path class="st0"
 										d="M-83.4,307.6l107.3-53.8h-212.4h-2.1h-2.1H-298v53.8l106.4-53.3h2L-83.4,307.6z" />
 								</svg>
 							</span>
 							<span class="zig-zag-bottom">
-								<img src="./images/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg alt="image"
+								<img src="./img/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg alt="image"
 									hidden="true">
 								<svg xmlns="http://www.w3.org/2000/svg" viewBox="-952 768.5 321.9 109.9"
 									preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
-									data-svg="./images/lpa-solid-pattern-footer-with-triangle.svg">
+									data-svg="./img/lpa-solid-pattern-footer-with-triangle.svg">
 									<path class="st0"
 										d="M-844.7,824.6L-952,878.4h212.4h2.1h2.1h105.3v-53.8l-106.4,53.3h-2L-844.7,824.6z" />
 									<path class="st1" d="M-952,768.5l107.6,56.1L-952,878.4V768.5z" />
@@ -1813,18 +1814,18 @@
 						</div>
 						<span class="triangle-left font-ships"></span>
 						<div class="zig-zag__inner uk-background-cover" data-uk-img
-							style="background-image: url('./images/slide_1.jpg');">
+							style="background-image: url('./img/slide_1.jpg');">
 							<div class="zig-zag-title">
 								<span class="uk-text-uppercase">Cruise</span>
 							</div>
 							<div class="zig-zag__text">
 								<div class="zig-zag__text-inner">
 									<span class="zig-zag-bottom">
-										<img src="./images/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg
+										<img src="./img/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg
 											alt="image" hidden="true">
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="-952 768.5 321.9 109.9"
 											preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
-											data-svg="./images/lpa-solid-pattern-footer-with-triangle.svg">
+											data-svg="./img/lpa-solid-pattern-footer-with-triangle.svg">
 											<path class="st0"
 												d="M-844.7,824.6L-952,878.4h212.4h2.1h2.1h105.3v-53.8l-106.4,53.3h-2L-844.7,824.6z" />
 										</svg>
@@ -1840,20 +1841,20 @@
 					<div class="zig-zag">
 						<div class="zig-zag-waves">
 							<span class="zig-zag-top">
-								<img src="./images/lpa-solid-pattern-footer.svg" data-uk-svg alt="image" hidden="true">
+								<img src="./img/lpa-solid-pattern-footer.svg" data-uk-svg alt="image" hidden="true">
 								<svg xmlns="http://www.w3.org/2000/svg" viewBox="-298 254.4 324.9 109.9"
 									preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
-									data-svg="./images/lpa-solid-pattern-footer.svg">
+									data-svg="./img/lpa-solid-pattern-footer.svg">
 									<path class="st0"
 										d="M-83.4,307.6l107.3-53.8h-212.4h-2.1h-2.1H-298v53.8l106.4-53.3h2L-83.4,307.6z" />
 								</svg>
 							</span>
 							<span class="zig-zag-bottom">
-								<img src="./images/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg alt="image"
+								<img src="./img/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg alt="image"
 									hidden="true">
 								<svg xmlns="http://www.w3.org/2000/svg" viewBox="-952 768.5 321.9 109.9"
 									preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
-									data-svg="./images/lpa-solid-pattern-footer-with-triangle.svg">
+									data-svg="./img/lpa-solid-pattern-footer-with-triangle.svg">
 									<path class="st0"
 										d="M-844.7,824.6L-952,878.4h212.4h2.1h2.1h105.3v-53.8l-106.4,53.3h-2L-844.7,824.6z" />
 									<path class="st1" d="M-952,768.5l107.6,56.1L-952,878.4V768.5z" />
@@ -1862,18 +1863,18 @@
 						</div>
 						<span class="triangle-left font-food"></span>
 						<div class="zig-zag__inner uk-background-cover" data-uk-img
-							style="background-image: url('./images/slide_1.jpg');">
+							style="background-image: url('./img/slide_1.jpg');">
 							<div class="zig-zag-title">
 								<span class="uk-text-uppercase">Fishing</span>
 							</div>
 							<div class="zig-zag__text">
 								<div class="zig-zag__text-inner">
 									<span class="zig-zag-bottom">
-										<img src="./images/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg
+										<img src="./img/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg
 											alt="image" hidden="true">
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="-952 768.5 321.9 109.9"
 											preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
-											data-svg="./images/lpa-solid-pattern-footer-with-triangle.svg">
+											data-svg="./img/lpa-solid-pattern-footer-with-triangle.svg">
 											<path class="st0"
 												d="M-844.7,824.6L-952,878.4h212.4h2.1h2.1h105.3v-53.8l-106.4,53.3h-2L-844.7,824.6z" />
 										</svg>
@@ -1890,20 +1891,20 @@
 					<div class="zig-zag">
 						<div class="zig-zag-waves">
 							<span class="zig-zag-top">
-								<img src="./images/lpa-solid-pattern-footer.svg" data-uk-svg alt="image" hidden="true">
+								<img src="./img/lpa-solid-pattern-footer.svg" data-uk-svg alt="image" hidden="true">
 								<svg xmlns="http://www.w3.org/2000/svg" viewBox="-298 254.4 324.9 109.9"
 									preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
-									data-svg="./images/lpa-solid-pattern-footer.svg">
+									data-svg="./img/lpa-solid-pattern-footer.svg">
 									<path class="st0"
 										d="M-83.4,307.6l107.3-53.8h-212.4h-2.1h-2.1H-298v53.8l106.4-53.3h2L-83.4,307.6z" />
 								</svg>
 							</span>
 							<span class="zig-zag-bottom">
-								<img src="./images/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg alt="image"
+								<img src="./img/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg alt="image"
 									hidden="true">
 								<svg xmlns="http://www.w3.org/2000/svg" viewBox="-952 768.5 321.9 109.9"
 									preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
-									data-svg="./images/lpa-solid-pattern-footer-with-triangle.svg">
+									data-svg="./img/lpa-solid-pattern-footer-with-triangle.svg">
 									<path class="st0"
 										d="M-844.7,824.6L-952,878.4h212.4h2.1h2.1h105.3v-53.8l-106.4,53.3h-2L-844.7,824.6z" />
 									<path class="st1" d="M-952,768.5l107.6,56.1L-952,878.4V768.5z" />
@@ -1912,18 +1913,18 @@
 						</div>
 						<span class="triangle-left font-noun_warehouse"></span>
 						<div class="zig-zag__inner uk-background-cover" data-uk-img
-							style="background-image: url('./images/slide_1.jpg');">
+							style="background-image: url('./img/slide_1.jpg');">
 							<div class="zig-zag-title">
 								<span class="uk-text-uppercase">Property</span>
 							</div>
 							<div class="zig-zag__text">
 								<div class="zig-zag__text-inner">
 									<span class="zig-zag-bottom">
-										<img src="./images/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg
+										<img src="./img/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg
 											alt="image" hidden="true">
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="-952 768.5 321.9 109.9"
 											preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
-											data-svg="./images/lpa-solid-pattern-footer-with-triangle.svg">
+											data-svg="./img/lpa-solid-pattern-footer-with-triangle.svg">
 											<path class="st0"
 												d="M-844.7,824.6L-952,878.4h212.4h2.1h2.1h105.3v-53.8l-106.4,53.3h-2L-844.7,824.6z" />
 										</svg>
@@ -1940,20 +1941,20 @@
 					<div class="zig-zag">
 						<div class="zig-zag-waves">
 							<span class="zig-zag-top">
-								<img src="./images/lpa-solid-pattern-footer.svg" data-uk-svg alt="image" hidden="true">
+								<img src="./img/lpa-solid-pattern-footer.svg" data-uk-svg alt="image" hidden="true">
 								<svg xmlns="http://www.w3.org/2000/svg" viewBox="-298 254.4 324.9 109.9"
 									preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
-									data-svg="./images/lpa-solid-pattern-footer.svg">
+									data-svg="./img/lpa-solid-pattern-footer.svg">
 									<path class="st0"
 										d="M-83.4,307.6l107.3-53.8h-212.4h-2.1h-2.1H-298v53.8l106.4-53.3h2L-83.4,307.6z" />
 								</svg>
 							</span>
 							<span class="zig-zag-bottom">
-								<img src="./images/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg alt="image"
+								<img src="./img/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg alt="image"
 									hidden="true">
 								<svg xmlns="http://www.w3.org/2000/svg" viewBox="-952 768.5 321.9 109.9"
 									preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
-									data-svg="./images/lpa-solid-pattern-footer-with-triangle.svg">
+									data-svg="./img/lpa-solid-pattern-footer-with-triangle.svg">
 									<path class="st0"
 										d="M-844.7,824.6L-952,878.4h212.4h2.1h2.1h105.3v-53.8l-106.4,53.3h-2L-844.7,824.6z" />
 									<path class="st1" d="M-952,768.5l107.6,56.1L-952,878.4V768.5z" />
@@ -1962,18 +1963,18 @@
 						</div>
 						<span class="triangle-left font-ship"></span>
 						<div class="zig-zag__inner uk-background-cover" data-uk-img
-							style="background-image: url('./images/slide_1.jpg');">
+							style="background-image: url('./img/slide_1.jpg');">
 							<div class="zig-zag-title">
 								<span class="uk-text-uppercase">Ferries</span>
 							</div>
 							<div class="zig-zag__text">
 								<div class="zig-zag__text-inner">
 									<span class="zig-zag-bottom">
-										<img src="./images/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg
+										<img src="./img/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg
 											alt="image" hidden="true">
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="-952 768.5 321.9 109.9"
 											preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
-											data-svg="./images/lpa-solid-pattern-footer-with-triangle.svg">
+											data-svg="./img/lpa-solid-pattern-footer-with-triangle.svg">
 											<path class="st0"
 												d="M-844.7,824.6L-952,878.4h212.4h2.1h2.1h105.3v-53.8l-106.4,53.3h-2L-844.7,824.6z" />
 										</svg>
@@ -1990,20 +1991,20 @@
 					<div class="zig-zag">
 						<div class="zig-zag-waves">
 							<span class="zig-zag-top">
-								<img src="./images/lpa-solid-pattern-footer.svg" data-uk-svg alt="image" hidden="true">
+								<img src="./img/lpa-solid-pattern-footer.svg" data-uk-svg alt="image" hidden="true">
 								<svg xmlns="http://www.w3.org/2000/svg" viewBox="-298 254.4 324.9 109.9"
 									preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
-									data-svg="./images/lpa-solid-pattern-footer.svg">
+									data-svg="./img/lpa-solid-pattern-footer.svg">
 									<path class="st0"
 										d="M-83.4,307.6l107.3-53.8h-212.4h-2.1h-2.1H-298v53.8l106.4-53.3h2L-83.4,307.6z" />
 								</svg>
 							</span>
 							<span class="zig-zag-bottom">
-								<img src="./images/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg alt="image"
+								<img src="./img/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg alt="image"
 									hidden="true">
 								<svg xmlns="http://www.w3.org/2000/svg" viewBox="-952 768.5 321.9 109.9"
 									preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
-									data-svg="./images/lpa-solid-pattern-footer-with-triangle.svg">
+									data-svg="./img/lpa-solid-pattern-footer-with-triangle.svg">
 									<path class="st0"
 										d="M-844.7,824.6L-952,878.4h212.4h2.1h2.1h105.3v-53.8l-106.4,53.3h-2L-844.7,824.6z" />
 									<path class="st1" d="M-952,768.5l107.6,56.1L-952,878.4V768.5z" />
@@ -2012,18 +2013,18 @@
 						</div>
 						<span class="triangle-left font-crane"></span>
 						<div class="zig-zag__inner uk-background-cover" data-uk-img
-							style="background-image: url('./images/slide_1.jpg');">
+							style="background-image: url('./img/slide_1.jpg');">
 							<div class="zig-zag-title">
 								<span class="uk-text-uppercase">Cargo</span>
 							</div>
 							<div class="zig-zag__text">
 								<div class="zig-zag__text-inner">
 									<span class="zig-zag-bottom">
-										<img src="./images/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg
+										<img src="./img/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg
 											alt="image" hidden="true">
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="-952 768.5 321.9 109.9"
 											preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
-											data-svg="./images/lpa-solid-pattern-footer-with-triangle.svg">
+											data-svg="./img/lpa-solid-pattern-footer-with-triangle.svg">
 											<path class="st0"
 												d="M-844.7,824.6L-952,878.4h212.4h2.1h2.1h105.3v-53.8l-106.4,53.3h-2L-844.7,824.6z" />
 										</svg>
@@ -2040,20 +2041,20 @@
 					<div class="zig-zag">
 						<div class="zig-zag-waves">
 							<span class="zig-zag-top">
-								<img src="./images/lpa-solid-pattern-footer.svg" data-uk-svg alt="image" hidden="true">
+								<img src="./img/lpa-solid-pattern-footer.svg" data-uk-svg alt="image" hidden="true">
 								<svg xmlns="http://www.w3.org/2000/svg" viewBox="-298 254.4 324.9 109.9"
 									preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
-									data-svg="./images/lpa-solid-pattern-footer.svg">
+									data-svg="./img/lpa-solid-pattern-footer.svg">
 									<path class="st0"
 										d="M-83.4,307.6l107.3-53.8h-212.4h-2.1h-2.1H-298v53.8l106.4-53.3h2L-83.4,307.6z" />
 								</svg>
 							</span>
 							<span class="zig-zag-bottom">
-								<img src="./images/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg alt="image"
+								<img src="./img/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg alt="image"
 									hidden="true">
 								<svg xmlns="http://www.w3.org/2000/svg" viewBox="-952 768.5 321.9 109.9"
 									preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
-									data-svg="./images/lpa-solid-pattern-footer-with-triangle.svg">
+									data-svg="./img/lpa-solid-pattern-footer-with-triangle.svg">
 									<path class="st0"
 										d="M-844.7,824.6L-952,878.4h212.4h2.1h2.1h105.3v-53.8l-106.4,53.3h-2L-844.7,824.6z" />
 									<path class="st1" d="M-952,768.5l107.6,56.1L-952,878.4V768.5z" />
@@ -2062,18 +2063,18 @@
 						</div>
 						<span class="triangle-left font-sailboat-1"></span>
 						<div class="zig-zag__inner uk-background-cover" data-uk-img
-							style="background-image: url('./images/slide_1.jpg');">
+							style="background-image: url('./img/slide_1.jpg');">
 							<div class="zig-zag-title">
 								<span class="uk-text-uppercase">Leisure</span>
 							</div>
 							<div class="zig-zag__text">
 								<div class="zig-zag__text-inner">
 									<span class="zig-zag-bottom">
-										<img src="./images/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg
+										<img src="./img/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg
 											alt="image" hidden="true">
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="-952 768.5 321.9 109.9"
 											preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
-											data-svg="./images/lpa-solid-pattern-footer-with-triangle.svg">
+											data-svg="./img/lpa-solid-pattern-footer-with-triangle.svg">
 											<path class="st0"
 												d="M-844.7,824.6L-952,878.4h212.4h2.1h2.1h105.3v-53.8l-106.4,53.3h-2L-844.7,824.6z" />
 										</svg>
@@ -2092,49 +2093,51 @@
 		</section>
 		<section class="sectors-section sectors-section--half">
 			<div class="uk-container uk-container-large zig-zag-wrap">
-				<div class="uk-flex uk-flex-wrap uk-child-width-1-2@l uk-child-width-1-2@s uk-child-width-1-1">
+				<div class="uk-flex uk-flex-wrap uk-child-width-1-2@l uk-child-width-1-1">
 					<div class="sectors-half">
 						<h3 class="uk-text-uppercase">Case studies</h3>
 						<p>It would be good to have an introductory paragraph for the case studies.</p>
 						<div class="zig-zag">
 							<div class="zig-zag-waves">
 								<span class="zig-zag-top">
-									<img src="./images/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg
-										alt="image" hidden="true">
+									<img src="./img/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg alt="image"
+										hidden="true">
 									<svg xmlns="http://www.w3.org/2000/svg" viewBox="-952 768.5 321.9 109.9"
 										preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
-										data-svg="./images/lpa-solid-pattern-footer-with-triangle.svg">
+										data-svg="./img/lpa-solid-pattern-footer-with-triangle.svg">
 										<path class="st0"
 											d="M-844.7,824.6L-952,878.4h212.4h2.1h2.1h105.3v-53.8l-106.4,53.3h-2L-844.7,824.6z" />
 										<path class="st1" d="M-952,768.5l107.6,56.1L-952,878.4V768.5z" />
 									</svg>
 								</span>
 								<span class="zig-zag-bottom">
-									<img src="./images/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg
-										alt="image" hidden="true">
+									<img src="./img/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg alt="image"
+										hidden="true">
 									<svg xmlns="http://www.w3.org/2000/svg" viewBox="-952 768.5 321.9 109.9"
 										preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
-										data-svg="./images/lpa-solid-pattern-footer-with-triangle.svg">
+										data-svg="./img/lpa-solid-pattern-footer-with-triangle.svg">
 										<path class="st0"
 											d="M-844.7,824.6L-952,878.4h212.4h2.1h2.1h105.3v-53.8l-106.4,53.3h-2L-844.7,824.6z" />
 										<path class="st1" d="M-952,768.5l107.6,56.1L-952,878.4V768.5z" />
 									</svg>
 								</span>
 							</div>
-							<span class="triangle-left"><span class="font-gross">Find out more</span></span>
+							<span class="triangle-left"><span class="uk-visible@s font-gross uk-text-uppercase">Find out
+									more</span><span class="uk-hidden@s font-gross"
+									aria-label="Find out more"></span></span>
 							<div class="zig-zag__inner uk-background-cover" data-uk-img
-								style="background-image: url('./images/slide_1.jpg');">
+								style="background-image: url('./img/slide_1.jpg');">
 								<div class="zig-zag-title">
 									<span class="uk-text-uppercase">Versatile mair's pier</span>
 								</div>
 								<div class="zig-zag__text">
 									<div class="zig-zag__text-inner">
 										<span class="zig-zag-bottom">
-											<img src="./images/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg
+											<img src="./img/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg
 												alt="image" hidden="true">
 											<svg xmlns="http://www.w3.org/2000/svg" viewBox="-952 768.5 321.9 109.9"
 												preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
-												data-svg="./images/lpa-solid-pattern-footer-with-triangle.svg">
+												data-svg="./img/lpa-solid-pattern-footer-with-triangle.svg">
 												<path class="st0"
 													d="M-844.7,824.6L-952,878.4h212.4h2.1h2.1h105.3v-53.8l-106.4,53.3h-2L-844.7,824.6z" />
 											</svg>
@@ -2156,31 +2159,33 @@
 						<div class="zig-zag">
 							<div class="zig-zag-waves">
 								<span class="zig-zag-top">
-									<img src="./images/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg
-										alt="image" hidden="true">
+									<img src="./img/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg alt="image"
+										hidden="true">
 									<svg xmlns="http://www.w3.org/2000/svg" viewBox="-952 768.5 321.9 109.9"
 										preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
-										data-svg="./images/lpa-solid-pattern-footer-with-triangle.svg">
+										data-svg="./img/lpa-solid-pattern-footer-with-triangle.svg">
 										<path class="st0"
 											d="M-844.7,824.6L-952,878.4h212.4h2.1h2.1h105.3v-53.8l-106.4,53.3h-2L-844.7,824.6z" />
 										<path class="st1" d="M-952,768.5l107.6,56.1L-952,878.4V768.5z" />
 									</svg>
 								</span>
 								<span class="zig-zag-bottom">
-									<img src="./images/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg
-										alt="image" hidden="true">
+									<img src="./img/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg alt="image"
+										hidden="true">
 									<svg xmlns="http://www.w3.org/2000/svg" viewBox="-952 768.5 321.9 109.9"
 										preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
-										data-svg="./images/lpa-solid-pattern-footer-with-triangle.svg">
+										data-svg="./img/lpa-solid-pattern-footer-with-triangle.svg">
 										<path class="st0"
 											d="M-844.7,824.6L-952,878.4h212.4h2.1h2.1h105.3v-53.8l-106.4,53.3h-2L-844.7,824.6z" />
 										<path class="st1" d="M-952,768.5l107.6,56.1L-952,878.4V768.5z" />
 									</svg>
 								</span>
 							</div>
-							<span class="triangle-left"><span class="font-gross">Find out more</span></span>
+							<span class="triangle-left"><span class="uk-visible@s font-gross uk-text-uppercase">Find out
+									more</span><span class="uk-hidden@s font-gross"
+									aria-label="Find out more"></span></span>
 							<div class="zig-zag__inner uk-background-cover" data-uk-img
-								style="background-image: url('./images/slide_1.jpg');">
+								style="background-image: url('./img/slide_1.jpg');">
 								<div class="zig-zag-title">
 									<span>5th June, 2018</span>
 									<span class="uk-text-uppercase">Breaking ground for new lerwick fishmarket</span>
@@ -2188,11 +2193,11 @@
 								<div class="zig-zag__text">
 									<div class="zig-zag__text-inner">
 										<span class="zig-zag-bottom">
-											<img src="./images/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg
+											<img src="./img/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg
 												alt="image" hidden="true">
 											<svg xmlns="http://www.w3.org/2000/svg" viewBox="-952 768.5 321.9 109.9"
 												preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
-												data-svg="./images/lpa-solid-pattern-footer-with-triangle.svg">
+												data-svg="./img/lpa-solid-pattern-footer-with-triangle.svg">
 												<path class="st0"
 													d="M-844.7,824.6L-952,878.4h212.4h2.1h2.1h105.3v-53.8l-106.4,53.3h-2L-844.7,824.6z" />
 											</svg>
@@ -2212,7 +2217,7 @@
 			</div>
 		</section>
 		<section data-uk-img class="vision-section uk-background-cover waves-label uk-background-fixed"
-			style="background-image: url('./images/vision_banner.jpg');">
+			style="background-image: url('./img/vision_banner.jpg');">
 			<span class="triangle-wrap triangle-wrap--bottom" role="presentation">
 				<span class="triangle" role="presentation"></span>
 				<span class="triangle" role="presentation"></span>
@@ -2287,8 +2292,24 @@
 	<footer class="footer">
 		<div class="uk-container uk-container-large">
 			<div class="uk-flex footer__top">
-				<div data-uk-img class="uk-flex uk-flex-middle uk-flex-between uk-width-4-5@l uk-width-2-3@s"
-					style="background-image: url('./images/footer_wave.png');">
+				<div class="uk-flex uk-flex-middle uk-flex-between uk-width-4-5@l uk-width-2-3@s">
+					<span class="zig-zag-top">
+						<img src="./img/lpa-solid-pattern-footer.svg" data-uk-svg alt="image" hidden="true">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 647 481.1" preserveAspectRatio="none"
+							class="uk-svg" width="600" height="481.1" data-svg="./img/lpa-solid-pattern.svg">
+							<path class="st0" d="M517.6,481.1l-129.4-64.9v0l-129.4,64.9l-129.4-64.9L0,481.1v-416L129.4,0.2l129.4,64.9L388.2,0.3V0l129.4,65
+							L647,0v415.3L517.6,481.1z" />
+						</svg>
+					</span>
+					<span class="zig-zag-bottom">
+						<img src="./img/lpa-solid-pattern.svg" data-uk-svg alt="image" hidden="true">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 647 481.1" preserveAspectRatio="none"
+							class="uk-svg" width="600" height="481.1" data-svg="./img/lpa-solid-pattern-footer.svg">
+							<path class="st0" d="M517.6,481.1l-129.4-64.9v0l-129.4,64.9l-129.4-64.9L0,481.1v-416L129.4,0.2l129.4,64.9L388.2,0.3V0l129.4,65
+							L647,0v415.3L517.6,481.1z" />
+						</svg>
+					</span>
+					</span>
 					<span class="uk-text-uppercase">Get in touch</span>
 					<span><b>We are here to help.</b> Every day.</span>
 					<div class="uk-flex uk-width-1-3 uk-flex-between">
@@ -2296,8 +2317,23 @@
 						<a href="tel:+44(0)1595692991" class="font-phone-1">+44 (0) 1595 692991</a>
 					</div>
 				</div>
-				<div data-uk-img class="uk-flex uk-flex-middle uk-width-1-5@l uk-width-1-3@s"
-					style="background-image: url('./images/footer_wave_orange.png');">
+				<div class="uk-flex uk-flex-middle uk-width-1-5@l uk-width-1-3@s">
+					<span class="zig-zag-top">
+						<img src="./img/lpa-solid-pattern-footer.svg" data-uk-svg alt="image" hidden="true">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 647 481.1" preserveAspectRatio="none"
+							class="uk-svg" width="600" height="481.1" data-svg="./img/lpa-solid-pattern.svg">
+							<path class="st0" d="M517.6,481.1l-129.4-64.9v0l-129.4,64.9l-129.4-64.9L0,481.1v-416L129.4,0.2l129.4,64.9L388.2,0.3V0l129.4,65
+									L647,0v415.3L517.6,481.1z" />
+						</svg>
+					</span>
+					<span class="zig-zag-bottom">
+						<img src="./img/lpa-solid-pattern.svg" data-uk-svg alt="image" hidden="true">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 647 481.1" preserveAspectRatio="none"
+							class="uk-svg" width="600" height="481.1" data-svg="./img/lpa-solid-pattern-footer.svg">
+							<path class="st0" d="M517.6,481.1l-129.4-64.9v0l-129.4,64.9l-129.4-64.9L0,481.1v-416L129.4,0.2l129.4,64.9L388.2,0.3V0l129.4,65
+									L647,0v415.3L517.6,481.1z" />
+						</svg>
+					</span>
 					<a href="#" class="uk-text-uppercase font-gross">Contact us</a>
 				</div>
 			</div>
@@ -2323,7 +2359,7 @@
 						</ul>
 					</div>
 					<div class="uk-flex uk-flex-column uk-width-1-2@s uk-width-1-1@l">
-						<span class="uk-text-uppercase uk-margin-bottom">Join our mailing list</span>
+						<span class="uk-text-uppercase">Join our mailing list</span>
 						<span>Keep up to date with the latest news, events and case studies as they happen.</span>
 						<a href="#" class="uk-button uk-button-primary font-gross"><span class="uk-button-hover"
 								role="presentation"></span><span class="uk-button--text">Join now</span></a>
@@ -2356,7 +2392,7 @@
 							<li><a class="font-gross" href="#">Property</a></li>
 						</ul>
 						<ul>
-							<li class="uk-text-uppercase">Policies</li>
+							<li class="uk-text-uppercase"><span>Policies</span></li>
 							<li><a class="font-gross" href="#">Terms & Conditions</a></li>
 							<li><a class="font-gross" href="#">Privacy Policy</a></li>
 							<li><a class="font-gross" href="#">Disclaimer</a></li>
@@ -2365,11 +2401,11 @@
 					</div>
 					<div class="uk-flex uk-flex-between">
 						<div class="uk-flex">
-							<img data-uk-img src="./images/iso.png" alt="image">
+							<img data-uk-img src="./img/iso.png" alt="image">
 						</div>
 						<div class="uk-flex">
 							<span>Copyright &copy; 2013 - 2018 Lerwick Port Authority.</span>
-							<span>Website by <span>NB</span><img data-uk-img src="./images/nb-logo.png"
+							<span>Website by <span>NB</span><img data-uk-img src="./img/nb-logo.png"
 									alt="NB Communication logo"></span>
 						</div>
 					</div>
@@ -2378,7 +2414,7 @@
 		</div>
 		<div class="footer__label uk-flex uk-flex-right">
 			<span data-uk-img role="presentation"></span>
-			<img data-uk-img src="./images/logo.png" alt="lerwick harbour logo">
+			<img data-uk-img src="./img/logo.png" alt="lerwick harbour logo">
 		</div>
 	</footer>
 
@@ -2387,7 +2423,53 @@
 	<script src='./js/uikit.min.js'></script>
 	<script src='./js/uikit-icons.min.js'></script>
 	<script src='./js/nb.min.js'></script>
-	<!-- <script src='./js/theme.min.js'></script> -->
+	<script src='./js/theme.min.js'></script>
+	<script>
+		const toggleOverlayBtn = document.querySelectorAll('.js-toggle-overlay');
+		const navTarget = document.getElementsByClassName('uk-navbar-dropdown')[0];
+		const tra = false;
+
+		function removeOverlay(e, tra) {
+			const overlays = document.getElementsByClassName('js-overlay')[0];
+			const dropdown = document.getElementsByClassName('uk-navbar-dropdown')[0];
+			const isClickInside = e.target;
+			console.log('kkakakaka');
+			if (!tra) {
+				if (!isClickInside.classList.contains('uk-navbar-dropdown') || isClickInside.classList.contains(
+						'js-toggle-dropdown')) {
+					overlays.style.display = 'none';
+				}
+			}
+		}
+
+		function toggleOverlay() {
+			const overlay = document.getElementsByClassName('js-overlay')[0];
+			overlay.style.display === 'none' || overlay.style.display === '' ? overlay.style.display = 'block' : overlay.style
+				.display = 'none';
+			overlay.style.display === 'none' || overlay.style.display === '' ? !tra : tra;
+		}
+
+		function keyPress(e) {
+			document.onkeydown = function (e) {
+				const overlay = document.getElementsByClassName('js-overlay')[0];
+				const dropdown = document.getElementsByClassName('uk-navbar-dropdown')[0];
+				e = e || window.event;
+				if (e.keyCode == 27 && overlay.style.display === 'block') {
+					overlay.style.display = 'none';
+					dropdown.style.display = 'none';
+				}
+			};
+		}
+
+		for (i = 0; i < toggleOverlayBtn.length; ++i) {
+			toggleOverlayBtn[i].addEventListener('click', toggleOverlay);
+		};
+		window.addEventListener('click', function (e) {
+			removeOverlay(e, tra);
+		});
+		// keyPress();
+
+	</script>
 </body>
 
 </html>

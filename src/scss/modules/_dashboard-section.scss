@@ -1,12 +1,25 @@
 .dashboard-section {
     min-height: 100vh;
-    padding: 90px 0 70px;
+    padding: 170px 0 70px;
 
     h2 {
-        color: $blue;
+        color: $white;
         text-align: center;
         font-weight: $bold;
     }
+    .triangle-wrap {
+        right: 0;
+        bottom: 0;
+        left: auto;
+        width: 20%;
+        height: 50px;
+    }
+    @media (max-width: $breakpointLarge) {
+        .triangle-wrap {
+            display: none;
+        }
+    }
+
     @media (max-width: $breakpointSmall) {
         h2 {
             font-size: 32px;
@@ -19,8 +32,9 @@
 }
 
 .dashboard-box {
-    margin-top: -60px;
-    padding: 1px;
+    margin-bottom: 100px;
+    position: relative;
+    padding: 2px;
 
     h3,
     a,
@@ -95,12 +109,70 @@
             font-size: 16px;
         }
     }
+
+    .zig-zag-waves {
+        left: 2px;
+        width: calc(100% - 4px);
+    }
+
+    .zig-zag-top,
+    .zig-zag-bottom {
+        height: 60px;
+        width: 100%;
+    }
+
+    .zig-zag-top {
+        bottom: 100%;
+        top: auto;
+    }
+
+    .zig-zag-bottom {
+        transform: rotate(-180deg);
+        top: calc(100% - 2px);
+
+        svg path {
+            fill: $blue-wave;
+        }
+    }
 }
 
 .dashboard-box--weather {
-    min-height: 675px;
+
+    .dashboard-box__inner {
+        min-height: 500px;
+    }
+
+    .dashboard-iframe>div>a {
+        padding-left: 30px;
+        position: absolute;
+        bottom: 80px;
+    }
+
     iframe {
-        padding: 0 40px;
+        padding: 0 30px;
+    }
+
+    @media (max-width: $breakpointLarge) {
+        .dashboard-iframe {
+            min-height: 550px;
+        }
+
+        iframe {
+            height: 415px !important;// sass-lint:disable-line no-important
+        }
+    }
+
+    @media (max-width: $breakpointSmall) {
+        .dashboard-iframe {
+            min-height: 580px;
+        }
+        iframe {
+            height: 470px !important;// sass-lint:disable-line no-important
+        }
+
+        .dashboard-box__inner {
+            min-height: 650px;
+        }
     }
 }
 
@@ -108,31 +180,33 @@
     position: relative;
 }
 
-.dashboard-box__inner,
-.dashboard-content {
-    clip-path: url('#clipping-middle');
-}
-
 .dashboard-box__inner {
-    overflow: hidden;
     background: $white;
-    min-height: 490px;
+    min-height: 370px;
     position: relative;
 
     >a {
         color: $white;
     }
+
+    @media (max-width: $breakpointSmall) {
+        min-height: 430px;
+    }
 }
 
 .dashboard-content {
     background: $white;
-    padding-top: 55px;
+
+    &.uk-padding {
+        padding: 10px 30px 30px;
+    }
 }
 
 .dashboard-video {
     overflow: hidden;
     padding-top: 55.8%;
     position: relative;
+    bottom: -2px;
 
     iframe {
         position: absolute;
@@ -146,8 +220,10 @@
 
 .dashboard-iframe {
     position: relative;
+
     iframe {
         display: block;
+        min-height: 330px;
     }
 }
 
@@ -184,12 +260,12 @@
 }
 
 .videocam-icon::before {
-    content: url('../images/videocam-icon.png');
+    content: url('../img/videocam-icon.png');
     margin-right: 10px;
 }
 
 .pdf-icon-blue::before {
-    content: url('../images/pdf-icon-blue.png');
+    content: url('../img/pdf-icon-blue.png');
 }
 
 .font-tide-1,
@@ -198,27 +274,33 @@
 }
 
 .dashboard-bottom {
-    background: $blue;
-    clip-path: url('#clipping-middle');
+    background: $blue-wave;
     position: absolute;
     left: 0;
     width: 100%;
-    top: calc(100% - 170px);
-    min-height: 490px;
+    bottom: -3px;
+    min-height: 45px;
     content: '';
 
     a {
         color: $white;
         position: absolute;
-        top: 85px;
-        right: 40px;
+        top: 50%;
+        right: 30px;
         padding-right: 25px;
+        transform: translateY(-50%);
 
         &::before {
             position: absolute;
             right: 0;
             font-size: 10px;
             top: 3px;
+        }
+    }
+
+    .zig-zag-top {
+        svg path {
+            fill: $blue-wave;
         }
     }
 }
@@ -247,22 +329,12 @@
         padding-right: 0;
 
         >.uk-padding {
-            padding-top: 20px;
-            padding-bottom: 0;
+            padding: 20px 30px 0;
         }
     }
 }
 
 .dashboard-iframe-box--diff {
+    min-height: 245px;
     position: relative;
-    &::before {
-        background: $blue;
-        content: '';
-        position: absolute;
-        left: 0;
-        width: 100%;
-        height: 200px;
-        bottom: 0;
-        display: block;
-    }
 }

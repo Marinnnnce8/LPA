@@ -36,9 +36,9 @@ gulp.task("assets-fonts", function() {
 });
 
 gulp.task("assets-img", function(){
-	gulp.src('src/images/*')
+	gulp.src('src/img/*')
         .pipe(imagemin())
-        .pipe(gulp.dest('dist/images'))
+        .pipe(gulp.dest('dist/img'))
 });
 
 gulp.task("favicon-copy", function() {

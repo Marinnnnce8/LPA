@@ -1,18 +1,22 @@
-@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+@media screen and (-ms-high-contrast: active),
+screen and (-ms-high-contrast: none) {
     .nav-text {
-    
+
         &::before {
             display: none;
         }
     }
+
     .zig-zag-bottom {
         svg .st1 {
             fill: $blue;
         }
     }
+
     .zig-zag__inner .zig-zag__text .zig-zag-bottom svg {
         fill: $blue;
     }
+
     .sectors-half {
         .zig-zag-top {
             path:last-of-type {
@@ -20,26 +24,27 @@
             }
         }
     }
+
     .sectors-section--home {
-    
+
         .zig-zag:nth-of-type(-n + 4) {
             .zig-zag-top path {
                 fill: $blue;
             }
         }
-    
-        @media (max-width: $breakpointXlarge) {
+
+        @media (max-width: $breakpointLargeMax) {
             .zig-zag {
                 .zig-zag-top path {
                     fill: $white;
                 }
-    
+
                 &:nth-of-type(-n + 4) {
                     .zig-zag-top path {
                         fill: $white;
                     }
                 }
-    
+
                 &:nth-of-type(-n + 3) {
                     .zig-zag-top path {
                         fill: $blue;
@@ -47,20 +52,20 @@
                 }
             }
         }
-    
-        @media (max-width: $breakpointLarge) {
+
+        @media (max-width: $breakpointMediumMax) {
             .zig-zag {
                 .zig-zag-top path {
                     fill: $white;
                 }
-    
+
                 &:nth-of-type(-n + 4),
                 &:nth-of-type(-n + 3) {
                     .zig-zag-top path {
                         fill: $white;
                     }
                 }
-    
+
                 &:nth-of-type(-n + 2) {
                     .zig-zag-top path {
                         fill: $blue;
@@ -68,13 +73,13 @@
                 }
             }
         }
-    
-        @media (max-width: $breakpointMedium) {
+
+        @media (max-width: $breakpointXsmallMax) {
             .zig-zag {
                 .zig-zag-top path {
                     fill: $white;
                 }
-    
+
                 &:nth-of-type(-n + 4),
                 &:nth-of-type(-n + 3),
                 &:nth-of-type(-n + 2) {
@@ -82,7 +87,7 @@
                         fill: $white;
                     }
                 }
-    
+
                 &:first-of-type {
                     .zig-zag-top path {
                         fill: $blue;
@@ -91,18 +96,19 @@
             }
         }
     }
+
     .sectors-section--home-diff {
-    
+
         .zig-zag-top path {
             fill: $blue;
         }
-    
-        @media (max-width: $breakpointLarge) {
+
+        @media (max-width: $breakpointLargeMax) {
             .zig-zag {
                 .zig-zag-top path {
                     fill: $white;
                 }
-    
+
                 &:nth-of-type(-n + 2) {
                     .zig-zag-top path {
                         fill: $blue;
@@ -110,22 +116,44 @@
                 }
             }
         }
-    
-        @media (max-width: $breakpointMedium) {
+
+        @media (max-width: $breakpointMediumMax) {
             .zig-zag {
                 .zig-zag-top path {
                     fill: $white;
                 }
-    
+
                 &:nth-of-type(-n + 2) {
                     .zig-zag-top path {
-                        fill: $white;
+                        fill: $blue;
                     }
                 }
-    
+
                 &:first-of-type {
                     .zig-zag-top path {
                         fill: $blue;
+                    }
+                }
+            }
+        }
+
+        @media (max-width: $breakpointXsmallMax) {
+            .zig-zag {
+                .zig-zag-top path {
+                    color: $white;
+                }
+
+                &:nth-of-type(-n + 4),
+                &:nth-of-type(-n + 3),
+                &:nth-of-type(-n + 2) {
+                    .zig-zag-top path {
+                        color: $white;
+                    }
+                }
+
+                &:first-of-type {
+                    .zig-zag-top path {
+                        color: $blue;
                     }
                 }
             }

@@ -29,18 +29,31 @@
     }
 
     @media (max-width: $breakpointSmall) {
-        .uk-container:last-of-type {
-            padding: 25px 17px 0;
+        padding: 80px 0;
+
+        .uk-container {
+            padding: 0 20px;
+            &:last-of-type {
+                padding: 25px 17px 0;
+            }
+        }
+
+        h2 {
+            font-size: 34px;
+        }
+
+        p {
+            font-size: 20px;
         }
     }
 }
 
 .wave-box {
+    cursor: pointer;
     position: relative;
     overflow: hidden;
     min-height: 510px;
     padding: 3px;
-
 
     >a {
         background: transparent;
@@ -114,7 +127,7 @@
         transition: .3s ease-in-out;
 
         &::after {
-            background-image: url('../images/lpa-main-pattern.svg');
+            background-image: url('../img/lpa-main-pattern.svg');
             position: absolute;
             left: 0;
             top: -66px;

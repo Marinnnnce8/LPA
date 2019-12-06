@@ -79,23 +79,17 @@ input[type='submit'] {
 	text-transform: uppercase;
 	transition: $nbSec ease-in-out;
 	text-align: left;
+	min-width: 250px;
 
-	&:focus {
-		outline: 1px dashed rgba($skyblue, .2);
-	}
-
-	.uk-icon {
+	&::before {
+		right: 10px;
 		position: absolute;
 		top: 50%;
-		color: $white;
-		border: 1px solid $blue;
-		right: 15px;
 		transform: translateY(-50%);
-		transition: $nbSec ease-in-out;
 	}
 
-	svg {
-		z-index: 1;
+	&:focus {
+		outline: 1px dashed rgba($blue-dark, .2);
 	}
 
 	.uk-button--text {
@@ -105,12 +99,19 @@ input[type='submit'] {
 		z-index: 2;
 	}
 
+	.uk-icon {
+		transition: .3s ease-in-out;
+		svg {
+			z-index: 1;
+		}
+	}
+
 	.uk-button-hover {
 		position: absolute;
 		display: block;
 		height: 0;
 		border-radius: 50%;
-		background-color: $orange;
+		background-color: $blue-dark;
 		transition: width .4s ease-in-out, height .4s ease-in-out;
 		transform: translate(-50%, -50%);
 		width: 0;
@@ -118,9 +119,9 @@ input[type='submit'] {
 	}
 
 	@include hover {
-		border: 1px solid $orange;
+		border: 1px solid $blue-dark;
 		background: $blue;
-		color: tint($orange, 75%);
+		color: tint($blue-dark, 75%);
 
 		.uk-button--text {
 			color: $white;
@@ -132,21 +133,20 @@ input[type='submit'] {
 		}
 
 		svg {
-			color: $white;
+			color: $blue;
 		}
 	}
 
 	@media (max-width: $breakpointLarge) {
 		font-size: 12px;
 		padding: 5px 40px 5px 15px;
-
-		.uk-icon {
-			right: 5px;
-		}
 	}
 
 	@media (max-width: $breakpointMedium) {
 		padding: 5px 31px 5px 15px;
+		.uk-icon {
+			right: 5px;
+		}
 	}
 
 	@media (max-width: $breakpointSmall) {
@@ -162,15 +162,14 @@ input[type='submit'] {
 	text-transform: uppercase;
 	position: relative;
 	transition: .3s ease-in-out;
-
 	svg {
 		right: 10px;
 		width: 25px;
 		position: absolute;
 		top: 50%;
 		transform: translateY(-50%);
+		transition: .3s ease-in-out;
 	}
-
 }
 
 .uk-button-primary-big {
@@ -188,15 +187,18 @@ input[type='submit'] {
 }
 
 .uk-button-secondary {
-	background: $blue;
-	color: $white;
+	background: $white;
+	color: $blue;
 	height: 100px;
 	width: 100px;
-	padding: 0;
 	position: relative;
 
 	&::before {
 		z-index: 2;
+	}
+
+	&:focus {
+		outline: 1px dashed rgba($blue, .2);
 	}
 
 	svg {
@@ -207,69 +209,78 @@ input[type='submit'] {
 		z-index: 1;
 		width: 70px;
 	}
+
+	.uk-button-hover {
+		background-color: $blue;
+	}
+
+	@include hover {
+		border: 1px solid $blue;
+		background: $blue;
+		color: tint($blue, 75%);
+
+		.uk-button--text {
+			color: $white;
+		}
+	}
 }
 
 .uk-button--underline {
 	position: relative;
 
-	>span:not(.font-foreign) {
-		// &:first-of-type {
-			background: none;
-			position: relative;
-			text-decoration: none;
-			font-family: $font-default;
-			font-size: 14px;
-			display: inline-block;
-			color: $white;
-			padding: 0 1px;
-			transition: color ease .3s;
+	>span:not(.font-foreign):not(.font-gross)  {
+		background: none;
+		position: relative;
+		text-decoration: none;
+		font-family: $font-default;
+		font-size: 14px;
+		display: inline-block;
+		color: $white;
+		padding: 0 1px;
+		transition: color ease .3s;
 
-			&::before,
-			&::after {
-				content: '';
-				position: absolute;
-				background-color: $white;
-				z-index: 0;
-				height: 5%;
-			}
+		&::before,
+		&::after {
+			content: '';
+			position: absolute;
+			background-color: $white;
+			z-index: 0;
+			height: 5%;
+		}
 
-			&::before {
-				width: 0%;
-				left: 0;
-				bottom: 0;
-				transition: width ease .4s;
-			}
+		&::before {
+			width: 0%;
+			left: 0;
+			bottom: 0;
+			transition: width ease .4s;
+		}
 
-			&::after {
-				width: 100%;
-				left: 0;
-				bottom: 0;
-				transition: ease .6s;
-			}
-		// }
-
-		// &:last-of-type {
-		// 	right: 10px;
-		// 	position: absolute;
-		// 	top: 50%;
-		// 	transform: translateY(-50%);
-		// 	color: $white;
-
-		// 	svg {
-		// 		width: 30px;
-		// 	}
-		// }
+		&::after {
+			width: 100%;
+			left: 0;
+			bottom: 0;
+			transition: ease .6s;
+		}
 	}
 
-	.font-foreign {
+	.font-foreign, .font-gross {
 		position: relative;
 		padding-right: 20px;
+
 		&::before {
 			position: absolute;
 			right: 3px;
 			top: 3px;
 			font-size: 14px;
 			color: $blue-dark;
+		}
+	}
+	.font-gross {
+		&::before {
+			color: $white;
+			font-size: 12px;
+			top: 5px;
+			right: -5px;
 		}
 	}
 

@@ -23,20 +23,11 @@
 </head>
 
 <body>
-    <svg width="0" height="0" class="svg-defs" width="500" height="400">
-        <defs>
-            <clipPath id="wave-large">
-                <path class="st0"
-                    d="M567.3,0.2l113.6,56.9L794.4,0.2L908,57.1V456l-113.6-56.9L680.9,456l-113.6-56.9 M567.3,0L453.8,56.9L340.4,0
-                            L226.9,56.9v0L113.5,0L0,56.9v398.9l113.5-56.9l113.4,56.9v0.2l113.5-56.9L453.8,456l113.5-56.9" />
-            </clipPath>
-        </defs>
-    </svg>
 
     <header class="header">
         <nav data-uk-navbar class="uk-flex uk-flex-between uk-container uk-container-large">
             <a href="#" class="header__logo" aria-label="Click here to visit home page"
-                title="Lerwick Port Authority"><img src="./images/logo.png" alt="Lerwick Port Authority logo"></a>
+                title="Lerwick Port Authority"><img src="./img/logo.png" alt="Lerwick Port Authority logo"></a>
             <ul class="uk-navbar-nav uk-flex-middle">
                 <li>
                     <a class="uk-text-uppercase" href="#">News</a>
@@ -54,13 +45,13 @@
                             <li data-uk-height-match=".nav-equal" class="nav-equal">
                                 <div data-uk-img
                                     class="uk-background-cover waves-top uk-flex uk-flex-column uk-flex-between"
-                                    style="background-image: url('./images/slide_1.jpg');">
+                                    style="background-image: url('./img/slide_1.jpg');">
                                     <ul>
                                         <li>
                                             <a class="uk-text-uppercase font-gross" href="#">Cruise</a>
                                         </li>
                                     </ul>
-                                    <img data-uk-img src="./images/lpa-main-pattern.svg" alt="image"
+                                    <img data-uk-img src="./img/lpa-main-pattern.svg" alt="image"
                                         role="presentation">
                                     <div class="uk-padding" data-uk-height-match=".nav-equal">
                                         <ul>
@@ -84,13 +75,13 @@
                             <li data-uk-height-match=".nav-equal" class="nav-equal">
                                 <div data-uk-img
                                     class="uk-background-cover waves-top uk-flex uk-flex-column uk-flex-between"
-                                    style="background-image: url('./images/slide_1.jpg');">
+                                    style="background-image: url('./img/slide_1.jpg');">
                                     <ul>
                                         <li>
                                             <a class="uk-text-uppercase font-gross" href="#">leisure</a>
                                         </li>
                                     </ul>
-                                    <img data-uk-img src="./images/lpa-main-pattern.svg" alt="image"
+                                    <img data-uk-img src="./img/lpa-main-pattern.svg" alt="image"
                                         role="presentation">
                                     <div class="uk-padding" data-uk-height-match=".nav-equal">
                                         <ul>
@@ -115,13 +106,13 @@
                             <li data-uk-height-match=".nav-equal" class="nav-equal">
                                 <div data-uk-img
                                     class="uk-background-cover waves-top uk-flex uk-flex-column uk-flex-between"
-                                    style="background-image: url('./images/slide_1.jpg');">
+                                    style="background-image: url('./img/slide_1.jpg');">
                                     <ul>
                                         <li>
                                             <a class="uk-text-uppercase font-gross" href="#">decommissioning</a>
                                         </li>
                                     </ul>
-                                    <img data-uk-img src="./images/lpa-main-pattern.svg" alt="image"
+                                    <img data-uk-img src="./img/lpa-main-pattern.svg" alt="image"
                                         role="presentation">
                                     <div class="uk-padding" data-uk-height-match=".nav-equal">
                                         <p>Lerwick is one of the first ports in the UK to handle significant
@@ -137,7 +128,7 @@
                             <li data-uk-height-match=".nav-equal" class="nav-equal">
                                 <div data-uk-img
                                     class="uk-background-cover waves-top uk-flex uk-flex-column uk-flex-between"
-                                    style="background-image: url('./images/slide_1.jpg');">
+                                    style="background-image: url('./img/slide_1.jpg');">
                                     <ul>
                                         <li>
                                             <a class="uk-text-uppercase font-gross" href="#">property</a>
@@ -155,7 +146,7 @@
                                             <a class="uk-text-uppercase font-gross" href="#">cargo</a>
                                         </li>
                                     </ul>
-                                    <img data-uk-img src="./images/lpa-main-pattern.svg" alt="image"
+                                    <img data-uk-img src="./img/lpa-main-pattern.svg" alt="image"
                                         role="presentation">
                                     <span role="presentation"></span>
                                 </div>
@@ -240,14 +231,26 @@
 
     <main class='nb-main'>
         <section class="banner uk-background-cover uk-background-fixed banner--cruise" data-uk-img
-            style="background-image: url('./images/styleguide_banner.jpg');">
+            style="background-image: url('./img/styleguide_banner.jpg');">
             <div class="uk-panel">
                 <h2 class="uk-text-uppercase">This is the styleguide</h2>
             </div>
             <a href="#styleguide" data-uk-scroll class="btn-down" data-uk-icon="chevron-down" role="button"
                 aria-label="Click to scroll to next section"></a>
         </section>
-        <section data-uk-img style="background-image: url(./images/blue_brush.png)" id="styleguide">
+        <section data-uk-img style="background-image: url(./img/blue_brush.png)" id="styleguide">
+            <div class="uk-position-fixed uk-position-center-right">
+                <a class="nb-link-contact font-phone" href="tel:+123456789" aria-label="Click here to contact us"></a>
+                <a class="nb-link-contact font-layout" href="#" aria-label="Click here to visit dashboard"></a>
+            </div>
+            <div class="uk-position-fixed nb-block-social uk-position-center-left uk-visible@m">
+                <a class="nb-link-social" data-uk-icon="facebook" href="#"
+                    aria-label="Click here to visit our facebook page"></a>
+                <a class="nb-link-social" data-uk-icon="twitter" href="#"
+                    aria-label="Click here to visit our twitter page"></a>
+                <a class="nb-link-social" data-uk-icon="mail" href="#" aria-label="Click here to email us"></a>
+                <span class="uk-text-uppercase">share page on</span>
+            </div>
             <div class="uk-flex uk-container nb-container uk-container-large uk-padding-large">
                 <div class='uk-container uk-container-small'>
                     <p class="nb-text-lead uk-text-uppercase">
@@ -269,9 +272,9 @@
 
                         <figure class="uk-align-center">
                             <a href="#" aria-label="Click here to visit page">
-                                <img data-uk-img alt="This is a centre aligned image" src="./images/full_img.jpg" />
+                                <img data-uk-img alt="This is a centre aligned image" src="./img/full_img.jpg" />
                             </a>
-                            <figcaption>A centered aligned image with caption.</figcaption>
+                            <figcaption class="uk-visible@s">A centered aligned image with caption.</figcaption>
                         </figure>
 
                         <h2 class="nb-color-blue uk-text-uppercase nb-bold">Heading 2</h2>
@@ -285,9 +288,9 @@
 
                         <figure class="uk-align-left uk-width-1-2">
                             <a href="#" aria-label="Click here to visit page">
-                                <img data-uk-img alt="This is a centre aligned image" src="./images/half_img_1.jpg" />
+                                <img data-uk-img alt="This is a centre aligned image" src="./img/half_img_1.jpg" />
                             </a>
-                            <figcaption>A left-aligned image with caption.</figcaption>
+                            <figcaption class="uk-visible@s">A left-aligned image with caption.</figcaption>
                         </figure>
 
                         <p>Tempori autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et
@@ -300,9 +303,9 @@
 
                         <figure class="uk-align-right uk-width-1-2">
                             <a href="#" aria-label="Click here to visit page">
-                                <img data-uk-img alt="This is a centre aligned image" src="./images/half_img_2.jpg" />
+                                <img data-uk-img alt="This is a centre aligned image" src="./img/half_img_2.jpg" />
                             </a>
-                            <figcaption>A right-aligned image with caption.</figcaption>
+                            <figcaption class="uk-visible@s">A right-aligned image with caption.</figcaption>
                         </figure>
 
                         <p>Tempori autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et
@@ -357,18 +360,18 @@
                         </p>
 
                         <ul class="nb-list">
-                            <li class="uk-flex uk-flex-middle"><img data-uk-logo src="./images/doc_img_1.png"
+                            <li class="uk-flex uk-flex-middle"><img data-uk-logo src="./img/doc_img_1.png"
                                     alt="icon image" role="presentation" data-uk-img>PDF file -
                                 <a href="#" class="uk-button--underline underline-blue"><span>Download now!</span></a>
                             </li>
-                            <li class="uk-flex uk-flex-middle"><img data-uk-logo src="./images/doc_img_2.png"
+                            <li class="uk-flex uk-flex-middle"><img data-uk-logo src="./img/doc_img_2.png"
                                     alt="icon image" role="presentation" data-uk-img>Word
                                 Document
                             </li>
-                            <li class="uk-flex uk-flex-middle"><img data-uk-logo src="./images/doc_img_3.png"
+                            <li class="uk-flex uk-flex-middle"><img data-uk-logo src="./img/doc_img_3.png"
                                     alt="icon image" role="presentation" data-uk-img>Excel
                                 Spreadsheet</li>
-                            <li class="uk-flex uk-flex-middle"><img data-uk-logo src="./images/doc_img_4.png"
+                            <li class="uk-flex uk-flex-middle"><img data-uk-logo src="./img/doc_img_4.png"
                                     alt="icon image" role="presentation" data-uk-img>Powerpoint
                                 Presentation</li>
                         </ul>
@@ -439,31 +442,34 @@
                 </div>
                 <div class="nb-facts-wrap uk-flex uk-flex-column">
                     <div class="nb-facts">
-                        <span class="uk-text-uppercase nb-color-blue">key facts</span>
-                        <ul>
-                            <li class="font-noun_79674_cc">230 meters in length berth</li>
-                            <li class="font-noun_79674_cc">1.7 metre tidal range</li>
-                            <li class="font-noun_79674_cc">90 cruise ships in season</li>
-                            <li class="font-noun_79674_cc">Over 200,000 passengers a year</li>
-                        </ul>
-                        <div class="nb-facts-body">
-                            <a href="#" class="uk-text-uppercase font-gross download">view 2019 cruise ships visits to
-                                lerwick</a>
+                        <div class="nb-facts__inner">
+                            <span class="uk-text-uppercase nb-color-blue">key facts</span>
+                            <ul>
+                                <li class="font-noun_79674_cc">230 meters in length berth</li>
+                                <li class="font-noun_79674_cc">1.7 metre tidal range</li>
+                                <li class="font-noun_79674_cc">90 cruise ships in season</li>
+                                <li class="font-noun_79674_cc">Over 200,000 passengers a year</li>
+                            </ul>
+                            <div class="nb-facts-body">
+                                <a href="#" class="uk-text-uppercase font-gross download">view more cruise
+                                    facilities</a>
+                            </div>
                         </div>
                     </div>
-                    <div data-uk-img class="nb-facts nb-facts--download uk-background-cover"
-                        style="background-image: url('./images/download.jpg');">
-                        <span class="uk-text-uppercase nb-color-blue">key facts</span>
-                        <div class="nb-facts-body">
-                            <span class="uk-text-uppercase">download in your language:</span>
-                            <ul class="uk-flex uk-flex-between uk-child-width-1-6">
-                                <li><a href="#" class="uk-text-uppercase font-gross" download>eng</a></li>
-                                <li><a href="#" class="uk-text-uppercase font-gross" download>deu</a></li>
-                                <li><a href="#" class="uk-text-uppercase font-gross" download>fra</a></li>
-                                <li><a href="#" class="uk-text-uppercase font-gross" download>nld</a></li>
-                                <li><a href="#" class="uk-text-uppercase font-gross" download>ita</a></li>
-                                <li><a href="#" class="uk-text-uppercase font-gross" download>esp</a></li>
-                            </ul>
+                    <div class="nb-facts nb-facts--download">
+                        <div data-uk-img class="nb-facts__inner uk-background-cover"
+                            style="background-image: url('./img/download.jpg');">
+                            <div class="nb-facts-body">
+                                <span class="uk-text-uppercase">download in your language:</span>
+                                <ul class="uk-flex uk-flex-between uk-child-width-1-6">
+                                    <li><a href="#" class="uk-text-uppercase font-gross" download>eng</a></li>
+                                    <li><a href="#" class="uk-text-uppercase font-gross" download>deu</a></li>
+                                    <li><a href="#" class="uk-text-uppercase font-gross" download>fra</a></li>
+                                    <li><a href="#" class="uk-text-uppercase font-gross" download>nld</a></li>
+                                    <li><a href="#" class="uk-text-uppercase font-gross" download>ita</a></li>
+                                    <li><a href="#" class="uk-text-uppercase font-gross" download>esp</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -482,95 +488,187 @@
                     <div class='nb-gallery-images' data-uk-lightbox='{"animation":"fade"}'
                         data-uk-scrollspy='{"cls":"uk-animation-fade","delay":128,"target":"> .nb-gallery-row > .nb-gallery-image"}'>
                         <div class='nb-gallery-row'>
-                            <a href='./images/gallery_style_2_1.jpg' class='nb-gallery-image' data-alt data-caption>
+                            <a href='./img/gallery_style_2_1.jpg' class='nb-gallery-image' data-alt data-caption>
                                 <span class="nb-gallery-box">
                                     <img data-uk-logo alt='Gallery Block' width='1151' height='768'
-                                        src='./images/gallery_style_2_1.jpg' data-src='./images/gallery_style_2_1.jpg'
+                                        src='./img/gallery_style_2_1.jpg' data-src='./img/gallery_style_2_1.jpg'
                                         data-uk-img>
-                                    <span class="nb-gallery-info uk-background-cover uk-text-uppercase">view as
-                                        slideshow</span>
+                                    <div class="nb-gallery-info">
+                                        <span class="zig-zag-top">
+                                            <img src="./img/lpa-solid-pattern.svg" data-uk-svg alt="image"
+                                                hidden="true">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-295 254.4 313.9 109.9"
+                                                preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
+                                                data-svg="./img/lpa-solid-pattern.svg">
+                                                <path class="st0"
+                                                    d="M-83.4,307.6l107.3-53.8h-212.4h-2.1h-2.1H-298v53.8l106.4-53.3h2L-83.4,307.6z" />
+                                            </svg>
+                                        </span>
+                                        <span class="nb-gallery-text uk-text-uppercase">view as
+                                            slideshow</span>
+                                    </div>
                                 </span>
                             </a>
-                            <a href='./images/gallery_style_2_2.jpg' class='nb-gallery-image'
+                            <a href='./img/gallery_style_2_2.jpg' class='nb-gallery-image'
                                 data-alt='This gallery image also has a caption with HTML.'
                                 data-caption='<div>This <em>gallery</em> image also has a <strong>caption</strong> with HTML.</div>'>
                                 <span class="nb-gallery-box">
                                     <img data-uk-logo alt='This gallery image also has a caption with HTML.'
-                                        width='1151' height='768' src='./images/gallery_style_2_2.jpg'
-                                        data-src='./images/gallery_style_2_2.jpg' data-uk-img>
-                                    <span class="nb-gallery-info uk-background-cover uk-text-uppercase">view as
-                                        slideshow</span>
+                                        width='1151' height='768' src='./img/gallery_style_2_2.jpg'
+                                        data-src='./img/gallery_style_2_2.jpg' data-uk-img>
+                                    <div class="nb-gallery-info"><span class="zig-zag-top">
+                                            <img src="./img/lpa-solid-pattern.svg" data-uk-svg alt="image"
+                                                hidden="true">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-295 254.4 313.9 109.9"
+                                                preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
+                                                data-svg="./img/lpa-solid-pattern.svg">
+                                                <path class="st0"
+                                                    d="M-83.4,307.6l107.3-53.8h-212.4h-2.1h-2.1H-298v53.8l106.4-53.3h2L-83.4,307.6z" />
+                                            </svg>
+                                        </span>
+                                        <span class="nb-gallery-text uk-text-uppercase">view as
+                                            slideshow</span></div>
                                 </span>
                             </a>
                         </div>
                         <div class='nb-gallery-row'>
-                            <a href='./images/gallery_style_2_3.jpg' class='nb-gallery-image' data-alt data-caption>
+                            <a href='./img/gallery_style_2_3.jpg' class='nb-gallery-image' data-alt data-caption>
                                 <span class="nb-gallery-box">
                                     <img data-uk-logo alt='Gallery Block' width='1151' height='768'
-                                        src='./images/gallery_style_2_3.jpg' data-src='./images/gallery_style_2_3.jpg'
+                                        src='./img/gallery_style_2_3.jpg' data-src='./img/gallery_style_2_3.jpg'
                                         data-uk-img>
-                                    <span class="nb-gallery-info uk-background-cover uk-text-uppercase">view as
-                                        slideshow</span>
+                                    <div class="nb-gallery-info"><span class="zig-zag-top">
+                                            <img src="./img/lpa-solid-pattern.svg" data-uk-svg alt="image"
+                                                hidden="true">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-295 254.4 313.9 109.9"
+                                                preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
+                                                data-svg="./img/lpa-solid-pattern.svg">
+                                                <path class="st0"
+                                                    d="M-83.4,307.6l107.3-53.8h-212.4h-2.1h-2.1H-298v53.8l106.4-53.3h2L-83.4,307.6z" />
+                                            </svg>
+                                        </span>
+                                        <span class="nb-gallery-text uk-text-uppercase">view as
+                                            slideshow</span></div>
                                 </span>
                             </a>
-                            <a href='./images/gallery_style_2_4.jpg' class='nb-gallery-image'
+                            <a href='./img/gallery_style_2_4.jpg' class='nb-gallery-image'
                                 data-alt='This gallery image also has a caption with HTML.'
                                 data-caption='<div>This <em>gallery</em> image also has a <strong>caption</strong> with HTML.</div>'>
                                 <span class="nb-gallery-box">
                                     <img data-uk-logo alt='This gallery image also has a caption with HTML.'
-                                        width='1151' height='768' src='./images/gallery_style_2_4.jpg'
-                                        data-src='./images/gallery_style_2_4.jpg' data-uk-img>
-                                    <span class="nb-gallery-info uk-background-cover uk-text-uppercase">view as
-                                        slideshow</span>
+                                        width='1151' height='768' src='./img/gallery_style_2_4.jpg'
+                                        data-src='./img/gallery_style_2_4.jpg' data-uk-img>
+                                    <div class="nb-gallery-info"><span class="zig-zag-top">
+                                            <img src="./img/lpa-solid-pattern.svg" data-uk-svg alt="image"
+                                                hidden="true">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-295 254.4 313.9 109.9"
+                                                preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
+                                                data-svg="./img/lpa-solid-pattern.svg">
+                                                <path class="st0"
+                                                    d="M-83.4,307.6l107.3-53.8h-212.4h-2.1h-2.1H-298v53.8l106.4-53.3h2L-83.4,307.6z" />
+                                            </svg>
+                                        </span>
+                                        <span class="nb-gallery-text uk-text-uppercase">view as
+                                            slideshow</span></div>
                                 </span>
                             </a>
-                            <a href='./images/gallery_style_2_5.jpg' class='nb-gallery-image' data-alt data-caption>
+                            <a href='./img/gallery_style_2_5.jpg' class='nb-gallery-image' data-alt data-caption>
                                 <span class="nb-gallery-box">
                                     <img data-uk-logo alt='Gallery Block' width='768' height='768'
-                                        src='./images/gallery_style_2_5.jpg' data-src='./images/gallery_style_2_5.jpg'
+                                        src='./img/gallery_style_2_5.jpg' data-src='./img/gallery_style_2_5.jpg'
                                         data-uk-img>
-                                    <span class="nb-gallery-info uk-background-cover uk-text-uppercase">view as
-                                        slideshow</span>
+                                    <div class="nb-gallery-info"><span class="zig-zag-top">
+                                            <img src="./img/lpa-solid-pattern.svg" data-uk-svg alt="image"
+                                                hidden="true">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-295 254.4 313.9 109.9"
+                                                preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
+                                                data-svg="./img/lpa-solid-pattern.svg">
+                                                <path class="st0"
+                                                    d="M-83.4,307.6l107.3-53.8h-212.4h-2.1h-2.1H-298v53.8l106.4-53.3h2L-83.4,307.6z" />
+                                            </svg>
+                                        </span>
+                                        <span class="nb-gallery-text uk-text-uppercase">view as
+                                            slideshow</span></div>
                                 </span>
                             </a>
                         </div>
                         <div class='nb-gallery-row'>
-                            <a href='./images/gallery_style_2_6.jpg' class='nb-gallery-image'
+                            <a href='./img/gallery_style_2_6.jpg' class='nb-gallery-image'
                                 data-alt='This gallery image has a caption.'
                                 data-caption='<div>This gallery image has a caption.</div>'>
                                 <span class="nb-gallery-box">
                                     <img data-uk-logo alt='This gallery image has a caption.' width='1151' height='768'
-                                        src='./images/gallery_style_2_6.jpg' data-src='./images/gallery_style_2_6.jpg'
+                                        src='./img/gallery_style_2_6.jpg' data-src='./img/gallery_style_2_6.jpg'
                                         data-uk-img>
-                                    <span class="nb-gallery-info uk-background-cover uk-text-uppercase">view as
-                                        slideshow</span>
+                                    <div class="nb-gallery-info"><span class="zig-zag-top">
+                                            <img src="./img/lpa-solid-pattern.svg" data-uk-svg alt="image"
+                                                hidden="true">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-295 254.4 313.9 109.9"
+                                                preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
+                                                data-svg="./img/lpa-solid-pattern.svg">
+                                                <path class="st0"
+                                                    d="M-83.4,307.6l107.3-53.8h-212.4h-2.1h-2.1H-298v53.8l106.4-53.3h2L-83.4,307.6z" />
+                                            </svg>
+                                        </span>
+                                        <span class="nb-gallery-text uk-text-uppercase">view as
+                                            slideshow</span></div>
                                 </span>
                             </a>
-                            <a href='./images/gallery_style_2_7.jpg' class='nb-gallery-image' data-alt data-caption>
+                            <a href='./img/gallery_style_2_7.jpg' class='nb-gallery-image' data-alt data-caption>
                                 <span class="nb-gallery-box">
                                     <img data-uk-logo alt='Gallery Block' width='1151' height='768'
-                                        src='./images/gallery_style_2_7.jpg' data-src='./images/gallery_style_2_7.jpg'
+                                        src='./img/gallery_style_2_7.jpg' data-src='./img/gallery_style_2_7.jpg'
                                         data-uk-img>
-                                    <span class="nb-gallery-info uk-background-cover uk-text-uppercase">view as
-                                        slideshow</span>
+                                    <div class="nb-gallery-info"><span class="zig-zag-top">
+                                            <img src="./img/lpa-solid-pattern.svg" data-uk-svg alt="image"
+                                                hidden="true">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-295 254.4 313.9 109.9"
+                                                preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
+                                                data-svg="./img/lpa-solid-pattern.svg">
+                                                <path class="st0"
+                                                    d="M-83.4,307.6l107.3-53.8h-212.4h-2.1h-2.1H-298v53.8l106.4-53.3h2L-83.4,307.6z" />
+                                            </svg>
+                                        </span>
+                                        <span class="nb-gallery-text uk-text-uppercase">view as
+                                            slideshow</span></div>
                                 </span>
                             </a>
-                            <a href='./images/gallery_style_2_8.jpg' class='nb-gallery-image' data-alt data-caption>
+                            <a href='./img/gallery_style_2_8.jpg' class='nb-gallery-image' data-alt data-caption>
                                 <span class="nb-gallery-box">
                                     <img data-uk-logo alt='Gallery Block' width='1151' height='768'
-                                        src='./images/gallery_style_2_8.jpg' data-src='./images/gallery_style_2_8.jpg'
+                                        src='./img/gallery_style_2_8.jpg' data-src='./img/gallery_style_2_8.jpg'
                                         data-uk-img>
-                                    <span class="nb-gallery-info uk-background-cover uk-text-uppercase">view as
-                                        slideshow</span>
+                                    <div class="nb-gallery-info"><span class="zig-zag-top">
+                                            <img src="./img/lpa-solid-pattern.svg" data-uk-svg alt="image"
+                                                hidden="true">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-295 254.4 313.9 109.9"
+                                                preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
+                                                data-svg="./img/lpa-solid-pattern.svg">
+                                                <path class="st0"
+                                                    d="M-83.4,307.6l107.3-53.8h-212.4h-2.1h-2.1H-298v53.8l106.4-53.3h2L-83.4,307.6z" />
+                                            </svg>
+                                        </span>
+                                        <span class="nb-gallery-text uk-text-uppercase">view as
+                                            slideshow</span></div>
                                 </span>
                             </a>
-                            <a href='./images/gallery_style_2_9.jpg' class='nb-gallery-image' data-alt data-caption>
+                            <a href='./img/gallery_style_2_9.jpg' class='nb-gallery-image' data-alt data-caption>
                                 <span class="nb-gallery-box">
                                     <img data-uk-logo alt='Gallery Block' width='1151' height='768'
-                                        src='./images/gallery_style_2_9.jpg' data-src='./images/gallery_style_2_9.jpg'
+                                        src='./img/gallery_style_2_9.jpg' data-src='./img/gallery_style_2_9.jpg'
                                         data-uk-img>
-                                    <span class="nb-gallery-info uk-background-cover uk-text-uppercase">view as
-                                        slideshow</span>
+                                    <div class="nb-gallery-info"><span class="zig-zag-top">
+                                            <img src="./img/lpa-solid-pattern.svg" data-uk-svg alt="image"
+                                                hidden="true">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-295 254.4 313.9 109.9"
+                                                preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
+                                                data-svg="./img/lpa-solid-pattern.svg">
+                                                <path class="st0"
+                                                    d="M-83.4,307.6l107.3-53.8h-212.4h-2.1h-2.1H-298v53.8l106.4-53.3h2L-83.4,307.6z" />
+                                            </svg>
+                                        </span>
+                                        <span class="nb-gallery-text uk-text-uppercase">view as
+                                            slideshow</span></div>
                                 </span>
                             </a>
                         </div>
@@ -589,27 +687,27 @@
 
                             <ul class="uk-slideshow-items uk-child-width-1-1">
                                 <li>
-                                    <img class="js-gallery-img" data-uk-img src="./images/slide_1.jpg" alt="image"
+                                    <img class="js-gallery-img" data-uk-img src="./img/slide_1.jpg" alt="image"
                                         data-uk-cover>
                                 </li>
                                 <li>
-                                    <img class="js-gallery-img" data-uk-img src="./images/slide_2.jpg" alt="image"
+                                    <img class="js-gallery-img" data-uk-img src="./img/slide_2.jpg" alt="image"
                                         data-uk-cover>
                                 </li>
                                 <li>
-                                    <img class="js-gallery-img" data-uk-img src="./images/slide_3.jpg" alt="image"
+                                    <img class="js-gallery-img" data-uk-img src="./img/slide_3.jpg" alt="image"
                                         data-uk-cover>
                                 </li>
                                 <li>
-                                    <img class="js-gallery-img" data-uk-img src="./images/slide_4.jpg" alt="image"
+                                    <img class="js-gallery-img" data-uk-img src="./img/slide_4.jpg" alt="image"
                                         data-uk-cover>
                                 </li>
                                 <li>
-                                    <img class="js-gallery-img" data-uk-img src="./images/slide_5.jpg" alt="image"
+                                    <img class="js-gallery-img" data-uk-img src="./img/slide_5.jpg" alt="image"
                                         data-uk-cover>
                                 </li>
                                 <li>
-                                    <img class="js-gallery-img" data-uk-img src="./images/slide_1.jpg" alt="image"
+                                    <img class="js-gallery-img" data-uk-img src="./img/slide_1.jpg" alt="image"
                                         data-uk-cover>
                                 </li>
                             </ul>
@@ -622,17 +720,17 @@
 
                             <div class="uk-position-relative uk-margin uk-margin-remove-horizontal">
                                 <ul class="uk-thumbnav uk-flex uk-child-width-1-6">
-                                    <li uk-slideshow-item="0"><a href="#"><img src="./images/slide_1.jpg" width="150"
+                                    <li uk-slideshow-item="0"><a href="#"><img src="./img/slide_1.jpg" width="150"
                                                 alt=""></a></li>
-                                    <li uk-slideshow-item="1"><a href="#"><img src="./images/slide_2.jpg" width="150"
+                                    <li uk-slideshow-item="1"><a href="#"><img src="./img/slide_2.jpg" width="150"
                                                 alt=""></a></li>
-                                    <li uk-slideshow-item="2"><a href="#"><img src="./images/slide_3.jpg" width="150"
+                                    <li uk-slideshow-item="2"><a href="#"><img src="./img/slide_3.jpg" width="150"
                                                 alt=""></a></li>
-                                    <li uk-slideshow-item="3"><a href="#"><img src="./images/slide_4.jpg" width="150"
+                                    <li uk-slideshow-item="3"><a href="#"><img src="./img/slide_4.jpg" width="150"
                                                 alt=""></a></li>
-                                    <li uk-slideshow-item="4"><a href="#"><img src="./images/slide_5.jpg" width="150"
+                                    <li uk-slideshow-item="4"><a href="#"><img src="./img/slide_5.jpg" width="150"
                                                 alt=""></a></li>
-                                    <li uk-slideshow-item="5"><a href="#"><img src="./images/slide_1.jpg" width="150"
+                                    <li uk-slideshow-item="5"><a href="#"><img src="./img/slide_1.jpg" width="150"
                                                 alt=""></a></li>
                                 </ul>
                             </div>
@@ -647,45 +745,47 @@
                 <div class='nb-block nb-content uk-clearfix' data-nb-block='content'>
 
                     <h4 class="nb-color-blue nb-bold uk-text-uppercase">Table</h4>
-                    <table class="nb-table">
-                        <thead>
+                    <div class="nb-table-wrap">
+                        <table class="nb-table">
+                            <thead>
+                                <tr>
+                                    <th>Main Column 1</th>
+                                    <th>Column 1</th>
+                                    <th>Column 2</th>
+                                    <th>Column 3</th>
+                                    <th>Column 4</th>
+                                </tr>
+                            </thead>
                             <tr>
-                                <th>Main Column 1</th>
-                                <th>Column 1</th>
-                                <th>Column 2</th>
-                                <th>Column 3</th>
-                                <th>Column 4</th>
+                                <td>Title Name 1</td>
+                                <td>Lorem</td>
+                                <td>&pound;99.99</td>
+                                <td>Lorem</td>
+                                <td>07:00 - 23:00</td>
                             </tr>
-                        </thead>
-                        <tr>
-                            <td>Title Name 1</td>
-                            <td>Lorem</td>
-                            <td>&pound;99.99</td>
-                            <td>Lorem</td>
-                            <td>07:00 - 23:00</td>
-                        </tr>
-                        <tr>
-                            <td>Title Name 1</td>
-                            <td>Lorem</td>
-                            <td>&pound;99.99</td>
-                            <td>Lorem</td>
-                            <td>07:00 - 23:00</td>
-                        </tr>
-                        <tr>
-                            <td>Title Name 1</td>
-                            <td>Lorem</td>
-                            <td>&pound;99.99</td>
-                            <td>Lorem</td>
-                            <td>07:00 - 23:00</td>
-                        </tr>
-                        <tr>
-                            <td>Title Name 1</td>
-                            <td>Lorem</td>
-                            <td>&pound;99.99</td>
-                            <td>Lorem</td>
-                            <td>07:00 - 23:00</td>
-                        </tr>
-                    </table>
+                            <tr>
+                                <td>Title Name 1</td>
+                                <td>Lorem</td>
+                                <td>&pound;99.99</td>
+                                <td>Lorem</td>
+                                <td>07:00 - 23:00</td>
+                            </tr>
+                            <tr>
+                                <td>Title Name 1</td>
+                                <td>Lorem</td>
+                                <td>&pound;99.99</td>
+                                <td>Lorem</td>
+                                <td>07:00 - 23:00</td>
+                            </tr>
+                            <tr>
+                                <td>Title Name 1</td>
+                                <td>Lorem</td>
+                                <td>&pound;99.99</td>
+                                <td>Lorem</td>
+                                <td>07:00 - 23:00</td>
+                            </tr>
+                        </table>
+                    </div>
 
                     <p class="uk-text-small">*This is some small text</p>
 
@@ -723,25 +823,19 @@
                     <div>
                         <h4 class="nb-color-blue nb-bold uk-text-uppercase">Buttons</h4>
                         <div class="uk-grid-medium uk-child-width-1-3@s uk-grid" data-uk-grid>
-                            <div class="uk-first-column">
-                                <button data-uk-icon="arrow-right"
-                                    class="uk-button uk-button-primary uk-button-primary-big uk-width-1-1">
-                                    <span class="uk-button--text">BUTTON LARGE</span><span class="uk-button-hover"
-                                        role="presentation"></span>
-                                </button>
+                            <div>
+                                <button class="uk-button uk-button-primary font-gross"><span class="uk-button-hover"
+                                        role="presentation"></span><span class="uk-button--text">find out
+                                        more</span></button>
                             </div>
                             <div>
-                                <button data-uk-icon="arrow-right" class="uk-button uk-button-primary uk-width-1-1">
-                                    <span class="uk-button--text">BUTTON NORMAL</span><span class="uk-button-hover"
-                                        role="presentation"></span>
-                                </button>
+                                <button class="uk-button uk-button-secondary font-gross"><span class="uk-button-hover"
+                                        role="presentation"></span><span class="uk-button--text">find out
+                                        more</span></button>
                             </div>
-                            <div>
-                                <button data-uk-icon="arrow-right"
-                                    class="uk-button uk-button-primary uk-button-primary-small uk-width-1-1">
-                                    <span class="uk-button--text">BUTTON SMALL</span><span class="uk-button-hover"
-                                        role="presentation"></span>
-                                </button>
+                            <div class="uk-first-column nb-bckg-blue uk-flex uk-flex-middle">
+                                <button class="uk-button--underline"><span class="uk-text-uppercase">Find
+                                        out more</span><span class="font-gross"></span></button>
                             </div>
                         </div>
                         <div class="nb-blue uk-padding uk-padding uk-margin">
@@ -824,7 +918,7 @@
         <div class="uk-container uk-container-large">
             <div class="uk-flex footer__top">
                 <div data-uk-img class="uk-flex uk-flex-middle uk-flex-between uk-width-4-5@l uk-width-2-3@s"
-                    style="background-image: url('./images/footer_wave.png');">
+                    style="background-image: url('./img/footer_wave.png');">
                     <span class="uk-text-uppercase">Get in touch</span>
                     <span><b>We are here to help.</b> Every day.</span>
                     <div class="uk-flex uk-width-1-3 uk-flex-between">
@@ -833,7 +927,7 @@
                     </div>
                 </div>
                 <div data-uk-img class="uk-flex uk-flex-middle uk-width-1-5@l uk-width-1-3@s"
-                    style="background-image: url('./images/footer_wave_orange.png');">
+                    style="background-image: url('./img/footer_wave_orange.png');">
                     <a href="#" class="uk-text-uppercase font-gross">Contact us</a>
                 </div>
             </div>
@@ -900,11 +994,11 @@
                     </div>
                     <div class="uk-flex uk-flex-between">
                         <div class="uk-flex">
-                            <img data-uk-img src="./images/iso.png" alt="image">
+                            <img data-uk-img src="./img/iso.png" alt="image">
                         </div>
                         <div class="uk-flex">
                             <span>Copyright &copy; 2013 - 2018 Lerwick Port Authority.</span>
-                            <span>Website by <span>NB</span><img data-uk-img src="./images/nb-logo.png"
+                            <span>Website by <span>NB</span><img data-uk-img src="./img/nb-logo.png"
                                     alt="NB Communication logo"></span>
                         </div>
                     </div>
@@ -913,7 +1007,7 @@
         </div>
         <div class="footer__label uk-flex uk-flex-right">
             <span data-uk-img role="presentation"></span>
-            <img data-uk-img src="./images/logo.png" alt="lerwick harbour logo">
+            <img data-uk-img src="./img/logo.png" alt="lerwick harbour logo">
         </div>
     </footer>
 

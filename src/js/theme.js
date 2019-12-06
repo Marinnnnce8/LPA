@@ -5,15 +5,14 @@
  *
  */
 
-// var $nb = NB.util;
-// var $uk = UIkit.util;
+var $nb = NB.util;
+var $uk = UIkit.util;
 
 var theme = {
 
 	init: function() {
 		this.ga();
 		this.blocks();
-		// this.enableLinks();
 	},
 
 	ga: function() {
@@ -102,16 +101,6 @@ var theme = {
 
 					break;
 			}
-		});
-	},
-	enableLinks: function() {
-		var slideLinks = document.getElementsByClassName('js-enable-link');
-
-		slideLinks.addEventListener('click', function(){
-			console.log('lalalalaal');
-			var urlPath = this.href;
-			console.log(urlPath);
-			window.open(urlPath, '_blank');
 		});
 	}
 };

@@ -1,10 +1,18 @@
 .nb-text-lead {
 	color: $blue;
 	font-size: 24px;
+
+	@media (max-width: $breakpointSmall) {
+		font-size: 20px;
+	}
 }
 
 .nb-color-blue {
 	color: $blue;
+}
+
+.nb-bckg-blue {
+	background: $blue;
 }
 
 .nb-bold {
@@ -47,6 +55,16 @@
 			margin-bottom: 20px;
 		}
 	}
+
+	@media (max-width: $breakpointSmall) {
+		li {
+			padding-left: 10px;
+
+			&::after {
+				top: 7px;
+			}
+		}
+	}
 }
 
 .nb-list--rec {
@@ -63,6 +81,13 @@
 			top: 15%;
 			position: absolute;
 		}
+	}
+}
+
+.nb-table-wrap {
+	@media (max-width: $breakpointSmall) {
+		max-width: 500px;
+		overflow-x: scroll;
 	}
 }
 
@@ -141,7 +166,7 @@
 	}
 }
 
-.uk-form-stacked {
+.nb-form form {
 	background: rgba($blue, .1);
 	padding: 50px;
 
@@ -159,6 +184,18 @@
 	.uk-textarea {
 		min-height: 220px;
 		resize: none;
+	}
+
+	@media (max-width: $breakpointSmall) {
+		padding: 50px 20px;
+
+		.uk-grid {
+			margin-left: 0;
+
+			>* {
+				padding-left: 0;
+			}
+		}
 	}
 }
 
@@ -187,6 +224,7 @@
 
 	.uk-thumbnav {
 		margin-left: 0;
+
 		li {
 			padding-left: 0;
 		}
