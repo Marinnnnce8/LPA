@@ -32,4 +32,9 @@ screen and (-ms-high-contrast: none) {
     .zig-zag-bottom {
         bottom: -1px;
     }
+    .nb-container {
+        >.uk-container {
+            margin-right: 170px;
+        }
+    }
 }

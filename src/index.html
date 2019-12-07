@@ -1004,7 +1004,7 @@
 					</div>
 				</li>
 			</ul>
-			<ul class="uk-navbar-nav uk-flex-middle uk-hidden@s">
+			<div class="uk-navbar-nav uk-flex-middle uk-hidden@s">
 				<button aria-expanded="false"
 					class="nav-link push-icon-right uk-text-uppercase burger-menu overlay-dropdown"
 					aria-label="Click here to open navigation"><span role="presentation"></span></button>
@@ -1431,10 +1431,10 @@
 						</li>
 						<li><button class="uk-text-uppercase font-gross">Resources</button>
 							<div data-uk-dropdown="mode: click"
-								class="uk-navbar-dropdown uk-navbar-dropdown-bottom-left" id="nav-children-14">
+								class="uk-navbar-dropdown uk-navbar-dropdown-bottom-left" id="nav-children-23">
 								<ul class="uk-nav uk-navbar-dropdown-nav">
 									<li><button class="font-gross uk-text-uppercase"
-											data-uk-toggle="target: #nav-children-14; animation: true">Back</button>
+											data-uk-toggle="target: #nav-children-23; animation: true">Back</button>
 									</li>
 									<li><span class="uk-text-uppercase">Resources</span></li>
 									<li><a class="uk-text-uppercase" href="#">Annual review</a></li>
@@ -1461,10 +1461,10 @@
 						</li>
 						<li><button class="uk-text-uppercase font-gross">About</button>
 							<div data-uk-dropdown="mode: click"
-								class="uk-navbar-dropdown uk-navbar-dropdown-bottom-left" id="nav-children-15">
+								class="uk-navbar-dropdown uk-navbar-dropdown-bottom-left" id="nav-children-24">
 								<ul class="uk-nav uk-navbar-dropdown-nav">
 									<li><button class="font-gross uk-text-uppercase"
-											data-uk-toggle="target: #nav-children-15; animation: true">Back</button>
+											data-uk-toggle="target: #nav-children-24; animation: true">Back</button>
 									</li>
 									<li><span class="uk-text-uppercase">About</span></li>
 									<li><a class="uk-text-uppercase" href="#">History</a></li>
@@ -1504,17 +1504,16 @@
 						</li>
 					</ul>
 				</div>
-			</ul>
+			</div>
 			<ul class="uk-flex uk-flex-middle header__socials uk-visible@xl">
-				<li><a href="#" data-uk-icon="youtube" class="overlay-link"
-						aria-label="Click here to visit our youtube page" class="font-youtube"></a></li>
-				<li><a href="#" data-uk-icon="linkedin" class="overlay-link"
-						aria-label="Click here to visit our linkedin page" class="font-linkedin"></a></li>
-				<li><a href="#" data-uk-icon="instagram" class="overlay-link"
-						aria-label="Click here to visit our instagram page" class="font-instagram"></a></li>
+				<li><a href="#" data-uk-icon="youtube" aria-label="Click here to visit our youtube page"
+						class="font-youtube overlay-link"></a></li>
+				<li><a href="#" data-uk-icon="linkedin" aria-label="Click here to visit our linkedin page"
+						class="font-linkedin overlay-link"></a></li>
+				<li><a href="#" data-uk-icon="instagram" aria-label="Click here to visit our instagram page"
+						class="font-instagram overlay-link"></a></li>
 			</ul>
-			<a href="#"
-				class="uk-flex uk-flex-middle header__live uk-visible@l overlay-link uk-button--underline"><span
+			<a href="#" class="uk-flex uk-flex-middle header__live uk-visible@l overlay-link uk-button--underline"><span
 					class="uk-text-uppercase">Lerwick
 					harbour
 					live</span><span class="font-gross" role="presentation"></span></a>
@@ -1531,7 +1530,7 @@
 				<a class="nb-link-contact font-phone" href="tel:+123456789" aria-label="Click here to contact us"></a>
 				<a class="nb-link-contact font-layout" href="#" aria-label="Click here to visit dashboard"></a>
 			</div>
-			<div uk-slider>
+			<div data-uk-slider>
 				<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
 					<ul class="uk-slider-items uk-child-width-1-1">
 						<li data-uk-img class="uk-background-cover" style="background-image: url('./img/slide_1.jpg');">
@@ -1597,7 +1596,7 @@
 				</div>
 				<div class="uk-container uk-container-large">
 					<ul class="uk-slider-nav uk-dotnav">
-						<li uk-slider-item="0" class="uk-active">
+						<li data-uk-slider-item="0" class="uk-active">
 							<div class="font-placeholder">
 								<span data-uk-img class="uk-background-cover uk-visible@s"
 									style="background-image: url('./img/slide_1.jpg');" role="presentation"></span>
@@ -1606,7 +1605,7 @@
 									more</a>
 							</div>
 						</li>
-						<li uk-slider-item="1">
+						<li data-uk-slider-item="1">
 							<div class="font-wrench">
 								<span data-uk-img class="uk-background-cover uk-visible@s"
 									style="background-image: url('./img/slide_1.jpg');" role="presentation"></span>
@@ -1615,7 +1614,7 @@
 									more</a>
 							</div>
 						</li>
-						<li uk-slider-item="2">
+						<li data-uk-slider-item="2">
 							<div class="font-petroleum-plant">
 								<span data-uk-img class="uk-background-cover uk-visible@s"
 									style="background-image: url('./img/slide_1.jpg');" role="presentation"></span>
@@ -1624,7 +1623,7 @@
 									more</a>
 							</div>
 						</li>
-						<li uk-slider-item="3">
+						<li data-uk-slider-item="3">
 							<div class="font-ship-2">
 								<span data-uk-img class="uk-background-cover uk-visible@s"
 									style="background-image: url('./img/slide_1.jpg');" role="presentation"></span>
@@ -1633,7 +1632,7 @@
 									more</a>
 							</div>
 						</li>
-						<li uk-slider-item="4">
+						<li data-uk-slider-item="4">
 							<div class="font-food">
 								<span data-uk-img class="uk-background-cover uk-visible@s"
 									style="background-image: url('./img/slide_1.jpg');" role="presentation"></span>
@@ -1692,7 +1691,7 @@
 					<div class="zig-zag">
 						<div class="zig-zag-waves">
 							<span class="zig-zag-top">
-								<img src="./img/lpa-solid-pattern-footer.svg" data-uk-svg alt="image" hidden="true">
+								<img src="./img/lpa-solid-pattern-footer.svg" data-uk-svg alt="image" hidden>
 								<svg xmlns="http://www.w3.org/2000/svg" viewBox="-298 254.4 324.9 109.9"
 									preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
 									data-svg="./img/lpa-solid-pattern-footer.svg">
@@ -1702,7 +1701,7 @@
 							</span>
 							<span class="zig-zag-bottom">
 								<img src="./img/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg alt="image"
-									hidden="true">
+									hidden>
 								<svg xmlns="http://www.w3.org/2000/svg" viewBox="-952 768.5 321.9 109.9"
 									preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
 									data-svg="./img/lpa-solid-pattern-footer-with-triangle.svg">
@@ -1722,7 +1721,7 @@
 								<div class="zig-zag__text-inner">
 									<span class="zig-zag-bottom">
 										<img src="./img/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg
-											alt="image" hidden="true">
+											alt="image" hidden>
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="-952 768.5 321.9 109.9"
 											preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
 											data-svg="./img/lpa-solid-pattern-footer-with-triangle.svg">
@@ -1743,7 +1742,7 @@
 					<div class="zig-zag">
 						<div class="zig-zag-waves">
 							<span class="zig-zag-top">
-								<img src="./img/lpa-solid-pattern-footer.svg" data-uk-svg alt="image" hidden="true">
+								<img src="./img/lpa-solid-pattern-footer.svg" data-uk-svg alt="image" hidden>
 								<svg xmlns="http://www.w3.org/2000/svg" viewBox="-298 254.4 324.9 109.9"
 									preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
 									data-svg="./img/lpa-solid-pattern-footer.svg">
@@ -1753,7 +1752,7 @@
 							</span>
 							<span class="zig-zag-bottom">
 								<img src="./img/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg alt="image"
-									hidden="true">
+									hidden>
 								<svg xmlns="http://www.w3.org/2000/svg" viewBox="-952 768.5 321.9 109.9"
 									preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
 									data-svg="./img/lpa-solid-pattern-footer-with-triangle.svg">
@@ -1773,7 +1772,7 @@
 								<div class="zig-zag__text-inner">
 									<span class="zig-zag-bottom">
 										<img src="./img/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg
-											alt="image" hidden="true">
+											alt="image" hidden>
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="-952 768.5 321.9 109.9"
 											preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
 											data-svg="./img/lpa-solid-pattern-footer-with-triangle.svg">
@@ -1795,7 +1794,7 @@
 					<div class="zig-zag">
 						<div class="zig-zag-waves">
 							<span class="zig-zag-top">
-								<img src="./img/lpa-solid-pattern-footer.svg" data-uk-svg alt="image" hidden="true">
+								<img src="./img/lpa-solid-pattern-footer.svg" data-uk-svg alt="image" hidden>
 								<svg xmlns="http://www.w3.org/2000/svg" viewBox="-298 254.4 324.9 109.9"
 									preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
 									data-svg="./img/lpa-solid-pattern-footer.svg">
@@ -1805,7 +1804,7 @@
 							</span>
 							<span class="zig-zag-bottom">
 								<img src="./img/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg alt="image"
-									hidden="true">
+									hidden>
 								<svg xmlns="http://www.w3.org/2000/svg" viewBox="-952 768.5 321.9 109.9"
 									preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
 									data-svg="./img/lpa-solid-pattern-footer-with-triangle.svg">
@@ -1825,7 +1824,7 @@
 								<div class="zig-zag__text-inner">
 									<span class="zig-zag-bottom">
 										<img src="./img/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg
-											alt="image" hidden="true">
+											alt="image" hidden>
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="-952 768.5 321.9 109.9"
 											preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
 											data-svg="./img/lpa-solid-pattern-footer-with-triangle.svg">
@@ -1845,7 +1844,7 @@
 					<div class="zig-zag">
 						<div class="zig-zag-waves">
 							<span class="zig-zag-top">
-								<img src="./img/lpa-solid-pattern-footer.svg" data-uk-svg alt="image" hidden="true">
+								<img src="./img/lpa-solid-pattern-footer.svg" data-uk-svg alt="image" hidden>
 								<svg xmlns="http://www.w3.org/2000/svg" viewBox="-298 254.4 324.9 109.9"
 									preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
 									data-svg="./img/lpa-solid-pattern-footer.svg">
@@ -1855,7 +1854,7 @@
 							</span>
 							<span class="zig-zag-bottom">
 								<img src="./img/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg alt="image"
-									hidden="true">
+									hidden>
 								<svg xmlns="http://www.w3.org/2000/svg" viewBox="-952 768.5 321.9 109.9"
 									preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
 									data-svg="./img/lpa-solid-pattern-footer-with-triangle.svg">
@@ -1875,7 +1874,7 @@
 								<div class="zig-zag__text-inner">
 									<span class="zig-zag-bottom">
 										<img src="./img/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg
-											alt="image" hidden="true">
+											alt="image" hidden>
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="-952 768.5 321.9 109.9"
 											preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
 											data-svg="./img/lpa-solid-pattern-footer-with-triangle.svg">
@@ -1896,7 +1895,7 @@
 					<div class="zig-zag">
 						<div class="zig-zag-waves">
 							<span class="zig-zag-top">
-								<img src="./img/lpa-solid-pattern-footer.svg" data-uk-svg alt="image" hidden="true">
+								<img src="./img/lpa-solid-pattern-footer.svg" data-uk-svg alt="image" hidden>
 								<svg xmlns="http://www.w3.org/2000/svg" viewBox="-298 254.4 324.9 109.9"
 									preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
 									data-svg="./img/lpa-solid-pattern-footer.svg">
@@ -1906,7 +1905,7 @@
 							</span>
 							<span class="zig-zag-bottom">
 								<img src="./img/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg alt="image"
-									hidden="true">
+									hidden>
 								<svg xmlns="http://www.w3.org/2000/svg" viewBox="-952 768.5 321.9 109.9"
 									preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
 									data-svg="./img/lpa-solid-pattern-footer-with-triangle.svg">
@@ -1926,7 +1925,7 @@
 								<div class="zig-zag__text-inner">
 									<span class="zig-zag-bottom">
 										<img src="./img/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg
-											alt="image" hidden="true">
+											alt="image" hidden>
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="-952 768.5 321.9 109.9"
 											preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
 											data-svg="./img/lpa-solid-pattern-footer-with-triangle.svg">
@@ -1947,7 +1946,7 @@
 					<div class="zig-zag">
 						<div class="zig-zag-waves">
 							<span class="zig-zag-top">
-								<img src="./img/lpa-solid-pattern-footer.svg" data-uk-svg alt="image" hidden="true">
+								<img src="./img/lpa-solid-pattern-footer.svg" data-uk-svg alt="image" hidden>
 								<svg xmlns="http://www.w3.org/2000/svg" viewBox="-298 254.4 324.9 109.9"
 									preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
 									data-svg="./img/lpa-solid-pattern-footer.svg">
@@ -1957,7 +1956,7 @@
 							</span>
 							<span class="zig-zag-bottom">
 								<img src="./img/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg alt="image"
-									hidden="true">
+									hidden>
 								<svg xmlns="http://www.w3.org/2000/svg" viewBox="-952 768.5 321.9 109.9"
 									preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
 									data-svg="./img/lpa-solid-pattern-footer-with-triangle.svg">
@@ -1977,7 +1976,7 @@
 								<div class="zig-zag__text-inner">
 									<span class="zig-zag-bottom">
 										<img src="./img/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg
-											alt="image" hidden="true">
+											alt="image" hidden>
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="-952 768.5 321.9 109.9"
 											preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
 											data-svg="./img/lpa-solid-pattern-footer-with-triangle.svg">
@@ -1998,7 +1997,7 @@
 					<div class="zig-zag">
 						<div class="zig-zag-waves">
 							<span class="zig-zag-top">
-								<img src="./img/lpa-solid-pattern-footer.svg" data-uk-svg alt="image" hidden="true">
+								<img src="./img/lpa-solid-pattern-footer.svg" data-uk-svg alt="image" hidden>
 								<svg xmlns="http://www.w3.org/2000/svg" viewBox="-298 254.4 324.9 109.9"
 									preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
 									data-svg="./img/lpa-solid-pattern-footer.svg">
@@ -2008,7 +2007,7 @@
 							</span>
 							<span class="zig-zag-bottom">
 								<img src="./img/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg alt="image"
-									hidden="true">
+									hidden>
 								<svg xmlns="http://www.w3.org/2000/svg" viewBox="-952 768.5 321.9 109.9"
 									preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
 									data-svg="./img/lpa-solid-pattern-footer-with-triangle.svg">
@@ -2028,7 +2027,7 @@
 								<div class="zig-zag__text-inner">
 									<span class="zig-zag-bottom">
 										<img src="./img/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg
-											alt="image" hidden="true">
+											alt="image" hidden>
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="-952 768.5 321.9 109.9"
 											preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
 											data-svg="./img/lpa-solid-pattern-footer-with-triangle.svg">
@@ -2049,7 +2048,7 @@
 					<div class="zig-zag">
 						<div class="zig-zag-waves">
 							<span class="zig-zag-top">
-								<img src="./img/lpa-solid-pattern-footer.svg" data-uk-svg alt="image" hidden="true">
+								<img src="./img/lpa-solid-pattern-footer.svg" data-uk-svg alt="image" hidden>
 								<svg xmlns="http://www.w3.org/2000/svg" viewBox="-298 254.4 324.9 109.9"
 									preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
 									data-svg="./img/lpa-solid-pattern-footer.svg">
@@ -2059,7 +2058,7 @@
 							</span>
 							<span class="zig-zag-bottom">
 								<img src="./img/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg alt="image"
-									hidden="true">
+									hidden>
 								<svg xmlns="http://www.w3.org/2000/svg" viewBox="-952 768.5 321.9 109.9"
 									preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
 									data-svg="./img/lpa-solid-pattern-footer-with-triangle.svg">
@@ -2079,7 +2078,7 @@
 								<div class="zig-zag__text-inner">
 									<span class="zig-zag-bottom">
 										<img src="./img/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg
-											alt="image" hidden="true">
+											alt="image" hidden>
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="-952 768.5 321.9 109.9"
 											preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
 											data-svg="./img/lpa-solid-pattern-footer-with-triangle.svg">
@@ -2110,7 +2109,7 @@
 							<div class="zig-zag-waves">
 								<span class="zig-zag-top">
 									<img src="./img/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg alt="image"
-										hidden="true">
+										hidden>
 									<svg xmlns="http://www.w3.org/2000/svg" viewBox="-952 768.5 321.9 109.9"
 										preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
 										data-svg="./img/lpa-solid-pattern-footer-with-triangle.svg">
@@ -2121,7 +2120,7 @@
 								</span>
 								<span class="zig-zag-bottom">
 									<img src="./img/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg alt="image"
-										hidden="true">
+										hidden>
 									<svg xmlns="http://www.w3.org/2000/svg" viewBox="-952 768.5 321.9 109.9"
 										preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
 										data-svg="./img/lpa-solid-pattern-footer-with-triangle.svg">
@@ -2142,7 +2141,7 @@
 									<div class="zig-zag__text-inner">
 										<span class="zig-zag-bottom">
 											<img src="./img/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg
-												alt="image" hidden="true">
+												alt="image" hidden>
 											<svg xmlns="http://www.w3.org/2000/svg" viewBox="-952 768.5 321.9 109.9"
 												preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
 												data-svg="./img/lpa-solid-pattern-footer-with-triangle.svg">
@@ -2172,7 +2171,7 @@
 							<div class="zig-zag-waves">
 								<span class="zig-zag-top">
 									<img src="./img/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg alt="image"
-										hidden="true">
+										hidden>
 									<svg xmlns="http://www.w3.org/2000/svg" viewBox="-952 768.5 321.9 109.9"
 										preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
 										data-svg="./img/lpa-solid-pattern-footer-with-triangle.svg">
@@ -2183,7 +2182,7 @@
 								</span>
 								<span class="zig-zag-bottom">
 									<img src="./img/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg alt="image"
-										hidden="true">
+										hidden>
 									<svg xmlns="http://www.w3.org/2000/svg" viewBox="-952 768.5 321.9 109.9"
 										preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
 										data-svg="./img/lpa-solid-pattern-footer-with-triangle.svg">
@@ -2205,7 +2204,7 @@
 									<div class="zig-zag__text-inner">
 										<span class="zig-zag-bottom">
 											<img src="./img/lpa-solid-pattern-footer-with-triangle.svg" data-uk-svg
-												alt="image" hidden="true">
+												alt="image" hidden>
 											<svg xmlns="http://www.w3.org/2000/svg" viewBox="-952 768.5 321.9 109.9"
 												preserveAspectRatio="none" class="uk-svg" width="600" height="109.9"
 												data-svg="./img/lpa-solid-pattern-footer-with-triangle.svg">
@@ -2269,6 +2268,7 @@
 			</div>
 		</section>
 		<section class="values-section">
+			<h2 class="uk-invisible">This is value section</h2>
 			<div class="uk-container uk-container-large">
 				<div class="uk-flex uk-flex-wrap uk-child-width-1-5@l uk-child-width-1-3@s uk-child-width-1-1">
 					<div class="value-box">
@@ -2310,7 +2310,7 @@
 				<div class="uk-flex uk-flex-middle uk-flex-between uk-width-4-5@l uk-width-2-3@s">
 					<div class="zig-zag-waves uk-visible@l">
 						<span class="zig-zag-top">
-							<img src="./img/lpa-solid-pattern-ft-header.svg" data-uk-svg alt="image" hidden="true">
+							<img src="./img/lpa-solid-pattern-ft-header.svg" data-uk-svg alt="image" hidden>
 							<svg xmlns="http://www.w3.org/2000/svg" viewBox="-673 818.2 1164.6 66.1"
 								preserveAspectRatio="none" class="uk-svg" width="1164.6" height="481.1"
 								data-svg="./img/lpa-solid-pattern-ft-header.svg">
@@ -2319,7 +2319,7 @@
 							</svg>
 						</span>
 						<span class="zig-zag-bottom">
-							<img src="./img/lpa-solid-pattern-ft-footer.svg" data-uk-svg alt="image" hidden="true">
+							<img src="./img/lpa-solid-pattern-ft-footer.svg" data-uk-svg alt="image" hidden>
 							<svg xmlns="http://www.w3.org/2000/svg" viewBox="-795.3 818.2 1164.6 66.6"
 								preserveAspectRatio="none" class="uk-svg" width="1164.6" height="481.1"
 								data-svg="./img/lpa-solid-pattern-ft-footer.svg">
@@ -2330,7 +2330,7 @@
 					</div>
 					<div class="zig-zag-waves uk-hidden@l">
 						<span class="zig-zag-top">
-							<img src="./img/lpa-solid-pattern-smaller-header.svg" data-uk-svg alt="image" hidden="true">
+							<img src="./img/lpa-solid-pattern-smaller-header.svg" data-uk-svg alt="image" hidden>
 							<svg xmlns="http://www.w3.org/2000/svg" viewBox="-296 241.4 317.9 66.6"
 								preserveAspectRatio="none" class="uk-svg" width="341.9" height="66.6"
 								data-svg="./img/lpa-solid-pattern-smaller-header.svg">
@@ -2339,7 +2339,7 @@
 							</svg>
 						</span>
 						<span class="zig-zag-bottom">
-							<img src="./img/lpa-solid-pattern-smaller-footer.svg" data-uk-svg alt="image" hidden="true">
+							<img src="./img/lpa-solid-pattern-smaller-footer.svg" data-uk-svg alt="image" hidden>
 							<svg xmlns="http://www.w3.org/2000/svg" viewBox="-296 253.4 317.9 66.6"
 								preserveAspectRatio="none" class="uk-svg" width="341.9" height="66.6"
 								data-svg="./img/lpa-solid-pattern-smaller-footer.svg">
@@ -2355,7 +2355,7 @@
 							<a href="#" class="uk-button--underline font-at"><span>Email us</span></a>
 						</div>
 						<div>
-							<a href="tel:+44(0)1595692991" class="uk-button--underline font-phone-1"><span>+44 (0) 1595
+							<a href="tel:+4401595692991" class="uk-button--underline font-phone-1"><span>+44 (0) 1595
 									692991</span></a>
 						</div>
 					</div>
@@ -2363,7 +2363,7 @@
 				<div class="uk-flex uk-flex-middle uk-width-1-5@l uk-width-1-3@s">
 					<div class="zig-zag-waves">
 						<span class="zig-zag-top">
-							<img src="./img/lpa-solid-pattern-smaller-header.svg" data-uk-svg alt="image" hidden="true">
+							<img src="./img/lpa-solid-pattern-smaller-header.svg" data-uk-svg alt="image" hidden>
 							<svg xmlns="http://www.w3.org/2000/svg" viewBox="-296 254.4 317.9 66.6"
 								preserveAspectRatio="none" class="uk-svg" width="341.9" height="66.6"
 								data-svg="./img/lpa-solid-pattern-smaller-header.svg">
@@ -2372,7 +2372,7 @@
 							</svg>
 						</span>
 						<span class="zig-zag-bottom">
-							<img src="./img/lpa-solid-pattern-smaller-footer.svg" data-uk-svg alt="image" hidden="true">
+							<img src="./img/lpa-solid-pattern-smaller-footer.svg" data-uk-svg alt="image" hidden>
 							<svg xmlns="http://www.w3.org/2000/svg" viewBox="-296 253.4 317.9 66.6"
 								preserveAspectRatio="none" class="uk-svg" width="341.9" height="66.6"
 								data-svg="./img/lpa-solid-pattern-smaller-footer.svg">
@@ -2390,9 +2390,9 @@
 					<div class="uk-flex uk-flex-column uk-width-1-2@s uk-width-1-1@l">
 						<ul>
 							<li class="font-placeholder-1">Albert Building, Lerwick, Shetland, ZE1 0LL, UK</li>
-							<li><a href="tel: +44(0)1595692991" class="font-phone-1">+44 (0) 1595 692991</a></li>
-							<li><a href="tel: +44(0)1595693452" class="font-telephone">+44 (0) 1595 693452</a></li>
-							<li><a href="mailto: info@lerwick-harbour.co.uk"
+							<li><a href="tel:+4401595692991" class="font-phone-1">+44 (0) 1595 692991</a></li>
+							<li><a href="tel:+4401595693452" class="font-telephone">+44 (0) 1595 693452</a></li>
+							<li><a href="mailto:info@lerwick-harbour.co.uk"
 									class="font-at">info@lerwick-harbour.co.uk</a>
 							</li>
 							<li>Port Control available 24/7</li>

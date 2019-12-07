@@ -944,7 +944,7 @@
 	}
 }
 
-.nb-container {
+.nb-container, .cruise-section .nb-container {
 	margin-left: 240px;
 
 	@media (max-width: $breakpointXlarge) {
