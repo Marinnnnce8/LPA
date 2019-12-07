@@ -4,7 +4,7 @@
 	position: absolute;
 	width: 100%;
 	top: 0;
-	z-index: 1;
+	z-index: 11;
 
 	.uk-container {
 		position: relative;
@@ -91,8 +91,7 @@
 		}
 
 		&:focus {
-			background: transparent;
-			border-color: transparent;
+			outline: 1px dashed rgba($white, .2);
 		}
 	}
 
@@ -157,17 +156,25 @@
 
 			a {
 				padding-right: 20px;
+				text-decoration: none;
 
 				&::before {
 					right: 5px;
 					position: absolute;
 					top: 3px;
 					font-size: 10px;
+					transition: .3s ease-in-out;
+				}
+
+				@include hover {
+					&::before {
+						right: 0;
+					}
 				}
 			}
 
 			>.uk-padding {
-				background: $blue;
+				background-color: $blue;
 				min-height: 205px;
 
 				ul a {
@@ -179,6 +186,13 @@
 						position: absolute;
 						top: 4px;
 						font-size: 10px;
+						transition: .2s ease-in-out;
+					}
+
+					@include hover {
+						&::before {
+							left: 3px;
+						}
 					}
 				}
 			}
@@ -352,6 +366,8 @@
 			transform: translate(-50%, -50%);
 
 			span {
+				pointer-events: none;
+				z-index: 0;
 				position: absolute;
 				left: 50%;
 				width: 20px;
@@ -472,6 +488,9 @@
 		width: 100%;
 		height: auto;
 	}
+	&:focus {
+		outline: 1px dashed rgba($white, .2);
+	}
 
 	@media (max-width: $breakpointLarge) {
 		left: 0;
@@ -508,27 +527,18 @@
 }
 
 .header__live {
-	background: $orange;
 	color: $white;
+	background: $orange;
 	padding: 0 40px 0 30px;
-	position: relative;
 
-	&::before {
-		right: 20px;
-		position: absolute;
+	>.font-gross::before {
 		top: 50%;
 		font-size: 14px;
 		transform: translateY(-50%);
-		transition: .3s ease-in-out;
 	}
-
 	@include hover {
+		color: transparent;
 		color: $white;
-		text-decoration: none;
-
-		&::before {
-			right: 15px;
-		}
 	}
 
 	@media (max-width: $breakpointLarge) {
@@ -606,22 +616,34 @@
 		line-height: 80px;
 	}
 
-	a:not(.header__logo) {
-		font-weight: $bold;
-		font-size: 12px;
+	.uk-button--underline {
 		padding-left: 45px;
 
-		&::before {
-			left: 20px;
-			right: auto;
-			transform: rotate(-180deg) translateY(50%);
-			font-size: 12px;
-		}
+		span {
+			&:first-of-type {
+				font-weight: $bold;
+				font-size: 12px;
+				display: inline;
 
-		@include hover {
-			&::before {
-				right: auto;
-				left: 25px;
+				&::before,
+				&::after {
+					top: auto;
+				}
+			}
+
+			&:last-of-type {
+				left: 0;
+				position: absolute;
+				padding: 0;
+				top: 0;
+				width: 100%;
+
+				&::before {
+					left: 20px;
+					right: auto;
+					transform: rotate(-180deg) translateY(50%);
+					font-size: 12px;
+				}
 			}
 		}
 	}
@@ -652,9 +674,11 @@
 			position: absolute;
 			left: 0;
 		}
+
 		a:not(.header__logo)::before {
 			font-size: 18px;
 		}
+
 		.uk-navbar {
 			padding-left: 171px;
 		}

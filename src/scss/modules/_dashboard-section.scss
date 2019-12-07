@@ -7,6 +7,7 @@
         text-align: center;
         font-weight: $bold;
     }
+
     .triangle-wrap {
         right: 0;
         bottom: 0;
@@ -14,6 +15,7 @@
         width: 20%;
         height: 50px;
     }
+
     @media (max-width: $breakpointLarge) {
         .triangle-wrap {
             display: none;
@@ -158,7 +160,7 @@
         }
 
         iframe {
-            height: 415px !important;// sass-lint:disable-line no-important
+            height: 415px !important; // sass-lint:disable-line no-important
         }
     }
 
@@ -166,8 +168,9 @@
         .dashboard-iframe {
             min-height: 580px;
         }
+
         iframe {
-            height: 470px !important;// sass-lint:disable-line no-important
+            height: 470px !important; // sass-lint:disable-line no-important
         }
 
         .dashboard-box__inner {
@@ -196,6 +199,13 @@
 
 .dashboard-content {
     background: $white;
+    a {
+        text-decoration: none;
+        transition: .3s ease-in-out;
+        @include hover {
+            color: $orange;
+        }
+    }
 
     &.uk-padding {
         padding: 10px 30px 30px;
@@ -289,13 +299,6 @@
         right: 30px;
         padding-right: 25px;
         transform: translateY(-50%);
-
-        &::before {
-            position: absolute;
-            right: 0;
-            font-size: 10px;
-            top: 3px;
-        }
     }
 
     .zig-zag-top {
@@ -306,7 +309,7 @@
 }
 
 .dashboard-notices {
-    span {
+    .dashboard-content span {
         font-weight: $medium;
     }
 
@@ -327,6 +330,16 @@
     .dashboard-content {
         padding-left: 0;
         padding-right: 0;
+        .uk-button--underline {
+            >span {
+                color: $blue;
+            }
+            @include hover {
+                >span::before, >span::after {
+                    background: $blue;
+                }
+            }
+        }
 
         >.uk-padding {
             padding: 20px 30px 0;

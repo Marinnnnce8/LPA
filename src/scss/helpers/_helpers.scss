@@ -1,6 +1,3 @@
-//----------  helpers
-//------------------------------------------------------------------------------
-
 * {
 	box-sizing: border-box;
 
@@ -31,6 +28,19 @@ body {
 	left: 0;
 	width: 100%;
 	z-index: 1;
+}
+
+.overlay-dropdown {
+	svg, span {
+		pointer-events: none;
+		z-index: 0;
+	}
+}
+
+.overlay-link {
+	svg {
+		pointer-events: none;
+	}
 }
 
 .waves-label {

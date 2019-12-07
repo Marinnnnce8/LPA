@@ -7,30 +7,6 @@
         font-weight: $bold;
     }
 
-    a {
-        margin-bottom: 0;
-        position: relative;
-        padding-right: 25px;
-        font-size: 14px;
-        text-decoration: none;
-
-        &::before {
-            position: absolute;
-            right: 0;
-            top: 2px;
-            transition: .3s ease-in-out;
-        }
-
-        @include hover {
-            color: $white;
-
-            &::before {
-                color: $white;
-                right: -10px;
-            }
-        }
-    }
-
     &.waves-label::before {
         left: auto;
         right: 0;
@@ -191,15 +167,6 @@
     a {
         font-size: 12px;
         padding-left: 30px;
-
-        @include hover {
-            color: $blue;
-
-            &::before {
-                color: $blue;
-                right: -10px;
-            }
-        }
     }
 
     >div {
