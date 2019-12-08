@@ -50,6 +50,7 @@
 @import 'theme/base.scss';
 @import 'theme/header.scss';
 @import 'theme/footer.scss';
+@import 'theme/firefox.scss';
 @import 'theme/ie11.scss';
 @import 'theme/print.scss';
 
@@ -58,6 +59,7 @@
 .uk-link-toggle:hover .uk-link,
 .uk-link:hover,
 a:hover {
+	text-decoration: none;
 	color: $nbRed;
 }
 
@@ -71,7 +73,8 @@ a:hover {
 .uk-radio:checked:not(.uk-form-danger) {
 	border-color: $ocean-blue;
 	font-size: 16px;
-	font-weight: $light;
+	font-family: $light;
+
 	&:focus {
 		border-color: $night-blue;
 	}

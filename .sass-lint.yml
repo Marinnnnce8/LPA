@@ -4,11 +4,11 @@ files:
   include: '**/*.s+(a|c)ss'
   ignore:
     - 'src/scss/theme.scss'
-    - 'src/scss/config/_variables.scss'
-    - 'src/scss/helpers/_print.scss'
-    - 'src/scss/helpers/_mixins.scss'
-    - 'src/scss/layout/_icon-font.scss'
-    - 'src/scss/base/_fonts.scss'
+    - 'src/scss/config/variables.scss'
+    - 'src/scss/helpers/print.scss'
+    - 'src/scss/helpers/mixins.scss'
+    - 'src/scss/layout/icon-font.scss'
+    - 'src/scss/base/fonts.scss'
     - 'src/scss/nb/*.scss'
     - 'src/scss/theme/*.scss'
 

@@ -1,0 +1,140 @@
+.vision-section {
+
+    .triangle-wrap {
+        right: 0;
+        bottom: 0;
+        left: auto;
+        width: 20%;
+        height: 50px;
+    }
+
+    h2 {
+        color: $white;
+        font-size: 54px;
+        font-weight: bold;
+    }
+
+    .uk-container {
+        min-height: calc(100vh - 420px);
+        padding-top: 220px;
+        padding-bottom: 200px;
+    }
+
+    .uk-flex-between {
+        .uk-flex {
+            padding-bottom: 10px;
+
+            &:not(:first-of-type) {
+                padding-left: 10px;
+            }
+
+            span {
+                font-family: $bold;
+                font-size: 34px;
+
+                &:first-of-type {
+                    display: block;
+                    position: relative;
+                    min-height: 80px;
+
+                    &::before {
+                        left: 0;
+                        position: absolute;
+                        color: $blue;
+                        font-size: 80px;
+                    }
+                }
+
+                &:nth-of-type(2) {
+                    font-size: 30px;
+
+                    span {
+                        display: inline;
+                    }
+
+                    .number {
+                        font-size: 70px;
+                    }
+                }
+
+                &:last-of-type {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: $breakpointLarge) {
+        &::before {
+            height: 75px;
+            width: 92%;
+        }
+
+        .triangle-wrap {
+            display: none;
+        }
+
+        .uk-container {
+            padding: 170px 60px 10px;
+            min-height: 850px;
+        }
+
+        .uk-flex-between .uk-flex {
+            padding-bottom: 55px;
+
+            &:not(:first-of-type) {
+                padding-left: 0;
+            }
+
+            span {
+                &:nth-of-type(2) {
+                    font-size: 26px;
+
+                    .number {
+                        font-size: 70px;
+                    }
+                }
+
+                &:last-of-type {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: $breakpointSmall) {
+        h2 {
+            font-size: 34px;
+        }
+
+        .uk-container {
+            padding: 120px 20px 10px;
+            min-height: 730px;
+        }
+
+        .uk-flex-between .uk-flex {
+            padding-bottom: 35px;
+
+            span {
+                &:first-of-type {
+                    min-height: 60px;
+                    &::before {
+                        font-size: 60px;
+                    }
+                }
+
+                &:nth-of-type(2) {
+                    font-size: 16px;
+
+                    .number {
+                        font-size: 40px;
+                    }
+                }
+
+                &:last-of-type {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}

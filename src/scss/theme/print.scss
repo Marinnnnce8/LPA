@@ -6,22 +6,32 @@
 		padding: 0;
 		text-align: left;
 	}
-	a:link, a:visited {
+
+	a:link,
+	a:visited {
 		background: #fff;
 		color: #000;
 		text-decoration: underline;
 	}
+
 	a:not([href='javascript:;']):after {
-		content: '[' attr(href) ']';
+		content: '['attr(href) ']';
 	}
-	h1, h2, h3, h4, h5, h6 {
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
 		background: none;
 		color: #000;
 	}
-	// add elements that are going to be hidden
+
 	.temp {
 		display: none;
 	}
+
 	.header,
 	.footer,
 	.nb-block-form,
@@ -29,7 +39,11 @@
 	.uk-button,
 	.uk-breadcrumb,
 	.uk-pagination,
-	.uk-modal {
+	.uk-modal,
+	.btn-load,
+	.uk-button--underline,
+	.uk-slidenav,
+	.btn-down {
 		display: none !important;
 	}
 }

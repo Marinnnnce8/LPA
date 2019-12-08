@@ -1,0 +1,737 @@
+.about-section,
+.sectors-section {
+
+    h2,
+    p {
+        color: $blue;
+    }
+
+    h2 {
+        font-size: 54px;
+        font-family: $bold;
+    }
+
+    p {
+        font-size: 26px;
+        font-family: $light;
+        margin-bottom: 50px;
+    }
+
+    @media (max-width: $breakpointLarge) {
+        .sectors-half .zig-zag {
+            margin-bottom: 0;
+        }
+    }
+
+    @media (max-width: $breakpointSmall) {
+        padding: 30px 0;
+
+        .uk-container {
+            padding: 20px;
+
+            .uk-container {
+                padding: 0;
+            }
+        }
+
+        h2 {
+            font-size: 34px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+    }
+}
+
+.sectors-section--cruise {
+    h2 {
+        font-size: 44px;
+    }
+
+    @media (max-width: $breakpointSmall) {
+        h2 {
+            font-size: 34px;
+        }
+    }
+}
+
+.zig-zag-wrap {
+    padding-top: 120px;
+
+    @media (max-width: $breakpointLarge) {
+        padding-top: 25px;
+    }
+}
+
+.sectors-section--half {
+    padding-bottom: 280px;
+
+    .triangle-left span {
+        position: absolute;
+        padding-right: 25px;
+        top: 50%;
+        left: 2%;
+        transform: translateY(-50%);
+        transition: .3s ease-in-out;
+
+        &::before {
+            right: 0;
+            bottom: auto;
+            left: auto;
+            position: absolute;
+            font-size: 12px;
+            top: 4px;
+            transition: .3s ease-in-out;
+        }
+    }
+
+    @media (max-width: $breakpointLarge) {
+        padding-bottom: 0;
+    }
+
+    @media (max-width: $breakpointSmall) {
+        .triangle-left span {
+            top: 40%;
+            left: 6%;
+        }
+    }
+}
+
+.zig-zag {
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    min-height: 490px;
+    padding: 3px;
+
+    .triangle-left,
+    .triangle-right {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        z-index: 2;
+    }
+
+    .triangle-left {
+        transition: .3s ease-in-out;
+
+        &::before {
+            position: absolute;
+            bottom: 35%;
+            left: 5%;
+            color: $white;
+            font-size: 40px;
+            transition: .3s ease-in-out;
+            z-index: 5;
+        }
+
+        &.font-gross::before {
+            font-size: 16px;
+        }
+    }
+
+    .triangle-right {
+        top: -8px;
+        right: 0;
+        z-index: 5;
+
+        >span {
+            position: absolute;
+
+            &:first-of-type {
+                right: 15px;
+                top: 72px;
+                z-index: 1;
+                font-family: $bold;
+            }
+
+            &:last-of-type {
+                background: rgba($black, .3);
+                transform: rotate(180deg);
+                width: 200px;
+                height: 200px;
+                right: 0;
+                top: -45%;
+            }
+        }
+    }
+
+    @include hover {
+        .triangle-left>span {
+            opacity: 0;
+
+            .font-gross {
+                opacity: 0;
+            }
+        }
+
+        .zig-zag__inner {
+            .zig-zag__text {
+                bottom: 0;
+            }
+
+            .zig-zag-title {
+                opacity: 0;
+            }
+        }
+    }
+
+    @media (max-width: $breakpointSmall) {
+        padding: 0;
+
+        .triangle-left::before {
+            font-size: 36px;
+        }
+    }
+}
+
+.zig-zag-waves {
+    background: $white;
+    position: absolute;
+    height: 100%;
+    left: 3px;
+    top: 0;
+    width: 100%;
+
+    @media (max-width: $breakpointSmall) {
+        left: 0;
+    }
+}
+
+.zig-zag-top,
+.zig-zag-bottom {
+    position: absolute;
+    left: 0;
+    width: calc(100% + 2px);
+    height: 115px;
+
+    svg.uk-svg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    @media (max-width: $breakpointSmall) {
+        width: 100%;
+    }
+}
+
+.zig-zag-top {
+    top: 0;
+    z-index: 1;
+
+    path {
+        fill: $white;
+    }
+}
+
+.zig-zag-bottom {
+    cursor: pointer;
+    bottom: 0;
+    z-index: 2;
+
+    path {
+        fill: $white;
+
+        &:last-of-type {
+            fill: $blue;
+        }
+    }
+
+    .st1 {
+        fill: $blue;
+    }
+}
+
+.zig-zag__inner {
+    cursor: pointer;
+    overflow: hidden;
+    padding: 70px 0;
+    height: 100%;
+    width: calc(100% - 3px);
+    position: absolute;
+    z-index: 0;
+    left: 3px;
+    top: 0;
+    bottom: 3px;
+
+    h3 {
+        font-family: $bold;
+        font-size: 26px;
+    }
+
+    .zig-zag-title {
+        padding-left: 30px;
+        transition: .3s ease-in-out;
+
+        span {
+            display: block;
+
+            &:first-of-type {
+                font-size: 20px;
+            }
+
+            &:last-of-type {
+                font-size: 26px;
+                font-family: $bold;
+            }
+
+            &.large {
+                font-size: 44px;
+            }
+        }
+    }
+
+    .zig-zag__text {
+        position: absolute;
+        width: 100%;
+        bottom: -100%;
+        transition: .3s ease-in-out;
+
+        p {
+            margin-bottom: 25px;
+        }
+
+        .zig-zag-bottom {
+            bottom: 100%;
+            width: 101%;
+
+            path {
+                fill: $blue;
+            }
+        }
+    }
+
+    @media (max-width: $breakpointXlarge) {
+        .zig-zag-title {
+            padding-left: 25px;
+        }
+    }
+
+    @media (max-width: $breakpointSmall) {
+        left: 0;
+        width: 100%;
+
+        .zig-zag-title span:last-of-type {
+            font-size: 22px;
+        }
+    }
+}
+
+.zig-zag-year {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    font-family: $bold;
+    color: $white;
+    font-size: 26px;
+    z-index: 1;
+
+    @media (max-width: $breakpointSmall) {
+        font-size: 18px;
+        top: 40px;
+        right: 10px;
+    }
+}
+
+.zig-zag__text-inner {
+    padding: 10px 35px 100px;
+    background: $blue;
+
+    h3,
+    p,
+    a {
+        color: $white;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .large {
+        font-size: 38px;
+    }
+
+    a {
+        font-size: 14px;
+        position: relative;
+        padding-right: 25px;
+        display: inline-block;
+        text-decoration: none;
+        font-family: $bold;
+    }
+
+    @media (max-width: $breakpointSmall) {
+        padding: 10px 20px 65px;
+
+        h3 {
+            font-size: 22px;
+        }
+    }
+}
+
+.sectors-section {
+    .zig-zag {
+        @include hover {
+            .triangle-left.font-gross {
+                opacity: 0;
+            }
+        }
+    }
+
+    .triangle-left {
+        z-index: 5;
+    }
+
+    .sectors-half {
+        &:last-child {
+            margin-top: -50px;
+        }
+    }
+
+    p {
+        font-family: $medium;
+    }
+
+    @media (max-width: $breakpointLarge) {
+        .uk-container {
+            padding-left: 60px;
+            padding-right: 60px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+    }
+
+    @media (max-width: $breakpointSmall) {
+        .uk-container {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .zig-zag__text-inner {
+            padding: 10px 25px 85px;
+        }
+    }
+}
+
+.sectors-section--home {
+    position: relative;
+    padding: 130px 0 120px;
+
+    &::after {
+        background: $blue;
+        content: '';
+        position: absolute;
+        left: 0;
+        height: 470px;
+        width: 100%;
+        top: 0;
+        z-index: -1;
+    }
+
+    h2,
+    p {
+        color: $white;
+    }
+
+    .zig-zag:nth-of-type(-n + 4) {
+        .zig-zag-top path {
+            fill: $blue;
+        }
+    }
+
+    @media (max-width: $breakpointLargeMax) {
+        .zig-zag {
+            .zig-zag-top path {
+                fill: $white;
+            }
+
+            &:nth-of-type(-n + 4) {
+                .zig-zag-top path {
+                    fill: $white;
+                }
+            }
+
+            &:nth-of-type(-n + 3) {
+                .zig-zag-top path {
+                    fill: $blue;
+                }
+            }
+        }
+    }
+
+    @media (max-width: $breakpointMediumMax) {
+        padding: 130px 0 80px;
+
+        .zig-zag {
+            .zig-zag-top path {
+                fill: $white;
+            }
+
+            &:nth-of-type(-n + 4),
+            &:nth-of-type(-n + 3) {
+                .zig-zag-top path {
+                    fill: $white;
+                }
+            }
+
+            &:nth-of-type(-n + 2) {
+                .zig-zag-top path {
+                    fill: $blue;
+                }
+            }
+        }
+    }
+
+    @media (max-width: $breakpointXsmallMax) {
+        padding: 100px 0 70px;
+
+        h2 {
+            font-size: 34px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        .zig-zag {
+            .zig-zag-top path {
+                fill: $white;
+            }
+
+            &:nth-of-type(-n + 4),
+            &:nth-of-type(-n + 3),
+            &:nth-of-type(-n + 2) {
+                .zig-zag-top path {
+                    fill: $white;
+                }
+            }
+
+            &:first-of-type {
+                .zig-zag-top path {
+                    fill: $blue;
+                }
+            }
+        }
+    }
+}
+
+.sectors-section--home-diff {
+    padding-bottom: 0;
+
+    .zig-zag-top path {
+        fill: $blue;
+    }
+
+    @media (max-width: $breakpointLargeMax) {
+        .zig-zag {
+            .zig-zag-top path {
+                fill: $white;
+            }
+
+            &:nth-of-type(-n + 2) {
+                .zig-zag-top path {
+                    fill: $blue;
+                }
+            }
+        }
+    }
+
+    @media (max-width: $breakpointMediumMax) {
+        .zig-zag {
+            .zig-zag-top path {
+                fill: $white;
+            }
+
+            &:nth-of-type(-n + 2) {
+                .zig-zag-top path {
+                    fill: $blue;
+                }
+            }
+
+            &:first-of-type {
+                .zig-zag-top path {
+                    fill: $blue;
+                }
+            }
+        }
+    }
+
+    @media (max-width: $breakpointXsmallMax) {
+        .zig-zag {
+            .zig-zag-top path {
+                fill: $white;
+            }
+
+            &:nth-of-type(-n + 4),
+            &:nth-of-type(-n + 3),
+            &:nth-of-type(-n + 2) {
+                .zig-zag-top path {
+                    fill: $white;
+                }
+            }
+
+            &:first-of-type {
+                .zig-zag-top path {
+                    fill: $blue;
+                }
+            }
+        }
+    }
+}
+
+.sectors-half,
+.about-section {
+
+    .zig-zag-waves .zig-zag-bottom svg path:last-of-type,
+    .triangle-left {
+        transition: .3s ease-in-out;
+    }
+
+    .zig-zag {
+        @include hover {
+
+            .zig-zag-waves .zig-zag-bottom svg path:last-of-type,
+            .triangle-left {
+                opacity: 0;
+            }
+        }
+    }
+}
+
+.sectors-half {
+
+    h3,
+    p,
+    >a {
+        color: $blue;
+    }
+
+    .zig-zag-top {
+        transform: rotate(-180deg);
+
+        path:last-of-type {
+            fill: rgba($black, .3);
+        }
+    }
+
+    .triangle-left span {
+        font-size: 14px;
+        font-family: $bold;
+    }
+
+    .zig-zag__text-inner {
+
+        p,
+        a,
+        h3 {
+            color: $white;
+        }
+    }
+
+    h3,
+    .zig-zag-title span {
+        &:first-of-type {
+            font-family: $medium;
+            font-size: 16px;
+        }
+
+        &:last-of-type {
+            font-size: 44px;
+            font-family: $bold;
+        }
+    }
+
+    p {
+        font-size: 20px;
+        margin-bottom: 150px;
+        font-family: $medium;
+    }
+
+    >a {
+        font-size: 12px;
+        font-family: $bold;
+        position: relative;
+        padding: 0 55px 0 25px;
+    }
+    .uk-button--underline >span:not(.font-foreign):not(.font-gross) {
+        font-size: 14px;
+    }
+
+    @media (max-width: $breakpointLarge) {
+        p {
+            margin-bottom: 30px;
+        }
+
+        .zig-zag {
+            margin-bottom: 40px;
+        }
+
+        >a:first-of-type {
+            display: inline-block;
+            margin-bottom: 160px;
+        }
+
+        .zig-zag-title {
+            margin-top: 70px;
+        }
+
+        h3,
+        .zig-zag__inner h3,
+        .zig-zag-title span:last-of-type {
+            font-size: 34px;
+        }
+    }
+
+    @media (max-width: $breakpointMedium) {
+        .zig-zag {
+            padding: 0;
+        }
+
+        .zig-zag-waves {
+            left: 0;
+        }
+
+        .zig-zag-top,
+        .zig-zag-bottom {
+            width: 100%;
+        }
+
+        .zig-zag__inner {
+            left: 0;
+            width: 100%;
+        }
+
+        .zig-zag__text-inner {
+            padding: 10px 35px 40px;
+        }
+    }
+
+    @media (max-width: $breakpointSmall) {
+        .zig-zag-title {
+            margin-top: 0;
+        }
+
+        h3:last-of-type {
+            font-size: 34px;
+        }
+
+        .zig-zag p {
+            font-size: 16px;
+        }
+
+        .zig-zag__inner h3,
+        .zig-zag-title span:last-of-type {
+            font-size: 20px;
+        }
+
+        .zig-zag__text-inner {
+            padding: 10px 20px 30px;
+        }
+    }
+}

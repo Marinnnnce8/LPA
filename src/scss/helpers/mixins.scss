@@ -1,0 +1,12 @@
+@mixin hover {
+
+	&:hover,
+	&:focus,
+	&:active {
+		@content;
+	}
+}
+
+@function tint($color, $percentage) {
+	@return mix(white, $color, $percentage);
+}

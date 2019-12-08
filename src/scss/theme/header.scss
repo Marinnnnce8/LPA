@@ -28,13 +28,13 @@
 			transition: .3s ease-in-out;
 
 			&:not(p) {
-				font-weight: $bold;
+				font-family: $bold;
 			}
 		}
 
 		p {
 			font-size: 14px;
-			font-weight: 500;
+			font-family: $medium;
 		}
 
 		li button {
@@ -345,7 +345,7 @@
 		min-height: 45px;
 
 		.uk-navbar {
-			padding-left: 96px;
+			padding-left: 129px;
 		}
 
 		.uk-navbar-nav {
@@ -503,6 +503,7 @@
 	}
 
 	@media (max-width: $breakpointSmall) {
+		width: 129px;
 		img {
 			height: 45px;
 		}
@@ -542,28 +543,34 @@
 	}
 
 	@media (max-width: $breakpointLarge) {
-		padding: 3px 3px 5px;
-		width: 75px;
-
-		&::before {
-			right: auto;
-			left: 50%;
-			top: 50%;
-			transform: translate(-50%, -50%);
-			font-size: 28px;
-		}
-
-		span {
-			font-size: 8px;
-			margin: 0 auto;
-			text-align: center;
+		padding: 0 15px;
+		position: relative;
+		min-width: 95px;
+		a {
+			padding: 0;
+			width: 100%;
+			height: 100%;
+			position: relative;
+			&::before {
+				right: auto;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+				font-size: 28px;
+				position: absolute;
+			}
+			span {
+				font-size: 8px;
+				margin: 0 auto;
+				text-align: center;
+			}
 		}
 	}
 
 	@media (max-width: $breakpointSmall) {
 		height: 45px;
 
-		&::before {
+		a::before {
 			right: auto;
 			transform: translate(-50%, -80%);
 			font-size: 24px;
@@ -621,7 +628,7 @@
 
 		span {
 			&:first-of-type {
-				font-weight: $bold;
+				font-family: $bold;
 				font-size: 12px;
 				display: inline;
 
@@ -693,17 +700,21 @@
 			line-height: 0;
 		}
 
-		a:not(.header__logo)::before {
-			font-size: 18px;
-			left: 50%;
-			right: auto;
-			transform: rotate(0) translate(-50%, -50%);
+		.font-gross {
+			display: none !important;// sass-lint:disable-line no-important
 		}
 
 		.header__live {
-			width: 45px;
+			width: 220px;
 			height: 45px;
 			min-height: 45px;
 		}
+		.uk-button--underline {
+			padding-left: 10px;
+		span:first-of-type {
+			line-height: 45px;
+			font-size: 10px;
+		}
+	}
 	}
 }

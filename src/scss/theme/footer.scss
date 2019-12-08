@@ -57,7 +57,7 @@
 
 		span {
 			&:first-of-type {
-				font-weight: $bold;
+				font-family: $bold;
 				font-size: 34px;
 			}
 
@@ -183,6 +183,9 @@
 				.uk-flex {
 					flex-direction: column;
 				}
+				.uk-button--underline {
+					margin: 7px 0;
+				}
 			}
 
 			&:last-of-type {
@@ -201,7 +204,7 @@
 	a {
 		font-size: 14px;
 		color: $black;
-		font-weight: 500;
+		font-family: $medium;
 	}
 
 	li {
@@ -271,7 +274,7 @@
 					display: block;
 
 					&:first-of-type {
-						font-weight: $bold;
+						font-family: $bold;
 						font-size: 16px;
 						margin-bottom: 7px;
 					}
@@ -279,7 +282,7 @@
 
 				.uk-button--text {
 					text-align: left;
-					font-weight: $bold;
+					font-family: $bold;
 				}
 
 				a {
@@ -318,7 +321,7 @@
 					}
 
 					span {
-						font-weight: $bold;
+						font-family: $bold;
 					}
 
 					a {

@@ -3,7 +3,7 @@ screen and (-ms-high-contrast: none) {
     .nav-text {
 
         &::before {
-            display: none;
+            background-repeat: repeat-x;
         }
     }
 
@@ -36,5 +36,25 @@ screen and (-ms-high-contrast: none) {
         >.uk-container {
             margin-right: 170px;
         }
+    }
+}
+
+@supports (-ms-ime-align:auto) {
+    .zig-zag-waves {
+        top: -1px;
+        height: calc(100% + 1px);
+    }
+    .zig-zag-top {
+        left: -1px;
+        top: -1px;
+    }
+    .zig-zag__inner .zig-zag__text .zig-zag-bottom {
+        bottom: calc(100% - 1px);
+    }
+    .zig-zag-bottom {
+        bottom: -1px;
+    }
+    .dashboard-box .zig-zag-top {
+        left: 0;
     }
 }

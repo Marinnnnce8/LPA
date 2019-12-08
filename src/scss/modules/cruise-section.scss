@@ -1,0 +1,76 @@
+.cruise-section {
+    padding: 70px 0;
+
+    blockquote {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    @media (max-width: $breakpointSmall) {
+        padding: 30px 0;
+
+        h2 {
+            font-size: 26px;
+        }
+
+        .uk-padding-large {
+            padding: 30px 20px 0;
+        }
+    }
+}
+
+.nb-expand {
+    background: $blue;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+
+    .uk-button--text {
+        color: $white;
+
+        >span {
+            font-family: $bold;
+            font-size: 26px;
+
+            >span {
+                font-family: $bold;
+                font-size: 18px;
+                text-transform: none;
+            }
+        }
+    }
+
+    .uk-button {
+        font-size: 10px;
+        border-color: $white;
+        min-width: 0;
+        &::before {
+            color: $white;
+        }
+
+        @include hover {
+            &::before {
+                color: $blue;
+            }
+            .uk-button-hover {
+                background: $white;
+            }
+            .uk-button--text {
+                color: $blue;
+            }
+        }
+    }
+
+    @media (max-width: $breakpointSmall) {
+        padding: 15px 5px;
+
+        .uk-button--text {
+            >span {
+                font-size: 14px;
+
+                >span {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

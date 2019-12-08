@@ -1,0 +1,219 @@
+.intro-section {
+    padding: 95px 0 245px;
+
+    h2,
+    h3,
+    a {
+        font-family: $bold;
+    }
+
+    &.waves-label::before {
+        left: auto;
+        right: 0;
+        top: auto;
+        bottom: 0;
+        height: 200px;
+        transform: translateY(45%);
+    }
+
+    @media (max-width: $breakpointLarge) {
+        .uk-container {
+            padding-left: 60px;
+            padding-right: 60px;
+        }
+
+        .uk-flex {
+            flex-direction: column;
+        }
+
+        &.waves-label::before {
+            width: calc(100% - 60px);
+        }
+    }
+
+    @media (max-width: $breakpointSmall) {
+        padding: 140px 0 150px;
+        .uk-container {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        &.waves-label::before {
+            height: 65px;
+            width: calc(100% - 20px);
+        }
+    }
+}
+
+.intro-box {
+    background-image: url('../img/banner_blue.png');
+    min-height: 450px;
+    padding: 90px 0;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 35%;
+
+    @media (max-width: $breakpointLarge) {
+        background: $blue;
+        position: relative;
+        width: 100%;
+
+        &::before {
+            background-image: url('../img/lpa-solid-pattern-large.svg');
+            bottom: 100%;
+            transform: translateY(21%);
+            content: '';
+            z-index: 0;
+            width: 100%;
+            left: 0;
+            height: 88px;
+            background-repeat: repeat-x;
+            background-size: cover;
+            position: absolute;
+        }
+    }
+
+    @media (max-width: $breakpointLarge) {
+        min-height: 400px;
+        padding: 40px 0 10px;
+    }
+
+    @media (max-width: $breakpointSmall) {
+        min-height: 350px;
+        padding: 20px 0 30px;
+    }
+}
+
+.intro-box__inner {
+    padding: 20px 20px 20px 60px;
+
+    span,
+    h2,
+    p,
+    a {
+        margin-bottom: 25px;
+        color: $white;
+    }
+
+    p {
+        font-family: $medium;
+    }
+
+    span {
+        display: block;
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 44px;
+        font-family: $bold;
+    }
+
+    @media (max-width: $breakpointLarge) {
+        padding: 0 35px 20px 60px;
+
+        span,
+        h2,
+        p,
+        a {
+            margin-bottom: 20px;
+        }
+    }
+
+    @media (max-width: $breakpointSmall) {
+        padding: 0 20px;
+
+        h2 {
+            font-size: 34px;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+}
+
+.intro-img {
+    width: 65%;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    @media (max-width: $breakpointLarge) {
+        width: 100%;
+        margin-top: -7%;
+        position: relative;
+    }
+}
+
+.intro__bottom {
+    padding-top: 130px;
+
+    h3,
+    a,
+    p {
+        color: $blue;
+    }
+
+    p {
+        font-size: 34px;
+    }
+
+    a {
+        font-size: 12px;
+        padding-left: 30px;
+    }
+
+    >div {
+        &:first-of-type {
+            width: 35%;
+        }
+
+        &:last-of-type {
+            width: 65%;
+        }
+    }
+
+    @media (max-width: $breakpointLarge) {
+        padding-top: 90px;
+
+        h3 {
+            margin-bottom: 40px;
+        }
+
+        p {
+            margin-bottom: 60px;
+        }
+
+        a {
+            padding-right: 110px;
+        }
+
+        >div {
+            &:first-of-type {
+                width: 100%;
+            }
+
+            &:last-of-type {
+                width: 100%;
+            }
+        }
+    }
+
+    @media (max-width: $breakpointSmall) {
+        h3 {
+            font-size: 26px;
+            margin-bottom: 40px;
+        }
+
+        p {
+            font-size: 20px;
+            margin-bottom: 55px;
+        }
+    }
+}

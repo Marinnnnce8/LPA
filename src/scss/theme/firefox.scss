@@ -1,0 +1,9 @@
+@-moz-document url-prefix() {
+    .sectors-half .zig-zag-waves {
+        top: -1px;
+        height: calc(100% + 1px);
+    }
+    .sectors-half .zig-zag-top {
+        left: -1px;
+    }
+}
