@@ -44,12 +44,41 @@
     }
 }
 
+.about-section,
+.sectors-section--single {
+    padding: 200px 0 150px;
+
+    @media (max-width: $breakpointLarge) {
+        padding: 150px 0 100px;
+
+        .uk-container {
+            padding-left: 56px;
+            padding-right: 56px;
+        }
+
+        &.sectors-section--half {
+            padding-bottom: 100px;
+        }
+    }
+
+    @media (max-width: $breakpointSmall) {
+        .uk-container {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+    }
+}
+
 .sectors-section--cruise {
+    padding-bottom: 150px;
+
     h2 {
         font-size: 44px;
     }
 
     @media (max-width: $breakpointSmall) {
+        padding-bottom: 100px;
+
         h2 {
             font-size: 34px;
         }
@@ -86,9 +115,9 @@
         }
     }
 
-    @media (max-width: $breakpointLarge) {
-        padding-bottom: 0;
-    }
+    // @media (max-width: $breakpointLarge) {
+    //     padding-bottom: 0;
+    // }
 
     @media (max-width: $breakpointSmall) {
         .triangle-left span {
@@ -405,12 +434,20 @@
         p {
             font-size: 20px;
         }
+
+        &.sectors-section--half {
+            padding-bottom: 30px;
+
+            .sectors-half {
+                margin-bottom: 150px;
+            }
+        }
     }
 
     @media (max-width: $breakpointSmall) {
         .uk-container {
-            padding-left: 20px;
-            padding-right: 20px;
+            padding-left: 15px;
+            padding-right: 15px;
         }
 
         .zig-zag__text-inner {
@@ -419,9 +456,9 @@
     }
 }
 
-.sectors-section--home {
+.sectors-section--blue {
     position: relative;
-    padding: 130px 0 120px;
+    padding-top: 130px;
 
     &::after {
         background: $blue;
@@ -521,7 +558,7 @@
     }
 }
 
-.sectors-section--home-diff {
+.sectors-section--blue-diff {
     padding-bottom: 0;
 
     .zig-zag-top path {
@@ -659,7 +696,8 @@
         position: relative;
         padding: 0 55px 0 25px;
     }
-    .uk-button--underline >span:not(.font-foreign):not(.font-gross) {
+
+    .uk-button--underline>span:not(.font-foreign):not(.font-gross) {
         font-size: 14px;
     }
 

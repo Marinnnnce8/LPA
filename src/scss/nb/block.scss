@@ -177,6 +177,10 @@
 	}
 }
 
+.nb-form .uk-form-stacked {
+	margin-bottom: 80px;
+}
+
 .nb-form form {
 	background: rgba($blue, .1);
 	padding: 50px;
@@ -589,7 +593,7 @@
 	}
 
 	ul {
-		padding: 0 15px 0 40px;
+		padding: 0 15px 5px 40px;
 
 		li {
 			font-size: 16px;
@@ -1004,8 +1008,8 @@
 	}
 
 	@media (max-width: $breakpointSmall) {
-		padding-left: 20px;
-		padding-right: 20px;
+		padding-left: 15px;
+		padding-right: 15px;
 	}
 }
 
