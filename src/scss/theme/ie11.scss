@@ -1,10 +1,26 @@
 @media screen and (-ms-high-contrast: active),
 screen and (-ms-high-contrast: none) {
+    .dashboard-content .uk-flex-column {
+        width: 100%;
+    }
     .nav-text {
 
         &::before {
-            background-repeat: repeat-x;
+            background-size: 250px 70px;
         }
+    }
+    .footer__label span {
+        height: 70px;
+        background-size: 250px 70px;
+    }
+
+    .header .uk-navbar-dropdown-nav > li .uk-background-cover img {
+        display: block;
+        margin-bottom: -20px;
+    }
+
+    .nb-facts .nb-facts-body::after {
+        background-size: 250px 70px;
     }
 
     .nb-link-contact {
@@ -20,18 +36,23 @@ screen and (-ms-high-contrast: none) {
             top: 2px;
         }
     }
+
     .dashboard-date {
         padding-top: 7px;
     }
+
     .wave-box .uk-card-body::after {
         display: none;
     }
+
     .zig-zag__inner .zig-zag__text .zig-zag-bottom {
         bottom: calc(100% - 1px);
     }
+
     .zig-zag-bottom {
         bottom: -1px;
     }
+
     .nb-container {
         >.uk-container {
             margin-right: 170px;
@@ -44,16 +65,20 @@ screen and (-ms-high-contrast: none) {
         top: -1px;
         height: calc(100% + 1px);
     }
+
     .zig-zag-top {
         left: -1px;
         top: -1px;
     }
+
     .zig-zag__inner .zig-zag__text .zig-zag-bottom {
         bottom: calc(100% - 1px);
     }
+
     .zig-zag-bottom {
         bottom: -1px;
     }
+
     .dashboard-box .zig-zag-top {
         left: 0;
     }
