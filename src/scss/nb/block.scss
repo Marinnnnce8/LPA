@@ -1,7 +1,9 @@
 .nb-text-lead {
 	color: $blue;
 	font-family: $font-default;
+	line-height: 1.2;
 	font-size: 24px;
+	margin-bottom: 35px;
 	font-weight: 600;
 
 	@media (max-width: $breakpointSmall) {
@@ -9,128 +11,227 @@
 	}
 }
 
-.nb-color-blue {
-	color: $blue;
-}
+.nb-content {
 
-.nb-bckg-blue {
-	background: $blue;
-}
+	h1,
+	h2,
+	h3,
+	h4 {
+		font-family: $bold;
+		color: $blue;
+		text-transform: uppercase;
+		line-height: 1;
+	}
 
-.nb-bold {
-	font-family: $bold;
-}
+	h1 {
+		font-size: 54px;
+		line-height: 1;
+		font-family: $bold;
+	}
 
-.nb-list {
-	margin-bottom: 10px;
+	h2 {
+		font-size: 44px;
+	}
 
-	li {
-		margin-bottom: 40px;
-		color: $black;
-		padding-left: 35px;
-		position: relative;
+	h3 {
+		font-size: 26px;
+	}
 
-		img {
-			margin-right: 20px;
+	h4 {
+		font-size: 20px;
+	}
+
+	p {
+		margin-bottom: 35px;
+	}
+
+	blockquote {
+		&::before {
+			content: font-char($quote);
+			font-family: 'svgicons';
+			position: absolute;
+			display: block;
+			color: $blue;
+			top: 0;
+			left: 0;
+			transform: rotate(180deg) translate(-90%, 3%);
+			font-size: 86px;
+			z-index: 1;
+			width: 55px;
 		}
 	}
 
-	.list-bottom {
-		display: block;
-		color: $black;
-		font-family: $light;
+	ul {
+		margin-bottom: 40px;
+
+		li {
+			margin-bottom: 15px;
+			color: $black;
+			padding-left: 25px;
+			position: relative;
+
+			&::after {
+				display: block;
+				content: '';
+				width: 7px;
+				height: 7px;
+				background: $blue;
+				z-index: 1;
+				left: 0;
+				top: 10px;
+				position: absolute;
+			}
+
+			b {
+				display: block;
+			}
+
+			img {
+				margin-right: 20px;
+			}
+		}
+	}
+
+	.uk-table {
+		border-collapse: collapse;
+		width: 100%;
+
+		thead {
+			background: $blue;
+			color: $white;
+			text-transform: uppercase;
+			border: 3px solid $white;
+		}
+
+		th,
+		td {
+			padding: 20px;
+
+			&:first-of-type {
+				padding-left: 20px;
+			}
+		}
+
+		th {
+			font-size: 12px;
+			color: $white;
+			font-family: $bold;
+		}
+
+		tbody {
+			tr {
+				border: 3px solid $white;
+			}
+
+			td {
+				background: $blue-lightest;
+				font-size: 14px;
+				font-family: $light;
+				color: $black;
+
+				&:first-of-type {
+					background: $blue-sky;
+					text-transform: uppercase;
+					font-family: $bold;
+					font-size: 12px;
+				}
+			}
+		}
+	}
+
+	form {
+		background: rgba($blue, .1);
+		padding: 50px;
+
+		label {
+			font-family: $bold;
+			font-size: 12px;
+			text-transform: uppercase;
+		}
+
+		>.uk-flex .uk-first-column:first-of-type {
+			padding-left: 0;
+		}
+
+		.uk-input {
+			margin-bottom: 20px;
+			min-height: 45px;
+		}
+
+		.uk-textarea {
+			min-height: 220px;
+			resize: none;
+		}
+
+		.uk-button {
+			text-align: center;
+		}
+
+		.uk-grid {
+			margin-left: 0;
+		}
+	}
+	.uk-background-primary {
+		background: $blue;
 	}
 
 	@media (max-width: $breakpointLarge) {
-		li {
+		ul li {
 			margin-bottom: 20px;
+		}
+
+		form {
+			.uk-button {
+				margin-top: 20px;
+			}
+			.uk-grid {
+
+				>* {
+					padding-left: 0;
+				}
+			}
 		}
 	}
 
 	@media (max-width: $breakpointSmall) {
-		li {
+		ul li {
 			padding-left: 10px;
 
 			&::after {
 				top: 7px;
 			}
 		}
-	}
-}
 
-.nb-list--rec {
-	li {
-		padding-left: 20px;
-
-		&::after {
-			display: block;
-			content: '';
-			width: 7px;
-			height: 7px;
-			background: $blue;
-			z-index: 1;
-			left: 0;
-			top: 8px;
-			position: absolute;
+		h1,
+		h2 {
+			font-size: 34px;
 		}
 
-		b {
-			display: block;
-		}
-	}
-}
-
-.nb-table-wrap {
-	@media (max-width: $breakpointSmall) {
-		max-width: 500px;
-		overflow-x: scroll;
-	}
-}
-
-.nb-table {
-	border-collapse: collapse;
-	width: 100%;
-
-	thead {
-		background: $blue;
-		color: $white;
-		text-transform: uppercase;
-		border: 3px solid $white;
-	}
-
-	th,
-	td {
-		padding: 20px;
-		&:first-of-type {
-			padding-left: 20px;
-		}
-	}
-
-	th {
-		font-size: 12px;
-		color: $white;
-		font-family: $bold;
-	}
-
-	tbody {
-		tr {
-			border: 3px solid $white;
+		blockquote::before {
+			transform: rotate(180deg) translate(7%, 17%);
+			font-size: 50px;
 		}
 
-		td {
-			background: $blue-lightest;
-			font-size: 14px;
-			font-family: $light;
-			color: $black;
+		form {
+			padding: 50px 20px;
 
-			&:first-of-type {
-				background: $blue-sky;
-				text-transform: uppercase;
-				font-family: $bold;
-				font-size: 12px;
+			.uk-grid {
+				margin-left: 0;
+
+				>* {
+					padding-left: 0;
+				}
 			}
 		}
 	}
+}
+
+.nb-color-blue {
+	color: $blue;
+}
+
+.nb-bold {
+	font-family: $bold;
 }
 
 .uk-alert-danger,
@@ -174,93 +275,6 @@
 
 	p {
 		color: $white;
-	}
-}
-
-.nb-form .uk-form-stacked {
-	margin-bottom: 80px;
-}
-
-.nb-form form {
-	background: rgba($blue, .1);
-	padding: 50px;
-
-	label {
-		font-family: $bold;
-		font-size: 12px;
-		text-transform: uppercase;
-	}
-
-	>.uk-flex .uk-first-column:first-of-type {
-		padding-left: 0;
-	}
-
-	.uk-input {
-		margin-bottom: 20px;
-		min-height: 45px;
-	}
-
-	.uk-textarea {
-		min-height: 220px;
-		resize: none;
-	}
-
-	.uk-button {
-		text-align: center;
-	}
-
-	.uk-grid {
-		margin-left: 0;
-	}
-
-	@media (max-width: $breakpointLarge) {
-		.uk-button {
-			margin-top: 20px;
-		}
-	}
-
-	@media (max-width: $breakpointSmall) {
-		padding: 50px 20px;
-
-		.uk-grid {
-			margin-left: 0;
-
-			>* {
-				padding-left: 0;
-			}
-		}
-	}
-}
-
-.nb-slider-one {
-
-	.uk-slidenav {
-		background: rgba($white, .5);
-		color: $white;
-		margin: 15px 0;
-		height: 55px;
-		transition: .3s ease-in-out;
-		width: 55px;
-
-		svg {
-			position: absolute;
-			left: 50%;
-			top: 50%;
-			transform: translate(-50%, -50%);
-		}
-
-		@include hover {
-			color: $blue;
-			background: $white;
-		}
-	}
-
-	.uk-thumbnav {
-		margin-left: 0;
-
-		li {
-			padding-left: 0;
-		}
 	}
 }
 
@@ -434,6 +448,47 @@
 	&-embed {
 		iframe {
 			width: 100%;
+		}
+	}
+}
+
+.nb-gallery {
+	h3 {
+		font-size: 26px;
+		font-family: $bold;
+		color: $blue;
+	}
+
+	.uk-slidenav {
+		background: rgba($white, .5);
+		color: $white;
+		margin: 15px 0;
+		height: 55px;
+		transition: .3s ease-in-out;
+		width: 55px;
+
+		svg {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+		@include hover {
+			color: $blue;
+			background: $white;
+		}
+	}
+
+	.uk-thumbnav {
+		margin-left: 0;
+
+		li {
+			padding-left: 0;
+
+			&:not(:first-of-type) {
+				padding-left: 1px;
+			}
 		}
 	}
 }
@@ -859,10 +914,12 @@
 
 .nb-select {
 	margin-top: 30px;
+
 	.uk-button-primary.uk-active {
 		background: $white;
 		border: 2px solid $blue;
 		color: $blue;
+
 		.uk-button-hover {
 			background-color: $blue;
 		}

@@ -3,21 +3,14 @@ h2,
 h3,
 h4,
 h5,
-h6,
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6 {
+h6 {
 	font-family: $font-default;
 	font-weight: normal;
 	line-height: 1;
 	margin-top: 0;
 }
 
-h1,
-.h1 {
+h1 {
 	font-size: 54px;
 	line-height: 1;
 	font-family: $bold;
@@ -26,31 +19,26 @@ h1,
 	}
 }
 
-h2,
-.h2 {
+h2 {
 	font-size: 44px;
 	@media (max-width: $breakpointSmall) {
 		font-size: 34px;
 	}
 }
 
-h3,
-.h3 {
+h3 {
 	font-size: 26px;
 }
 
-h4,
-.h4 {
+h4 {
 	font-size: 20px;
 }
 
-h5,
-.h5 {
+h5 {
 	font-size: 20px;
 }
 
-h6,
-.h6 {
+h6 {
 	font-size: 16px;
 }
 
@@ -107,17 +95,6 @@ blockquote {
 	padding: 35px 20px 35px 115px;
 	color: transparent;
 	position: relative;
-	&::before {
-		position: absolute;
-		display: block;
-		color: $blue;
-		top: 0;
-		left: 0;
-		transform: rotate(180deg) translate(-75%, -18%);
-		font-size: 86px;
-		z-index: 1;
-		width: 55px;
-	}
 
 	p,
 	span {
@@ -140,10 +117,6 @@ blockquote {
 	}
 	@media (max-width: $breakpointSmall) {
 		padding: 10px 20px 10px 45px;
-		&::before {
-			transform: rotate(180deg) translate(7%, 10%);
-			font-size: 62px;
-		}
 		p {
 			font-size: 16px;
 		}
