@@ -18,6 +18,10 @@
         margin-bottom: 50px;
     }
 
+    >.uk-container>p {
+        max-width: 40%;
+    }
+
     .uk-button {
         text-align: center;
         padding: 15px 25px;
@@ -37,6 +41,9 @@
 
 
     @media (max-width: $breakpointLarge) {
+        >.uk-container>p {
+            max-width: 100%;
+        }
         .uk-container {
             &:first-of-type {
                 padding-left: 60px;
