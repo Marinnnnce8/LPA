@@ -33,6 +33,7 @@
 
     @media (max-width: $breakpointSmall) {
         padding: 140px 0 150px;
+
         .uk-container {
             padding-left: 15px;
             padding-right: 15px;
@@ -137,7 +138,26 @@
 }
 
 .intro-img {
+    position: relative;
     width: 65%;
+
+    .zig-zag-waves {
+        background: transparent;
+        left: 0;
+    }
+
+    .zig-zag-bottom,
+    .zig-zag-top {
+        height: 60px;
+    }
+
+    .zig-zag-bottom {
+        transform: rotate(-180deg);
+
+        svg path {
+            fill: $white;
+        }
+    }
 
     img {
         width: 100%;
@@ -146,8 +166,26 @@
 
     @media (max-width: $breakpointLarge) {
         width: 100%;
+        min-height: 430px;
         margin-top: -7%;
         position: relative;
+
+        .zig-zag-bottom,
+        .zig-zag-top {
+            height: 50px;
+        }
+
+        .zig-zag-top {
+            svg path {
+                fill: $blue;
+            }
+        }
+    }
+    @media (max-width: $breakpointSmall) {
+        .zig-zag-bottom,
+        .zig-zag-top {
+            height: 30px;
+        }
     }
 }
 
