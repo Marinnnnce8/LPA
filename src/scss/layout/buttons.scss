@@ -5,12 +5,6 @@ button {
 	transition: .3s ease-in-out;
 	color: $white;
 	text-decoration: none;
-
-	@include media-breakpoint-up(lg) {
-		&:focus {
-			outline: 1px dashed rgba($white, .2);
-		}
-	}
 }
 
 button,
@@ -65,10 +59,6 @@ input[type='submit'] {
 		top: 50%;
 		transform: translateY(-50%);
 		z-index: 2;
-	}
-
-	&:focus {
-		outline: 1px dashed rgba($blue-dark, .2);
 	}
 
 	.uk-button--text {
@@ -349,18 +339,4 @@ li .uk-button--underline>span:not(.font-foreign):not(.font-gross) {
 	font-size: 18px;
 	font-family: $font-default;
 	font-weight: 600;
-}
-.uk-button--underline,
-.uk-button-secondary,
-.uk-button-primary,
-.btn-down,
-.btn-load {
-
-	&:focus {
-		color: $white;
-		outline: 1px dashed rgba($midblue, .2);
-	}
-}
-.uk-close:focus {
-	outline: 1px dashed rgba($midblue, .5);
 }
