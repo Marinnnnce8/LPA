@@ -35,6 +35,8 @@
 				bottom: -100px;
 				padding-right: 15px;
 				position: absolute;
+				font-size: 10px;
+				font-family: $bold;
 				z-index: 3;
 
 				span {
@@ -42,7 +44,7 @@
 				}
 
 				.font-gross::before {
-					top: 11px;
+					top: 4px;
 					font-size: 10px;
 				}
 			}
@@ -53,7 +55,7 @@
 				font-size: 20px;
 				font-family: $bold;
 				text-align: left;
-				padding: 30px;
+				padding: 32px 30px 30px;
 				width: 100%;
 			}
 
@@ -62,7 +64,7 @@
 				border-radius: 0;
 				border: 0;
 				color: $white;
-				min-height: 85px;
+				min-height: 80px;
 				position: relative;
 				overflow: hidden;
 				white-space: initial;
@@ -87,7 +89,7 @@
 					font-size: 56px;
 					position: absolute;
 					right: 20px;
-					top: 50%;
+					top: 46%;
 					transform: translateY(-50%);
 				}
 
@@ -113,17 +115,12 @@
 					}
 
 					.uk-button--underline {
-						bottom: 20px;
+						bottom: 15px;
 					}
 				}
-
-				&:focus {
-					outline: 1px dashed $white;
-				}
-
 				a {
 					.uk-button--underline {
-						bottom: 20px;
+						bottom: 15px;
 						color: $white;
 						opacity: 1;
 					}
@@ -141,7 +138,7 @@
 			}
 
 			.uk-button--underline {
-				bottom: 20px;
+				bottom: 15px;
 			}
 		}
 	}
