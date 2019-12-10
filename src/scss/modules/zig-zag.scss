@@ -115,10 +115,6 @@
         }
     }
 
-    // @media (max-width: $breakpointLarge) {
-    //     padding-bottom: 0;
-    // }
-
     @media (max-width: $breakpointSmall) {
         .triangle-left span {
             top: 40%;
@@ -679,7 +675,7 @@
         }
 
         &:last-of-type {
-            font-size: 44px;
+            font-size: 34px;
             font-family: $bold;
         }
     }
@@ -720,8 +716,7 @@
         }
 
         h3,
-        .zig-zag__inner h3,
-        .zig-zag-title span:last-of-type {
+        .zig-zag__inner h3 {
             font-size: 34px;
         }
     }
