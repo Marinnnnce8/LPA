@@ -207,14 +207,14 @@
 	span,
 	li,
 	a {
-		font-size: 14px;
+		font-size: 13px;
 		color: $black;
 		font-family: $medium;
 	}
 
 	li {
 		display: block;
-		margin-bottom: 15px;
+		margin-bottom: 10px;
 	}
 
 	a,
@@ -226,6 +226,12 @@
 			color: $black;
 			top: 3px;
 			left: 0;
+		}
+	}
+
+	>.uk-flex:first-of-type>.uk-flex:last-of-type {
+		span {
+			font-size: 12px;
 		}
 	}
 
@@ -250,6 +256,8 @@
 			}
 
 			>span {
+				font-size: 12px;
+				padding-right: 25px;
 				display: block;
 
 				&:first-of-type {
@@ -319,14 +327,15 @@
 				padding: 0 20px;
 
 				li {
-					margin-bottom: 15px;
+					margin-bottom: 11px;
 
 					&:first-of-type {
-						margin-bottom: 20px;
+						margin-bottom: 15px;
 					}
 
 					span {
 						font-family: $bold;
+						font-size: 16px;
 					}
 
 					a {
@@ -343,6 +352,7 @@
 							left: -15px;
 							transition: .3s ease-in-out;
 							color: $blue-dark;
+							font-size: 11px;
 						}
 
 						@include hover {
@@ -359,7 +369,7 @@
 		}
 
 		.footer__socials {
-			margin: 0 0 30px;
+			margin: 0 0 40px;
 
 			a {
 				color: $blue;
@@ -383,6 +393,13 @@
 			padding: 0;
 		}
 
+		.uk-flex-between:last-of-type .uk-flex:last-of-type {
+			>span {
+				padding-left: 10px;
+				padding-right: 0;
+			}
+		}
+
 		>.uk-flex-column {
 			&:first-of-type {
 				flex-direction: row;
@@ -403,6 +420,12 @@
 
 	@media (max-width: $breakpointSmall) {
 		padding-bottom: 50px;
+
+		.uk-flex-between:last-of-type .uk-flex:last-of-type {
+			>span {
+				padding-left: 0;
+			}
+		}
 
 		.uk-flex {
 			&:first-of-type {
