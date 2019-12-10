@@ -858,9 +858,14 @@
 }
 
 .nb-select {
+	margin-top: 30px;
 	.uk-button-primary.uk-active {
 		background: $white;
+		border: 2px solid $blue;
 		color: $blue;
+		.uk-button-hover {
+			background-color: $blue;
+		}
 	}
 
 	.uk-button,
