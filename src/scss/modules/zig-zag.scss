@@ -676,12 +676,13 @@
 
         &:last-of-type {
             font-size: 34px;
+            line-height: 1.1;
             font-family: $bold;
         }
     }
 
     p {
-        font-size: 20px;
+        font-size: 16px;
         margin-bottom: 150px;
         font-family: $medium;
     }
