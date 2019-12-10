@@ -145,11 +145,14 @@
 
 	.uk-panel {
 		top: 350px;
-		width: 30%;
+		width: 34%;
 
 		span {
 			color: $white;
+			line-height: 1;
 			font-family: $bold;
+			display: block;
+			margin-bottom: 10px;
 			font-size: 26px;
 
 			&.uk-text-uppercase {

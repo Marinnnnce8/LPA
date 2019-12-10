@@ -19,6 +19,7 @@ h6,
 h1,
 .h1 {
 	font-size: 54px;
+	line-height: 1;
 	font-family: $bold;
 	@media (max-width: $breakpointSmall) {
 		font-size: 34px;
