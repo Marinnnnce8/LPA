@@ -48,7 +48,7 @@
 	>.uk-flex {
 		min-height: 110px;
 		position: relative;
-		padding: 40px 15px;
+		padding: 40px;
 
 		a,
 		span {
@@ -132,6 +132,11 @@
 		}
 	}
 
+	@media (max-width: $breakpointXlarge) {
+		.uk-flex:first-of-type {
+			padding: 40px 20px;
+		}
+	}
 	@media (max-width: $breakpointLarge) {
 		.uk-flex {
 			width: 100%;
