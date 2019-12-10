@@ -1,7 +1,7 @@
 {
-	"name": "vegait-fe-hbs-starter",
-	"description": "VegaIT Front-end HBS Starter",
-	"author": "VegaIT",
+	"name": "lpa",
+	"description": "",
+	"author": "",
 	"version": "1.0.2",
 	"main": "gulpfile.js",
 	"dependencies": {

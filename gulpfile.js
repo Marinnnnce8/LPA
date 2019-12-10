@@ -10,7 +10,7 @@ const globalVars = require('./src/config/gulp-tasks/_global-vars');
 gulp.task('build', function() {
 	globalVars.createDistFolder();
 	globalVars.productionBuild = true;
-	runSequence('html-clean', 'html', 'css','css-copy', 'js', 'assets');
+	runSequence('html-clean', 'html', 'css','css-copy', 'assets');
 });
 
 //icon font
