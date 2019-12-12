@@ -176,6 +176,15 @@
 		background: $blue;
 	}
 
+	.uk-button:not(.uk-button-text) {
+		min-width: 250px;
+		padding: 0 20px;
+		text-align: left;
+		&::before {
+			right: 15px;
+		}
+	}
+
 	@media (max-width: $breakpointLarge) {
 		ul li {
 			margin-bottom: 20px;
@@ -641,7 +650,7 @@
 		position: relative;
 	}
 
-	span:not(.uk-button-hover) {
+	span {
 		display: block;
 		font-family: $bold;
 		font-size: 20px;
@@ -691,7 +700,7 @@
 			transition: .3s ease-in-out;
 		}
 
-		span:not(.uk-button-hover),
+		span,
 		a {
 			color: $white;
 			position: relative;
@@ -700,34 +709,29 @@
 			transition: .3s ease-in-out;
 			line-height: 1.1;
 
-			&::before,
 			&::after {
 				position: absolute;
-				top: 3px;
 			}
 		}
 
-		.uk-button--underline {
+		.uk-button {
 			display: block;
-			padding: 0 20px 0 55px;
-
-			.font-gross {
-				position: absolute;
+			padding: 10px 20px 0 45px;
+			font-size: 18px;
+			&::before {
+				top: 7px;
 			}
-
-			.uk-text-uppercase {
-				font-size: 18px;
-
-				&::after,
+			@include hover {
 				&::before {
-					top: auto;
+					right: -5px;
 				}
 			}
 		}
 
 		.download {
 			font-size: 18px;
-			position: absolute;
+			position: relative;
+			text-align: left;
 			top: 0;
 			right: auto;
 			left: 0;
@@ -743,7 +747,7 @@
 
 			&::after {
 				left: 0;
-				top: 5px;
+				top: 10px;
 				content: url('../img/pdf-icon.png');
 				width: 25px;
 			}
@@ -791,7 +795,7 @@
 			font-size: 12px;
 		}
 
-		>span:not(.uk-button-hover) {
+		>span {
 			&::after {
 				left: 0;
 				top: 50%;
@@ -820,6 +824,7 @@
 			border-color: $white;
 			width: 100%;
 			height: 45px;
+			font-size: 12px;
 			text-align: center;
 			padding: 10px 0 0;
 			min-width: 0;
@@ -830,25 +835,14 @@
 				left: 50%;
 				font-size: 10px;
 				width: 12px;
-			}
-
-			.uk-button--text {
-				color: $white;
-				padding: 0;
-				margin: 0;
+				transition: none;
 			}
 
 			@include hover {
+				background: $white;
+				color: $blue;
 				&::before {
 					color: $blue;
-				}
-
-				.uk-button--text {
-					color: $blue;
-				}
-
-				.uk-button-hover {
-					background: $white;
 				}
 			}
 		}
@@ -924,7 +918,7 @@
 .nb-select {
 	margin-top: 30px;
 
-	.uk-button-primary.uk-active {
+	.uk-button-secondary.uk-active {
 		background: $white;
 		border: 2px solid $blue;
 		color: $blue;
@@ -934,61 +928,41 @@
 		}
 	}
 
-	.uk-button,
+	.uk-button-secondary,
 	.uk-dropdown {
 		min-width: 350px;
 	}
 
-	.uk-button {
+	.uk-button-secondary {
 		line-height: 20px;
 		border: 0;
-
-		.uk-button--text {
-			text-align: left;
-			display: inline-block;
-			font-size: 12px;
-			width: 100%;
+		display: inline-block;
+		font-size: 12px;
+		width: 100%;
+		&::before {
+			display: none;
 		}
 
-		>.uk-icon {
+		svg {
 			border: 0;
 			position: absolute;
 			top: 50%;
 			transform: translateY(-50%);
 			right: 10px;
+			left: auto;
 			width: 20px;
+			transition: .3s ease-in-out;
 			z-index: 1;
 		}
 
 		@include hover {
-			.uk-button--text {
-				color: $white;
-			}
+			background: $blue;
+			color: $white;
 
-			>.uk-icon {
-				transform: rotate(-180deg) translateX(100%);
-
-				svg {
-					color: $white;
-				}
-			}
-		}
-
-		&:focus {
-			.uk-button--text {
-				color: $blue;
-			}
-
-			.uk-button-hover {
-				background: $white;
-			}
-
-			>.uk-icon {
-				transform: rotate(-180deg) translateX(100%);
-
-				svg {
-					color: $blue;
-				}
+			svg {
+				top: 30%;
+				transform: rotate(-180deg) translateX(0);
+				fill: $white;
 			}
 		}
 
@@ -996,12 +970,10 @@
 			background: $white;
 			color: $blue;
 
-			>.uk-icon {
-				transform: rotate(-180deg) translateX(100%);
-
-				svg {
-					color: $blue;
-				}
+			svg {
+				transform: rotate(-180deg) translateX(0);
+				transition: .3s ease-in-out;
+				top: 30%;
 			}
 		}
 	}

@@ -40,98 +40,57 @@ input[type='submit'] {
 }
 
 .uk-button {
-	background: $blue;
 	position: relative;
 	color: $white;
+	text-transform: uppercase;
 	cursor: pointer;
-	overflow: hidden;
 	font-family: $bold;
 	font-size: 14px;
-	padding: 0 45px 0 25px;
-	text-transform: uppercase;
-	transition: $nbSec ease-in-out;
-	text-align: left;
-	min-width: 250px;
+	padding: 0 30px 0 0;
+	transition: .3s ease-in-out;
 
 	&::before {
-		right: 10px;
+		content: font-char($gross);
+		font-family: 'svgicons';
+		right: 0;
 		position: absolute;
-		top: 50%;
-		transform: translateY(-50%);
+		top: 0;
+		transition: .3s ease-in-out;
 		z-index: 2;
-	}
-
-	.uk-button--text {
-		font-family: $bold;
-		font-size: 14px;
-		position: relative;
-		transition: .4s ease-in-out;
-		z-index: 2;
-	}
-
-	.uk-icon {
-		transition: .4s ease-in-out;
-
-		svg {
-			z-index: 1;
-		}
-	}
-
-	.uk-button-hover {
-		position: absolute;
-		display: block;
-		height: 0;
-		border-radius: 50%;
-		background-color: $blue-dark;
-		transition: width .4s ease-in-out, height .4s ease-in-out;
-		transform: translate(-50%, -50%);
-		width: 0;
-		z-index: 1;
 	}
 
 	@include hover {
-		background: $blue;
-		color: tint($blue-dark, 75%);
+		color: $white;
 
-		.uk-button--text {
-			color: $white;
-		}
-
-		.uk-button-hover {
-			height: calc(100% * 2.25);
-			width: 225%;
-		}
-
-		svg {
-			color: $blue;
+		&::before {
+			right: -5px;
 		}
 	}
 
 	@media (max-width: $breakpointLarge) {
 		font-size: 12px;
-		padding: 0 40px 0 15px;
 	}
 
 	@media (max-width: $breakpointMedium) {
-		padding: 0 31px 0 15px;
 
 		.uk-icon {
 			right: 5px;
 		}
 	}
-
-	@media (max-width: $breakpointSmall) {
-		padding: 0 30px 0 15px;
-	}
 }
 
 .uk-button-primary {
 	background: $blue;
+	border: 2px solid $blue;
 	font-size: 14px;
 	color: $white;
 	text-transform: uppercase;
 	position: relative;
 	transition: .3s ease-in-out;
+
+	&::before {
+		transition: none;
+	}
 
 	svg {
 		right: 10px;
@@ -141,34 +100,31 @@ input[type='submit'] {
 		transform: translateY(-50%);
 		transition: .3s ease-in-out;
 	}
-}
 
-.uk-button-primary-big {
-	padding: 31px 80px 31px 50px;
-}
-
-.uk-button-primary-small {
-	padding: 10px 50px 10px 15px;
-	font-size: 12px;
-	width: 185px;
-
-	.uk-button-text {
-		font-size: 12px;
+	@include hover {
+		background: $blue-dark;
+		border-color: $blue-dark;
+		color: $white;
+		&::before {
+			right: 0;
+		}
 	}
 }
 
 .uk-button-secondary {
-	border: 1px solid $blue;
+	border: 2px solid $blue;
 	background: transparent;
 	color: $blue;
 	position: relative;
+	text-align: left;
+	min-width: 250px;
 
 	&::before {
+		top: 50%;
+		transform: translateY(-50%);
+		right: 20px;
 		z-index: 2;
-	}
-
-	&:focus {
-		outline: 1px dashed rgba($blue, .2);
+		transition: none;
 	}
 
 	svg {
@@ -180,17 +136,11 @@ input[type='submit'] {
 		width: 70px;
 	}
 
-	.uk-button-hover {
-		background-color: $blue;
-	}
-
 	@include hover {
-		border: 1px solid $blue;
 		background: $blue;
-		color: tint($blue, 75%);
 
-		.uk-button--text {
-			color: $white;
+		&::before {
+			right: 20px;
 		}
 	}
 }
@@ -200,110 +150,19 @@ input[type='submit'] {
 	min-width: 100px;
 }
 
-.uk-button--underline {
-	padding: 2px 0;
-	position: relative;
-	text-decoration: none;
-
-	>span:not(.font-foreign):not(.font-gross) {
-		background: none;
-		position: relative;
-		text-decoration: none;
-		font-size: 14px;
-		font-family: $bold;
-		display: inline-block;
-		color: $white;
-		padding: 0 1px;
-		transition: color ease .3s;
-
-		&::before,
-		&::after {
-			content: '';
-			position: absolute;
-			background-color: transparent;
-			z-index: 0;
-			height: 1px;
-		}
-
-		&::before {
-			width: 0%;
-			left: 0;
-			bottom: 0;
-			transition: width ease .4s;
-		}
-
-		&::after {
-			width: 100%;
-			left: 0;
-			bottom: 0;
-			transition: ease .6s;
-		}
+.uk-button-text {
+	font-size: 18px;
+	font-family: $font-default;
+	color: $blue-dark;
+	padding: 0;
+	text-transform: initial;
+	&::before {
+		right: 100%;
+		content: '';
+		border-color: $blue-dark;
 	}
-
-	.font-foreign,
-	.font-gross {
-		position: relative;
-		padding-right: 20px;
-
-		&::before {
-			position: absolute;
-			right: 3px;
-			top: 3px;
-			font-size: 14px;
-			color: $blue-dark;
-		}
-	}
-
-	.font-gross {
-		display: inline !important; // sass-lint:disable-line no-important
-
-		&::before {
-			color: $white;
-			font-size: 12px;
-			top: 5px;
-			right: -5px;
-		}
-	}
-
 	@include hover {
-		span:first-of-type {
-			&::before {
-				width: 100%;
-				background: $white;
-			}
-
-			&::after {
-				left: 100%;
-				width: 0%;
-				background: $white;
-				transition: ease .2s;
-			}
-		}
-	}
-
-	&.underline-blue {
-		>span {
-			font-family: inherit;
-			font-size: inherit;
-			font-weight: inherit;
-
-			&:first-of-type {
-				color: $blue-dark;
-
-				&::before,
-				&::after {
-					background-color: $blue-dark;
-				}
-			}
-
-			&:last-of-type {
-				position: relative;
-				color: $blue-dark;
-				top: auto;
-				transform: none;
-				right: auto;
-			}
-		}
+		color: $blue-dark;
 	}
 }
 

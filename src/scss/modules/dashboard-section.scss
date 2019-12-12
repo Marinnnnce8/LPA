@@ -32,6 +32,11 @@
 
 .dashboard-wrap {
     padding-top: 70px;
+    .uk-flex-column:first-of-type {
+        .zig-zag-bottom {
+            width: calc(100% - 1px);
+        }
+    }
 }
 
 .dashboard-box {
@@ -203,8 +208,14 @@
     a {
         text-decoration: none;
         transition: .3s ease-in-out;
+        &::before {
+            transition: none;
+        }
         @include hover {
             color: $orange;
+            &::before {
+                right: 0;
+            }
         }
     }
 
@@ -331,14 +342,9 @@
     .dashboard-content {
         padding-left: 0;
         padding-right: 0;
-        .uk-button--underline {
-            >span {
-                color: $blue;
-            }
-            @include hover {
-                >span::before, >span::after {
-                    background: $blue;
-                }
+        .uk-button {
+            &::before {
+                content: font-char($foreign);
             }
         }
 

@@ -25,6 +25,7 @@
         >.uk-container>p {
             max-width: 100%;
         }
+
         .sectors-half .zig-zag {
             margin-bottom: 0;
         }
@@ -119,6 +120,12 @@
             font-size: 12px;
             top: 4px;
             transition: .3s ease-in-out;
+        }
+    }
+
+    @media (max-width: $breakpointMedium) {
+        .triangle-left span {
+            top: 45%;
         }
     }
 
@@ -427,15 +434,14 @@
     p {
         font-family: $medium;
     }
+    .zig-zag__text-inner p {
+        font-size: 14px;
+    }
 
     @media (max-width: $breakpointLarge) {
         .uk-container {
             padding-left: 60px;
             padding-right: 60px;
-        }
-
-        p {
-            font-size: 20px;
         }
 
         &.sectors-section--half {
@@ -454,7 +460,7 @@
         }
 
         .zig-zag__text-inner {
-            padding: 10px 25px 85px;
+            padding: 10px 25px 100px;
         }
     }
 }
@@ -749,7 +755,7 @@
         }
 
         .zig-zag__text-inner {
-            padding: 10px 35px 40px;
+            padding: 10px 35px 60px;
         }
     }
 
@@ -772,7 +778,7 @@
         }
 
         .zig-zag__text-inner {
-            padding: 10px 20px 30px;
+            padding: 10px 20px 57px;
         }
     }
 }

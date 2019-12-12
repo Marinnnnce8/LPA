@@ -260,16 +260,27 @@ if (document.getElementsByClassName("js-enable-link").length) {
     removeRel();
   });
 }
+
+function waveTitleHeight() {
+  var waveBoxes = document.getElementsByClassName("wave-box");
+  for (var i = 0; i < waveBoxes.length; i++) {
+      textHeight = document.getElementsByClassName("wave-text")[i].offsetHeight + 10;
+      document.getElementsByClassName("uk-card-body")[i].style.bottom = -textHeight + "px";
+  }
+}
+
 if (document.getElementsByClassName("wave-box").length) {
   loadMoreBtn.addEventListener("click", function() {
     var waveBox = document.getElementsByClassName("wave-box");
     var number = 0;
-    for (i = 0; i < waveBox.length; i++) {
+    for (var i = 0; i < waveBox.length; i++) {
       var compStyles = window.getComputedStyle(waveBox[i]);
       if (compStyles.getPropertyValue("display") === "none" && number < 3) {
         waveBox[i].style.display = "flex";
         number++;
       }
     }
+    waveTitleHeight();
   });
+  waveTitleHeight();
 }
