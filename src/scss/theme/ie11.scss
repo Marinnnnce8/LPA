@@ -1,5 +1,13 @@
 @media screen and (-ms-high-contrast: active),
 screen and (-ms-high-contrast: none) {
+    .nb-container, .cruise-section .nb-container {
+        margin-left: 320px;
+    }
+    .banner .uk-slider-nav li .uk-button {
+        display: block;
+        text-align: left;
+        width: 60%;
+    }
     .dashboard-content .uk-flex-column {
         width: 100%;
     }
@@ -17,6 +25,10 @@ screen and (-ms-high-contrast: none) {
     .header .uk-navbar-dropdown-nav > li .uk-background-cover img {
         display: block;
         margin-bottom: -20px;
+    }
+
+    .wave-box .uk-card-body::after {
+        background-size: 250px 70px;
     }
 
     .nb-facts .nb-facts-body::after {
@@ -39,10 +51,6 @@ screen and (-ms-high-contrast: none) {
 
     .dashboard-date {
         padding-top: 7px;
-    }
-
-    .wave-box .uk-card-body::after {
-        display: none;
     }
 
     .zig-zag__inner .zig-zag__text .zig-zag-bottom {

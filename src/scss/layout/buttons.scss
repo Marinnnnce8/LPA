@@ -155,7 +155,7 @@ input[type='submit'] {
 	font-family: $font-default;
 	color: $blue-dark;
 	padding: 0;
-	text-transform: initial;
+	text-transform: none;
 	&::before {
 		right: 100%;
 		content: '';
