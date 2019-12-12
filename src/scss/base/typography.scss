@@ -65,6 +65,9 @@ span {
 	font-family: $font-default;
 	@media (max-width: $breakpointSmall) {
 		font-size: 14px;
+		.uk-button {
+			font-size: 14px;
+		}
 	}
 }
 

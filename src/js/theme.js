@@ -263,11 +263,21 @@ if (document.getElementsByClassName("js-enable-link").length) {
 
 function waveTitleHeight() {
   var waveBoxes = document.getElementsByClassName("wave-box");
+  var addedHeight = 10;
   for (var i = 0; i < waveBoxes.length; i++) {
-      textHeight = document.getElementsByClassName("wave-text")[i].offsetHeight + 10;
-      document.getElementsByClassName("uk-card-body")[i].style.bottom = -textHeight + "px";
+    textHeight =
+      document.getElementsByClassName("wave-text")[i].offsetHeight +
+      addedHeight;
+    document.getElementsByClassName("uk-card-body")[i].style.bottom =
+      -textHeight + "px";
   }
 }
+
+window.addEventListener("load", function() {
+  if (document.getElementsByClassName("wave-box").length) {
+    waveTitleHeight();
+  }
+});
 
 if (document.getElementsByClassName("wave-box").length) {
   loadMoreBtn.addEventListener("click", function() {
@@ -282,5 +292,14 @@ if (document.getElementsByClassName("wave-box").length) {
     }
     waveTitleHeight();
   });
-  waveTitleHeight();
+}
+
+if (document.getElementsByClassName("btn-down").length) {
+  var btnDown = document.getElementsByClassName("btn-down")[0];
+  var secTo = document.getElementsByClassName("js-scroll-to")[0];
+  btnDown.addEventListener("click", function() {
+    var top = secTo.offsetTop;
+
+    window.scrollTo(0, top);
+  });
 }

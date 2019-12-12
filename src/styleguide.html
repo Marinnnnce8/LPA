@@ -1530,10 +1530,9 @@
 			<div class="uk-panel">
 				<h2>This is the styleguide</h2>
 			</div>
-			<a href="#styleguide" data-uk-scroll class="btn-down" data-uk-icon="chevron-down" role="button"
-				aria-label="Click to scroll to next section"></a>
+			<button class="btn-down" data-uk-icon="chevron-down" aria-label="Click to scroll to next section"></button>
 		</section>
-		<section id="styleguide">
+		<section class="js-scroll-to">
 			<div class="uk-position-fixed uk-position-center-right nb-fixed uk-visible@s">
 				<a class="nb-link-contact font-phone" href="tel:+123456789" aria-label="Click here to contact us"
 					data-uk-tooltip="title: Call us"></a>
@@ -1629,7 +1628,7 @@
 						<h3>Heading 3</h3>
 
 						<p><a href="#" class="uk-button uk-button-text">Here's an example external
-									link.</a> Sed ut perspiciatis unde omnis
+								link.</a> Sed ut perspiciatis unde omnis
 							iste natus error sit volupt accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
 							quae ab
 							illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
@@ -1707,11 +1706,11 @@
 
 						<ol>
 							<li><a href="#" class="uk-button uk-button-text">A list of ordered
-										links</a> - a link with some further text</li>
+									links</a> - a link with some further text</li>
 							<li><a href="#" class="uk-button uk-button-text">A list of ordered
-										links</a></li>
+									links</a></li>
 							<li><a href="#" class="uk-button uk-button-text">A list of ordered
-										links</a></li>
+									links</a></li>
 						</ol>
 					</div>
 				</div>
@@ -2105,9 +2104,7 @@
 								<button class="uk-button uk-button-secondary">find out more</button>
 							</div>
 							<div class="uk-flex uk-flex-middle">
-								<div class="uk-background-primary uk-width-1-1 uk-padding">
-									<button class="uk-button uk-button-text uk-button-large">Find out more</button>
-								</div>
+								<button class="uk-button uk-button-text uk-button-large">Find out more</button>
 							</div>
 						</div>
 					</div>
@@ -2164,9 +2161,8 @@
 								id='wrap_nb-form-nb-styleguide_submit'>
 								<div class='nb-form-content uk-flex uk-flex-right'>
 									<button id="nb-form-nb-styleguide_submit" class="uk-button uk-button-primary"
-										name="submit" value="Send" type="submit"><span class="uk-button-hover"
-											role="presentation"></span><span class="uk-button--text">send a
-											message</span></button>
+										name="submit" value="Send" type="submit">send a
+											message</button>
 								</div>
 							</div>
 						</form>

@@ -1,36 +1,18 @@
-//
-// Theme
-//
-/*--------------------------------------------------------------
-# Config
---------------------------------------------------------------*/
 @import 'config/variables.scss';
 
-/*--------------------------------------------------------------
-# Base
---------------------------------------------------------------*/
 @import 'base/breakpoints.scss';
 @import 'base/fonts.scss';
 @import 'base/layout.scss';
 @import 'base/typography.scss';
 
-/*--------------------------------------------------------------
-# Helpers
---------------------------------------------------------------*/
 @import 'helpers/mixins.scss';
 @import 'helpers/helpers.scss';
 
-/*--------------------------------------------------------------
-# Layout
---------------------------------------------------------------*/
 @import 'layout/icon-font.scss';
 @import 'layout/buttons.scss';
 @import 'layout/forms.scss';
 @import 'layout/triangles.scss';
 
-/*--------------------------------------------------------------
-# Modules
---------------------------------------------------------------*/
 @import 'modules/banner.scss';
 @import 'modules/link-box.scss';
 @import 'modules/zig-zag.scss';

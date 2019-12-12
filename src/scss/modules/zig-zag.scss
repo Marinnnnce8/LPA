@@ -104,6 +104,10 @@
 .sectors-section--half {
     padding-bottom: 280px;
 
+    &.uk-padding-large {
+        padding-top: 120px;
+    }
+
     .triangle-left span {
         position: absolute;
         padding-right: 25px;
@@ -121,6 +125,10 @@
             top: 4px;
             transition: .3s ease-in-out;
         }
+    }
+
+    .uk-button-secondary {
+        margin-left: 3px;
     }
 
     @media (max-width: $breakpointMedium) {
@@ -413,6 +421,7 @@
 }
 
 .sectors-section {
+
     .zig-zag {
         @include hover {
             .triangle-left.font-gross {
@@ -427,13 +436,14 @@
 
     .sectors-half {
         &:last-child {
-            margin-top: -50px;
+            margin-top: -87px;
         }
     }
 
     p {
         font-family: $medium;
     }
+
     .zig-zag__text-inner p {
         font-size: 14px;
     }
@@ -779,6 +789,63 @@
 
         .zig-zag__text-inner {
             padding: 10px 20px 57px;
+        }
+    }
+}
+
+.sectors-section--home {
+    padding-bottom: 150px;
+    .sectors-half {
+        &:first-of-type {
+
+            .zig-zag-title span:last-of-type,
+            .zig-zag__text-inner h3 {
+                font-size: 44px;
+            }
+        }
+
+        .zig-zag {
+            min-height: 570px;
+        }
+
+        .zig-zag-top,
+        .zig-zag-bottom {
+            height: 180px;
+        }
+
+        .zig-zag__inner {
+            padding: 100px 0;
+        }
+
+        .triangle-left span {
+            top: 15%;
+        }
+    }
+    .sectors-half>p {
+        margin-bottom: 30px;
+    }
+    @media (max-width: $breakpointLarge) {
+        padding-top: 0;
+        padding-bottom: 100px;
+        &.uk-padding-large {
+            padding-top: 0;
+        }
+        &.sectors-section--half .sectors-half {
+            margin-bottom: 0;
+        }
+        .sectors-half {
+            &:first-of-type {
+
+                .zig-zag-title span:last-of-type,
+                .zig-zag__text-inner h3 {
+                    font-size: 34px;
+                }
+            }
+        }
+    }
+    @media (max-width: $breakpointSmall) {
+        &.sectors-section--half .sectors-half {
+            margin-bottom: 100px;
         }
     }
 }

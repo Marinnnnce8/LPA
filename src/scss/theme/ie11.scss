@@ -66,6 +66,9 @@ screen and (-ms-high-contrast: none) {
             margin-right: 170px;
         }
     }
+    .sectors-half .zig-zag-top {
+        top: -1px;
+    }
 }
 
 @supports (-ms-ime-align:auto) {
